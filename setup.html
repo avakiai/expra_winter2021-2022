@@ -242,13 +242,13 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#getting-the-course-content">
-   Getting the course content
+  <a class="reference internal nav-link" href="#running-r">
+   Running R
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#enter-the-matrix">
-   Enter the matrix
+  <a class="reference internal nav-link" href="#go-get-yourself-a-nice-drink">
+   Go get yourself a nice drink!
   </a>
  </li>
 </ul>
@@ -265,7 +265,6 @@
   <div class="section" id="setup-for-the-course">
 <h1>Setup for the course<a class="headerlink" href="#setup-for-the-course" title="Permalink to this headline">¶</a></h1>
 <p>There are a few things you need to get working on your machine in order to follow this course. However, don’t worry as it’s all gonna be <span class="xref myst">open source</span>, won’t require a lot of storage and will be explained in detail.</p>
-<p>While same parts and section will be do-able via <code class="docutils literal notranslate"><span class="pre">cloud</span> <span class="pre">computing</span></code>, which is nice and easy to follow in an interactive manner, it’s not recommended as getting <code class="docutils literal notranslate"><span class="pre">R</span></code> &amp; friends to work reliably on your machine is going to be very beneficial. This holds true for the course and especially beyond. Via installing these tools, you will be equipped to basically continue right away and start using them in your everyday research workflow. This even applies if you won’t continue with <code class="docutils literal notranslate"><span class="pre">R</span></code> and instead work with <code class="docutils literal notranslate"><span class="pre">Python</span></code> (of course also super cool), <code class="docutils literal notranslate"><span class="pre">matlab</span></code> (weeeeeeeell…) or what have you.  Having that in mind and integrating other tools/resources focusing open and reproducible science, you will find a rather comprehensive set of install instructions below. While not all of them might be totally necessary for the course, they all will help you a great deal going further and are especially useful/needed if we have to hold the course virtually due to the COVID-19 pandemic.</p>
 <p>Don’t worry, you got this!</p>
 <p><img alt="logo" src="https://media1.tenor.com/images/f72cb542d6b3e3c3421889e0a3d9628d/tenor.gif?itemid=4533805" /><br />
 <sub><sup><sub><sup><a class="reference external" href="https://media1.tenor.com/images/f72cb542d6b3e3c3421889e0a3d9628d/tenor.gif?itemid=4533805">https://media1.tenor.com/images/f72cb542d6b3e3c3421889e0a3d9628d/tenor.gif?itemid=4533805</a></sup></sub></sup></sub></p>
@@ -283,9 +282,9 @@
 <h2>Required software<a class="headerlink" href="#required-software" title="Permalink to this headline">¶</a></h2>
 <p>To get the most out of the course, we ask that you install the following software asap but latest after the first lecture:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.r-project.org/">R</a> and <a class="reference external" href="https://www.rstudio.com/">RStudio</a></p></li>
-<li><p>A literature &amp; reference manager: <a class="reference external" href="https://www.zotero.org/">Zotero</a></p></li>
-<li><p>An instant messaging &amp; meeting tool: <a class="reference external" href="https://discord.com/">Slack</a></p></li>
+<li><p>Data Analysis: <a class="reference external" href="https://www.r-project.org/">R</a> and <a class="reference external" href="https://www.rstudio.com/">RStudio</a></p></li>
+<li><p>Communication Tool: <a class="reference external" href="https://slack.com/intl/en-de/">Slack</a></p></li>
+<li><p>Reference manager: <a class="reference external" href="https://www.zotero.org/">Zotero</a></p></li>
 <li><p>A modern browser: <a class="reference external" href="https://www.google.com/chrome/index.html">Chrome</a>, <a class="reference external" href="https://brave.com/">Brave</a>, <a class="reference external" href="https://www.opera.com/">Opera</a></p></li>
 </ul>
 <p>If you already have all of the above software installed, you are all set!
@@ -299,10 +298,10 @@ The rest of this page provides more detail on installation procedures for each o
 </div>
 <div class="section" id="os-specific-installation-instructions">
 <h3>OS-specific installation instructions<a class="headerlink" href="#os-specific-installation-instructions" title="Permalink to this headline">¶</a></h3>
-<p>Select the tab that corresponds to your operating system and follow the instructions therein.</p>
+<p>Select the tab that corresponds to your operating system and follow the instructions.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="409d6beb-cc75-4941-b886-1eee26fb938a" name="3428a279-db27-4f72-ae48-e7f02fe00327" type="radio">
-</input><label class="tabbed-label" for="409d6beb-cc75-4941-b886-1eee26fb938a">
+<input checked="checked" id="304088f4-f1a3-4901-80a7-07964fd27404" name="48602d5d-a92b-453b-bdb8-abe1b59348cc" type="radio">
+</input><label class="tabbed-label" for="304088f4-f1a3-4901-80a7-07964fd27404">
 Windows</label><div class="tabbed-content docutils">
 <p><strong>R &amp; RStudio</strong></p>
 <p><em>Please note</em>: If you already have <code class="docutils literal notranslate"><span class="pre">R</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">RStudio</span></code> installed, please check that you have version <code class="docutils literal notranslate"><span class="pre">4.1.1</span></code> and if that’s not the case, <a class="reference external" href="https://ftp.fau.de/cran/bin/windows/base/rw-FAQ.html#What_0027s-the-best-way-to-upgrade_003f">upgrade your version following these instructions</a>.</p>
@@ -318,7 +317,7 @@ Windows</label><div class="tabbed-content docutils">
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">Zotero</span> <span class="pre">Desktop</span> <span class="pre">App</span></code>, go to <code class="docutils literal notranslate"><span class="pre">Zotero</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Preferences</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Sync</span></code> and log in with your user credentials.</p></li>
 </ol>
 <p><strong>Slack</strong></p>
-<p>Go to <a class="reference external" href="https://discord.com/">https://discord.com/</a> and download and install Discord. Please note, that you can also use Discord through your browser if you don’t want to download it.
+<p>Go to <a class="reference external" href="https://slack.com/intl/en-de/">https://slack.com/intl/en-de/</a> and download and install Discord. Please note, that you can also use Discord through your browser if you don’t want to download it.
 You will be invited to the course channel via e-mail.</p>
 <p><strong>Modern web browser</strong></p>
 <p>Install Firefox or Chrome.
@@ -331,16 +330,9 @@ You will be invited to the course channel via e-mail.</p>
 </ol>
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-menu.png?w=400&tok=55835d" alt="logo" title="logo" width="300" height="150" hspace=50 />
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-toolbar.png?w=300&tok=799a8a" alt="logo" title="logo" width="300" height="150" />
-<p><strong>Other cool/interesting things</strong></p>
-<ol class="simple">
-<li><p>A <a class="reference external" href="https://chrome.google.com/webstore/detail/citation-transparency/cepnbdbhabaljgecaddglhhcgajphbcf?hl=en">Google Chrome Extension</a> targeting citation transparency focusing gender imbalance. Going further, your <code class="docutils literal notranslate"><span class="pre">Zotero</span> <span class="pre">library</span></code> can also be used to <a class="reference external" href="https://github.com/dalejn/cleanBib#instructions">create a diversity statement</a> which can be added to your written submissions. Find out more about it on <a class="reference external" href="https://complexsystemsupenn.com/">Dani Bassett</a>’s <a class="reference external" href="https://complexsystemsupenn.com/diversity-1">lab website</a>.</p></li>
-<li><p><a class="reference external" href="https://www.grammarly.com/">Grammarly</a>: an AI powered cloud-based writing assistant that can help with typos, spelling, grammar, punctuation, clarity, engagement, and delivery mistakes. The basic version is free and integrates nicely with browsers and local apps.</p></li>
-<li><p><a class="reference external" href="https://app.gitkraken.com/glo/">GitKraken Glo Boards</a>: create and track tasks for better project management.</p></li>
-<li><p>Get a <a class="reference external" href="https://en.wikipedia.org/wiki/Pomodoro_Technique">pomodoro</a> app that helps you to stay focus, track your work and get things done. For some examples check this <a class="reference external" href="https://www.jotform.com/blog/best-pomodoro-app/">list</a>.</p></li>
-</ol>
 </div>
-<input id="d52a955d-e493-4b2d-b696-59c7827699d8" name="3428a279-db27-4f72-ae48-e7f02fe00327" type="radio">
-</input><label class="tabbed-label" for="d52a955d-e493-4b2d-b696-59c7827699d8">
+<input id="bebd284f-197e-4fd4-92b2-282b86ee7e70" name="48602d5d-a92b-453b-bdb8-abe1b59348cc" type="radio">
+</input><label class="tabbed-label" for="bebd284f-197e-4fd4-92b2-282b86ee7e70">
 Linux</label><div class="tabbed-content docutils">
 <p><strong>R &amp; RStudio</strong></p>
 <p><em>Please note</em>: If you already have <code class="docutils literal notranslate"><span class="pre">R</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">RStudio</span></code> installed, please check that you have version <code class="docutils literal notranslate"><span class="pre">4.1.1</span></code> and if that’s not the case, <a class="reference external" href="https://medium.com/&#64;hpgomide/how-to-update-your-r-3-x-to-the-r-4-x-in-your-linux-ubuntu-46e2209409c3">upgrade your version following these instructions (assuming you use <code class="docutils literal notranslate"><span class="pre">ubuntu</span></code>)</a>.</p>
@@ -355,12 +347,10 @@ Linux</label><div class="tabbed-content docutils">
 <li><p>Download the <a class="reference external" href="https://www.zotero.org/download/client/dl?channel=release&amp;platform=linux-x86_64&amp;version=5.0.96.3">Zotero Desktop App for linux</a> from the <a class="reference external" href="https://www.zotero.org/download/">Download page</a>, run the downloaded file and follow the instructions on your screen.</p></li>
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">Zotero</span> <span class="pre">Desktop</span> <span class="pre">App</span></code>, go to <code class="docutils literal notranslate"><span class="pre">Zotero</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Preferences</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Sync</span></code> and log in with your user credentials.</p></li>
 </ol>
-<p><strong>Discord</strong></p>
-<p>Go to <a class="reference external" href="https://discord.com/">https://discord.com/</a> and download and install Discord. Please note, that you can also use Discord through your browser if you don’t want to download it.
-You will be invited to the course channel via e-mail.</p>
+<p><strong>Slack</strong></p>
+<p>Go to <a class="reference external" href="https://slack.com/intl/en-de/">https://slack.com/intl/en-de/</a> and download and install Slack. You will be invited to the course Slack channel via e-mail.</p>
 <p><strong>Modern web browser</strong></p>
-<p>Install Firefox or Chrome.
-(Safari will also work.)</p>
+<p>Install Firefox or Chrome. (Safari will also work.)</p>
 <p><strong>Integrations</strong></p>
 <p>A few of the tools you installed additionally nicely integrate with one another. It’s of course up to you to make use of that but it’s definitely recommended as it will ease up your (research/work/study) life quite a bit.</p>
 <ol class="simple">
@@ -369,16 +359,9 @@ You will be invited to the course channel via e-mail.</p>
 </ol>
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-menu.png?w=400&tok=55835d" alt="logo" title="logo" width="300" height="150" hspace=50 />
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-toolbar.png?w=300&tok=799a8a" alt="logo" title="logo" width="300" height="150" />
-<p><strong>Other cool/interesting things</strong></p>
-<ol class="simple">
-<li><p>A <a class="reference external" href="https://chrome.google.com/webstore/detail/citation-transparency/cepnbdbhabaljgecaddglhhcgajphbcf?hl=en">Google Chrome Extension</a> targeting citation transparency focusing gender imbalance. Going further, your <code class="docutils literal notranslate"><span class="pre">Zotero</span> <span class="pre">library</span></code> can also be used to <a class="reference external" href="https://github.com/dalejn/cleanBib#instructions">create a diversity statement</a> which can be added to your written submissions. Find out more about it on <a class="reference external" href="https://complexsystemsupenn.com/">Dani Bassett</a>’s <a class="reference external" href="https://complexsystemsupenn.com/diversity-1">lab website</a>.</p></li>
-<li><p><a class="reference external" href="https://www.grammarly.com/">Grammarly</a>: an AI powered cloud-based writing assistant that can help with typos, spelling, grammar, punctuation, clarity, engagement, and delivery mistakes. The basic version is free and integrates nicely with browsers and local apps.</p></li>
-<li><p><a class="reference external" href="https://app.gitkraken.com/glo/">GitKraken Glo Boards</a>: create and track tasks for better project management.</p></li>
-<li><p>Get a <a class="reference external" href="https://en.wikipedia.org/wiki/Pomodoro_Technique">pomodoro</a> app that helps you to stay focus, track your work and get things done. For some examples check this <a class="reference external" href="https://www.jotform.com/blog/best-pomodoro-app/">list</a>.</p></li>
-</ol>
 </div>
-<input id="91564734-6322-4bfe-a333-c99cb8bdc83f" name="3428a279-db27-4f72-ae48-e7f02fe00327" type="radio">
-</input><label class="tabbed-label" for="91564734-6322-4bfe-a333-c99cb8bdc83f">
+<input id="fa47c4c9-067c-447e-9a51-d0bd67ee82ca" name="48602d5d-a92b-453b-bdb8-abe1b59348cc" type="radio">
+</input><label class="tabbed-label" for="fa47c4c9-067c-447e-9a51-d0bd67ee82ca">
 MacOs</label><div class="tabbed-content docutils">
 <p><strong>R &amp; RStudio</strong></p>
 <p><em>Please note</em>: If you already have <code class="docutils literal notranslate"><span class="pre">R</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">RStudio</span></code> installed, please check that you have version <code class="docutils literal notranslate"><span class="pre">4.1.1</span></code> and if that’s not the case, <a class="reference external" href="https://medium.com/&#64;hpgomide/how-to-update-your-r-3-x-to-the-r-4-x-in-your-linux-ubuntu-46e2209409c3">upgrade your version following these instructions (assuming you use <code class="docutils literal notranslate"><span class="pre">ubuntu</span></code>)</a>.</p>
@@ -394,11 +377,9 @@ MacOs</label><div class="tabbed-content docutils">
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">Zotero</span> <span class="pre">Desktop</span> <span class="pre">App</span></code>, go to <code class="docutils literal notranslate"><span class="pre">Zotero</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Preferences</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Sync</span></code> and log in with your user credentials.</p></li>
 </ol>
 <p><strong>Slack</strong></p>
-<p>Go to <a class="reference external" href="https://slack.com/">https://slack.com/</a> and download and install Slack. You will be invited to the course Slack channel via e-mail.</p>
+<p>Go to <a class="reference external" href="https://slack.com/intl/en-de/">https://slack.com/intl/en-de/</a> and download and install Slack. You will be invited to the course Slack channel via e-mail.</p>
 <p><strong>Modern web browser</strong></p>
-<p>Install Firefox or Chrome.
-(Safari will also work.)
-Microsoft Edge is not modern, despite what Microsoft might try and otherwise tell you.</p>
+<p>Install Firefox or Chrome. (Safari will also work.)</p>
 <p><strong>Integrations</strong></p>
 <p>A few of the tools you installed additionally nicely integrate with one another. It’s of course up to you to make use of that but it’s definitely recommended as it will ease up your (research/work/study) life quite a bit.</p>
 <ol class="simple">
@@ -407,28 +388,15 @@ Microsoft Edge is not modern, despite what Microsoft might try and otherwise tel
 </ol>
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-menu.png?w=400&tok=55835d" alt="logo" title="logo" width="300" height="150" hspace=50 />
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-toolbar.png?w=300&tok=799a8a" alt="logo" title="logo" width="300" height="150" />
-<p><strong>Other cool/interesting things</strong></p>
-<ol class="simple">
-<li><p>A <a class="reference external" href="https://chrome.google.com/webstore/detail/citation-transparency/cepnbdbhabaljgecaddglhhcgajphbcf?hl=en">Google Chrome Extension</a> targeting citation transparency focusing gender imbalance. Going further, your <code class="docutils literal notranslate"><span class="pre">Zotero</span> <span class="pre">library</span></code> can also be used to <a class="reference external" href="https://github.com/dalejn/cleanBib#instructions">create a diversity statement</a> which can be added to your written submissions. Find out more about it on <a class="reference external" href="https://complexsystemsupenn.com/">Dani Bassett</a>’s <a class="reference external" href="https://complexsystemsupenn.com/diversity-1">lab website</a>.</p></li>
-<li><p><a class="reference external" href="https://www.grammarly.com/">Grammarly</a>: an AI powered cloud-based writing assistant that can help with typos, spelling, grammar, punctuation, clarity, engagement, and delivery mistakes. The basic version is free and integrates nicely with browsers and local apps.</p></li>
-<li><p><a class="reference external" href="https://app.gitkraken.com/glo/">GitKraken Glo Boards</a>: create and track tasks for better project management.</p></li>
-<li><p>Get a <a class="reference external" href="https://en.wikipedia.org/wiki/Pomodoro_Technique">pomodoro</a> app that helps you to stay focus, track your work and get things done. For some examples check this <a class="reference external" href="https://www.jotform.com/blog/best-pomodoro-app/">list</a>.</p></li>
-</ol>
 </div>
 </div>
-<p><strong>Note</strong>: If the instructions aren’t working and you have spent more than 15-20 minutes troubleshooting on your own, reach out on the #help-installation channel on the Discord channel with the exact problems you’re having.
-One of the instructors will try and get back to you quickly to help resolve the situation.
-If they’re unable to help via <code class="docutils literal notranslate"><span class="pre">Discord</span></code>, you may be directed to attend one of the installation office hours.</p>
 </div>
 </div>
-<div class="section" id="getting-the-course-content">
-<h2>Getting the course content<a class="headerlink" href="#getting-the-course-content" title="Permalink to this headline">¶</a></h2>
-<p>Now that you have installed the required software (or not) to follow the course, it’s time to gather the respective materials.</p>
-<p>As mentioned before: all materials, that is slides, links, readings, etc. will be either completely hosted here or linked to. Thus, the course website is the best address to find and get the course content. You can either use the <a class="reference external" href="https://peerherholz.github.io/EXPRA_Winter2021/outline.html#schedule">schedule in the outline section</a> or the <code class="docutils literal notranslate"><span class="pre">ToC</span></code> on the left to find and navigate through the sessions. Within each, the respective materials will be provided: <code class="docutils literal notranslate"><span class="pre">slides</span></code> as <code class="docutils literal notranslate"><span class="pre">pdfs</span></code> to download, <code class="docutils literal notranslate"><span class="pre">R</span> <span class="pre">code</span></code> as <code class="docutils literal notranslate"><span class="pre">scripts</span></code> or <code class="docutils literal notranslate"><span class="pre">notebooks</span></code> to download, links to <code class="docutils literal notranslate"><span class="pre">reading</span></code> and <code class="docutils literal notranslate"><span class="pre">video</span> <span class="pre">materials</span></code>, etc. .</p>
-<p>Concerning certain <code class="docutils literal notranslate"><span class="pre">R</span></code> related things, you have two options: running things <code class="docutils literal notranslate"><span class="pre">locally</span></code> and in the <code class="docutils literal notranslate"><span class="pre">cloud</span></code>. The first is definitely recommended as you will need to conduct analyses yourself and also share your <code class="docutils literal notranslate"><span class="pre">code</span></code> and <code class="docutils literal notranslate"><span class="pre">scripts</span></code> in the end. Both options are explained further below.</p>
+<div class="section" id="running-r">
+<h2>Running R<a class="headerlink" href="#running-r" title="Permalink to this headline">¶</a></h2>
 <div class="tabbed-set docutils">
-<input checked="checked" id="0fed57f8-ea95-43dd-999c-6ee7508a2a6e" name="359445b7-68ac-4e66-9716-355f6329735c" type="radio">
-</input><label class="tabbed-label" for="0fed57f8-ea95-43dd-999c-6ee7508a2a6e">
+<input checked="checked" id="2827c371-7868-4031-b03a-6d0310cb3850" name="072378dc-abef-456f-8976-072ae1f5b8ac" type="radio">
+</input><label class="tabbed-label" for="2827c371-7868-4031-b03a-6d0310cb3850">
 Local</label><div class="tabbed-content docutils">
 <p>By installing <code class="docutils literal notranslate"><span class="pre">R</span></code> on your system and setting up the appropriate <code class="docutils literal notranslate"><span class="pre">environment</span></code>, you will be able to open all the <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Notebooks</span></code>, <code class="docutils literal notranslate"><span class="pre">R</span> <span class="pre">scripts</span></code>, as well as <code class="docutils literal notranslate"><span class="pre">R</span> <span class="pre">markdown</span></code> files and go through the whole content of the course locally.</p>
 <p>To get things up and running, please follow these steps:</p>
@@ -449,26 +417,14 @@ Local</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </li>
-<li><p>Download the <code class="docutils literal notranslate"><span class="pre">scripts</span></code>, <code class="docutils literal notranslate"><span class="pre">Rmarkdown</span> <span class="pre">files</span></code>or <code class="docutils literal notranslate"><span class="pre">notebooks</span></code> of the respective sections via the <code class="docutils literal notranslate"><span class="pre">download</span> <span class="pre">button</span></code> on the top right or download the entire repository via <a class="reference external" href="https://github.com/PeerHerholz/EXPRA_Winter2021/archive/master.zip">this link</a>) and unzip it to your preferred location, e.g. <code class="docutils literal notranslate"><span class="pre">Desktop/EXPRA_Winter2021</span></code>.</p></li>
-<li><p>Open <a class="reference external" href="https://www.rstudio.com/">RStudio</a> and navigate to the respective folder(s) to access and open the files.</p></li>
+<li><p>Open <a class="reference external" href="https://www.rstudio.com/">RStudio</a>.</p></li>
 </ol>
 </div>
-<input id="8532174c-2d6f-4948-be4d-aaf46e70702e" name="359445b7-68ac-4e66-9716-355f6329735c" type="radio">
-</input><label class="tabbed-label" for="8532174c-2d6f-4948-be4d-aaf46e70702e">
-Cloud via Mybinder</label><div class="tabbed-content docutils">
-<p><img src="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b" alt="binder logo" width="300"/><br />
-<sub><sup><sub><sup><a class="reference external" href="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b">https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b</a></sup></sub></sup></sub></p>
-<p><a class="reference external" href="https://mybinder.org/v2/gh/peerherholz/EXPRA_Winter2021/HEAD"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
-<p><a class="reference external" href="https://mybinder.org/">MyBinder.org</a> is a great service that allows you to run Jupyter notebooks in a Docker or Python environment, directly online and for free. However, this service comes of course with a restricted computational environment (1-2GB of RAM). This means, many notebooks might be very slow and some might even crash, due to not enough memory.</p>
-<p>You can use this approach to run and test most of the <code class="docutils literal notranslate"><span class="pre">notebooks</span></code> and to explore some of the slides. To access the MyBinder instance, use <a class="reference external" href="https://mybinder.org/v2/gh/peerherholz/EXPRA_Winter2021/HEAD">this link</a>.</p>
 </div>
 </div>
-</div>
-<div class="section" id="enter-the-matrix">
-<h2>Enter the matrix<a class="headerlink" href="#enter-the-matrix" title="Permalink to this headline">¶</a></h2>
-<p>Once you reached this point, you should be ready the enter the matrix and follow the course in your preferred way. Congrats, fantastic work!</p>
-<p><img alt="logo" src="https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236" /><br />
-<sub><sup><sub><sup><a class="reference external" href="https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236">https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236</a></sup></sub></sup></sub></p>
+<div class="section" id="go-get-yourself-a-nice-drink">
+<h2>Go get yourself a nice drink!<a class="headerlink" href="#go-get-yourself-a-nice-drink" title="Permalink to this headline">¶</a></h2>
+<p>Once you reached this point, you’re good to go. Congrats, fantastic work!</p>
 </div>
 </div>
 
