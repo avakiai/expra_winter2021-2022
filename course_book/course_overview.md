@@ -37,65 +37,35 @@ We may choose to hold some classes on Zoom throughout the semester, however the 
 **Deadlines**: Until we/your hear otherwise, the deadlines are the deadlines. :)
 
 
-#### Hardware & Software
+#### Getting Set Up
 
-In this class, we will rely heavily on software designed for statistics and data science, such as R and some Python. We will use only open source and free software. To get you set up for this course, check out this [comprehensive installation instruction]() from a fellow EXPRA instructor, Peer Herholz. In a step-by-step manner it will guide you through the installation process, covering several `OS`: `windows`, `macos` and `linux`. 
-
-
-#### Syllabus and Text
-
-As noted above, this page serves as the syllabus for this course, with the precise outline indicated in the [respective section](https://peerherholz.github.io/EXPRA_Winter2021/outline.html). This syllabus is subject to change; students who miss class are responsible for learning about any changes to the syllabus.
-
-The course has several textbooks, all of which are online and free:
-
-https://statsthinking21.org/
-
-Additional reading material might be added but will always be open & free with students being informed about any addition.
+In this class, we will rely heavily on software designed for statistics and data science, such as R and some Python. We will use only open source and free software. To get you set up for this course, check out this [comprehensive installation instruction](https://avakiai.github.io/expra_winter2021-2022/setup.html) from a fellow EXPRA instructor, Peer Herholz. In a step-by-step manner it will guide you through the installation process, covering several `OS`: `windows`, `macos` and `linux`. 
 
 
+#### Course Materials
+Readings assigned for class (see [Syllabus](https://avakiai.github.io/expra_winter2021-2022/syllabus.html))
+Journal articles for journal clubs/your projects (tbd)
+[Statistical Rethinking](https://statsthinking21.org/)
+[Resources for programming and statistics](https://github.com/avakiai/Scientific-Resources)
 
-#### How to get those credits?
+**Highly Recommended:**
+[The Sense of Style](https://www.amazon.de/-/en/Steven-Pinker/dp/0241957710/ref=sr_1_1?dchild=1&keywords=the+sense+of+style&qid=1632410527&sr=8-1) by Steven Pinker
 
-As this is a practical lab course intended to provide you with an introduction to the workflow and life cycle of scientific research projects via a mixture of guided and  independent work, your assignments and tasks will be rather diverse and quite different from other modules. This is by all means intended and founded on the idea that this course should entail a holistic overview of the research process beyond the classic "do this, do that, n=30, do a t-test, tell a story, publish or perish" nonsense. Instead, the goal is to enable you to critically perceive and evaluated research, its implementation and its outcomes, regarding both your own work and that of others. The assignments and tasks aim to reflect these aspects and will entail working on research projects, evaluating that of others, reading project-related and general research-related literature and more. The different parts and grading scheme are further outlined below. 
+#### Assignments
 
-##### Exams and Assignments
+You will be expected to:
+* **Read articles/materials** for your project/that are assigned for class (individually)
+* Present a research article (**journal club**) related to your project (individually)
+* Prepare a **scientific poster** showcasing the results of your experiment (in groups) 
+ 
+However, your grade will come from two written reports, the Demo Report on the subject of the demo experiment we will conduct and analyze together, and the final report: a 15-page written report in the style of a journal article.
 
-In general, there will be two classes of assignments and tasks you need to work on in order to (successfully) pass this course: ungraded assessments and graded exams. The first will take place throughout the semester at various time points whereas the latter will entail two written research reports, one mid-term at roughly half of the semester and one final three weeks after the last session. 
-
-The ungraded assessments focus on different parts of the research workflow and your active engagement with them:
-
-- reading articles/materials for your project/that are assigned for class (individually or in groups)
-- present a research article (journal club) related to your project (individually)
-- conduct reviews of another group's project and provide feedback (in groups) 
-- prepare a scientific poster showcasing the results of your experiment (in groups) 
-
-The graded exams aim to assess your ability to bring the different parts of the research workflow together:
-
-- write a research report on the demo experiment (in groups)
-- write a 15-page research report in the style of a scientific paper summarizing your experiment (individually) 
-
-##### Grading
-
-Your final course grade will be determined by all these aspects, however with a different weight. As mentioned above, the graded exams will entail two written research reports. They will have the biggest weight in the calculation of your grade, both 40%. The ungraded assessments will be, you guessed right, ungraded but nonetheless influencing your final grade. How and why you asked? First, the assessments will be used to evaluate your work throughout the course and knowledge/experience you gained. Therefore, they will inform the scoring of your graded exams. Second, the research process is not static but continuous and so are your experience and skills. Thus, why would it be fair to assign your work a grade on a rather static outcome? All your efforts should be considered. Additionally, research is by no means a one-person thing (even though modern day science/academia looks/acts this way): it's about folks from different backgrounds coming together to work openly and collaboratively to create, preserve and disseminate knowledge. The way we act and the environment we create are crucial and will thus be evaluated as well.
-
-| Assignment/task | percentage of final grade  | deadline (dd/mm/yyyy, time) |
+| Assignment | Who? | percentage of final grade  | deadline (date, time) |
 |--------------|-----------|------------|
-| assessments | 20% | ongoing basis throughout the semester |
-| demo experiment report | 40% | 08/12/2021, 11:59 PM CET |
-| research experiment report | 40% | 23/02/2022, 11:59 PM CET |
-
-<iframe src="https://giphy.com/embed/yFHkrrbfITemc" width="240" height="173" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/exams-yFHkrrbfITemc">via GIPHY</a></p>
+| demo experiment report | with pod | 40% | Dec. 3, 2021, 11:59 PM CET |
+| final report | individually | 60% | Feb. 24, 2022, 11:59 PM CET |
 
 
-##### Academic Honor Code
-
-You are encouraged to discuss problem sets with classmates and work on them together, but certain written submissions must reflect your own, original work. If you worked with other students on a problem set, please include their names in a statement like "I worked on this homework with XX and YY" on the assignment. If in doubt, ask the instructor.
-
-##### Notice about missed work due to religious holy days
-
-Please notify the instructor of your pending absence at least fourteen days prior to the date of observance of a religious holy day. If you must miss a class, an examination, a work assignment, or a project in order to observe a religious holy day, I will give you an opportunity to complete the missed work within a reasonable time after the absence.
-
-
-### Acknowledgements
+##### Acknowledgements
 
 Some of the materials and resources for this course were borrowed from another EXPRA tutor, [Peer Herholz](https://peerherholz.github.io/EXPRA_Winter2021/index.html). 
