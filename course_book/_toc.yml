@@ -1,0 +1,10 @@
+root: index
+format: jb-book
+chapters:
+- file: course_overview
+- file: syllabus
+- file: setup
+- file: introduction/introduction.md
+- file: projects
+- file: experimentation/experimentation.md
+- file: finalization/finalization.md
