@@ -5,6 +5,7 @@ chapters:
 - file: syllabus.md
 - file: setup.md
 - file: introduction/introduction.md
+- file: introduction/open_science.md
 - file: projects.md
 - file: experimentation/experimentation.md
 - file: finalization/finalization.md

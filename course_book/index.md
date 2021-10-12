@@ -18,6 +18,9 @@ Please visit these pages again in the next few weeks for further information.
 
 This is the course book for EXPRA - Group 6 for the Winter Semester 2021-2022 at Goethe University. 
 
+![logo](https://ohbm.github.io/hackathon2019/img/dogeLove.gif)\
+<sub><sup><sub><sup>https://ohbm.github.io/hackathon2019/img/dogeLove.gif</sup></sub></sup></sub>
+
 ## About this course
 
 This course is designed to provide you with an introduction to the theory and practice of scientific research. Its primary goals are to:
@@ -33,7 +36,9 @@ Moreover, in this module, you will be encouraged to look at science with a wide-
 **Note: In this module, you will have the opportunity to conduct an experiment either with human subjects on a topic within auditory cognition or with animal subjects (the neotropical bat Carollia perspicillata).** 
 
 <div style="text-align: justify"> 
+
 ## About this course book
+
 This  [jupyter book](https://jupyterbook.org/intro.html) will house all important information about this course, including course materials, pratical resources, and our class schedule. 
 
 You can navigate through the  sections via the Table of Contents on the left side and within sections via the Contents on the right side of the page. 
@@ -52,11 +57,11 @@ You can use the following sections to navigate through the content of the lectur
 
 * [Software Setup](https://github.com/avakiai/expra_winter2021-2022/setup.html): What do I need to follow and participate in the course?
 
-* [An introduction to the scientific method & theory building](https://github.com/avakiai/expra_winter2021-2022/introduction/introduction.html)
+* [Introductory Materials](https://github.com/avakiai/expra_winter2021-2022/introduction/introduction.html)
 
 * [Projects](https://github.com/avakiai/expra_winter2021-2022/projects.html)
 
 * [Experimentation](https://github.com/avakiai/expra_winter2021-2022/experimentation/experimentation.html)
 
-* [Project finalization](https://github.com/avakiai/expra_winter2021-2022/finalization/finalization.html)
+* [Project Finalization](https://github.com/avakiai/expra_winter2021-2022/finalization/finalization.html)
 
