@@ -1,15 +1,15 @@
 # Lectures
 
-## Introduction to Experimentation
+#### Introduction to Experimentation
 
-## Open Science
+#### Open Science
 
-## Philosophy of Experimentation
+#### Philosophy of Experimentation
 
-## Literature Review & Scientific Writing Workshop
+#### Literature Review & Scientific Writing Workshop
 
-## Logic & Causality
+#### Logic & Causality
 
-## Extreme Ownership
+#### Extreme Ownership
 
-## Comparative Cognition
+#### Comparative Cognition

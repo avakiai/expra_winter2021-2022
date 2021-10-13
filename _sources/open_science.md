@@ -7,11 +7,11 @@ Here is brief list of resources for carrying out experiments in as open, transpa
 Do check out [*The Turing Way*](https://the-turing-way.netlify.app/welcome), which is a whole handbook for reproducible research and collaborative data science. They have loads of materials and help guides. 
 
 
-### Documentation
-#### Preregistration
+#### Documentation
+##### Preregistration
 [AsPredicted.org](https://aspredicted.org/)
 
-#### Project & Preprint Servers
+##### Project & Preprint Servers
 
 [OSF](https://osf.io/)
 
@@ -19,14 +19,14 @@ Do check out [*The Turing Way*](https://the-turing-way.netlify.app/welcome), whi
 
 [bioRxiv](https://www.biorxiv.org/)
 
-### Version Control
-#### Git/GitHub
+#### Version Control
+##### Git/GitHub
 
 [Git](https://git-scm.com/)
 
 [GitHub](https://github.com/)
 
-### Programming Software
+#### Programming Software
 
 [R](https://github.com/avakiai/expra_winter2021-2022/syllabus.html) see setup
 
@@ -37,7 +37,7 @@ Do check out [*The Turing Way*](https://the-turing-way.netlify.app/welcome), whi
 ![rainbow os](static/rainbow_os.png)
 
 
-### Advanced
+#### Advanced
 
 [Zenodo](https://zenodo.org/): Hosting data online
 
