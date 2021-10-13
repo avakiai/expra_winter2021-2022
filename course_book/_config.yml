@@ -88,5 +88,3 @@ sphinx:
       sphinx-panels:
         - https://sphinx-panels.readthedocs.io/en/sphinx-book-theme/
         - null
-plugins:
-  - jemoji
