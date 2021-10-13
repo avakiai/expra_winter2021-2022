@@ -4,8 +4,8 @@ chapters:
 - file: course_overview.md
 - file: syllabus.md
 - file: setup.md
-- file: introduction/introduction.md
-- file: introduction/open_science.md
+- file: lectures/lectures.md
 - file: projects.md
+- file: open_science.md
 - file: experimentation/experimentation.md
 - file: finalization/finalization.md
