@@ -8,4 +8,5 @@ chapters:
 - file: projects.md
 - file: open_science.md
 - file: experimentation/experimentation.md
+- file: experimentation/data_analyses.md
 - file: finalization/finalization.md
