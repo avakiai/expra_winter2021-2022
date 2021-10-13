@@ -52,7 +52,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Experimentation" href="experimentation/experimentation.html" />
+    <link rel="next" title="Experimentation" href="experimentation/landing.html" />
     <link rel="prev" title="Projects" href="projects.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -72,6 +72,11 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/dogeLove.gif" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">EXPRA Team 6 2021-2022</h1>
@@ -120,20 +125,44 @@
    Open Science
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="experimentation/experimentation.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="experimentation/landing.html">
    Experimentation
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="experimentation/experimentation.html">
+     Experimentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="experimentation/data_analyses.html">
+     Data Analyses
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="experimentation/data_analyses.html">
-   Data Analyses
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="finalization/finalization.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="finalization/landing.html">
    Finalization
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="finalization/finalization.html">
+     Finalization
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -354,7 +383,7 @@
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="experimentation/experimentation.html" title="next page">
+        <a class="right-next" href="experimentation/landing.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
                 <p class="prevnext-title">Experimentation</p>

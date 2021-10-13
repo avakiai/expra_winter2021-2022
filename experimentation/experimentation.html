@@ -53,7 +53,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Data Analyses" href="data_analyses.html" />
-    <link rel="prev" title="Open Science" href="../open_science.html" />
+    <link rel="prev" title="Experimentation" href="landing.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -72,6 +72,11 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/dogeLove.gif" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">EXPRA Team 6 2021-2022</h1>
@@ -120,20 +125,44 @@
    Open Science
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="landing.html">
    Experimentation
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Experimentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_analyses.html">
+     Data Analyses
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="data_analyses.html">
-   Data Analyses
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../finalization/finalization.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../finalization/landing.html">
    Finalization
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../finalization/finalization.html">
+     Finalization
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -293,11 +322,11 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="../open_science.html" title="previous page">
+        <a class="left-prev" href="landing.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Open Science</p>
+                <p class="prevnext-title">Experimentation</p>
             </div>
         </a>
     </div>

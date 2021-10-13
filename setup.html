@@ -72,6 +72,11 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/dogeLove.gif" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">EXPRA Team 6 2021-2022</h1>
@@ -120,20 +125,44 @@
    Open Science
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="experimentation/experimentation.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="experimentation/landing.html">
    Experimentation
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="experimentation/experimentation.html">
+     Experimentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="experimentation/data_analyses.html">
+     Data Analyses
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="experimentation/data_analyses.html">
-   Data Analyses
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="finalization/finalization.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="finalization/landing.html">
    Finalization
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="finalization/finalization.html">
+     Finalization
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -303,8 +332,8 @@ The rest of this page provides more detail on installation procedures for each o
 <h3>OS-specific installation instructions<a class="headerlink" href="#os-specific-installation-instructions" title="Permalink to this headline">¶</a></h3>
 <p>Select the tab that corresponds to your operating system and follow the instructions.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="884be769-990e-451b-a44c-ed2096fea9f4" name="b092702b-79f3-49d4-a80a-1e27913ce64b" type="radio">
-</input><label class="tabbed-label" for="884be769-990e-451b-a44c-ed2096fea9f4">
+<input checked="checked" id="56cb641b-04a2-4983-ab94-39ddc837a523" name="9031fd50-0bd6-494e-98e3-2c42b29e9aa4" type="radio">
+</input><label class="tabbed-label" for="56cb641b-04a2-4983-ab94-39ddc837a523">
 Windows</label><div class="tabbed-content docutils">
 <p><strong>R &amp; RStudio</strong></p>
 <p><em>Please note</em>: If you already have <code class="docutils literal notranslate"><span class="pre">R</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">RStudio</span></code> installed, please check that you have version <code class="docutils literal notranslate"><span class="pre">4.1.1</span></code> and if that’s not the case, <a class="reference external" href="https://ftp.fau.de/cran/bin/windows/base/rw-FAQ.html#What_0027s-the-best-way-to-upgrade_003f">upgrade your version following these instructions</a>.</p>
@@ -332,8 +361,8 @@ Windows</label><div class="tabbed-content docutils">
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-menu.png?w=400&tok=55835d" alt="logo" title="logo" width="300" height="150" hspace=50 />
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-toolbar.png?w=300&tok=799a8a" alt="logo" title="logo" width="300" height="150" />
 </div>
-<input id="638a2381-40ad-4e9d-a544-e16e9d663ab8" name="b092702b-79f3-49d4-a80a-1e27913ce64b" type="radio">
-</input><label class="tabbed-label" for="638a2381-40ad-4e9d-a544-e16e9d663ab8">
+<input id="e8178df9-b50d-4bf2-ab00-fde8d609cf76" name="9031fd50-0bd6-494e-98e3-2c42b29e9aa4" type="radio">
+</input><label class="tabbed-label" for="e8178df9-b50d-4bf2-ab00-fde8d609cf76">
 Linux</label><div class="tabbed-content docutils">
 <p><strong>R &amp; RStudio</strong></p>
 <p><em>Please note</em>: If you already have <code class="docutils literal notranslate"><span class="pre">R</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">RStudio</span></code> installed, please check that you have version <code class="docutils literal notranslate"><span class="pre">4.1.1</span></code> and if that’s not the case, <a class="reference external" href="https://medium.com/&#64;hpgomide/how-to-update-your-r-3-x-to-the-r-4-x-in-your-linux-ubuntu-46e2209409c3">upgrade your version following these instructions (assuming you use <code class="docutils literal notranslate"><span class="pre">ubuntu</span></code>)</a>.</p>
@@ -361,8 +390,8 @@ Linux</label><div class="tabbed-content docutils">
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-menu.png?w=400&tok=55835d" alt="logo" title="logo" width="300" height="150" hspace=50 />
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-toolbar.png?w=300&tok=799a8a" alt="logo" title="logo" width="300" height="150" />
 </div>
-<input id="a3bf492e-d9a1-4e8c-b077-73e03d5042cf" name="b092702b-79f3-49d4-a80a-1e27913ce64b" type="radio">
-</input><label class="tabbed-label" for="a3bf492e-d9a1-4e8c-b077-73e03d5042cf">
+<input id="aad7c395-7850-4bfc-ad03-1142fe9efcc0" name="9031fd50-0bd6-494e-98e3-2c42b29e9aa4" type="radio">
+</input><label class="tabbed-label" for="aad7c395-7850-4bfc-ad03-1142fe9efcc0">
 MacOs</label><div class="tabbed-content docutils">
 <p><strong>R &amp; RStudio</strong></p>
 <p><em>Please note</em>: If you already have <code class="docutils literal notranslate"><span class="pre">R</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">RStudio</span></code> installed, please check that you have version <code class="docutils literal notranslate"><span class="pre">4.1.1</span></code> and if that’s not the case, <a class="reference external" href="https://medium.com/&#64;hpgomide/how-to-update-your-r-3-x-to-the-r-4-x-in-your-linux-ubuntu-46e2209409c3">upgrade your version following these instructions (assuming you use <code class="docutils literal notranslate"><span class="pre">ubuntu</span></code>)</a>.</p>
@@ -396,8 +425,8 @@ MacOs</label><div class="tabbed-content docutils">
 <div class="section" id="running-r">
 <h2>Running R<a class="headerlink" href="#running-r" title="Permalink to this headline">¶</a></h2>
 <div class="tabbed-set docutils">
-<input checked="checked" id="c977ca1c-02d9-4448-ba7e-19c5b92937c7" name="5ef8080a-89e5-4f0e-b389-7c3f0bff9897" type="radio">
-</input><label class="tabbed-label" for="c977ca1c-02d9-4448-ba7e-19c5b92937c7">
+<input checked="checked" id="efeccb8c-e6b2-4136-92bb-6460d4b6a8c5" name="aac2791c-b3b3-4bdd-8b35-1f3a42cbefdc" type="radio">
+</input><label class="tabbed-label" for="efeccb8c-e6b2-4136-92bb-6460d4b6a8c5">
 Local</label><div class="tabbed-content docutils">
 <p>By installing <code class="docutils literal notranslate"><span class="pre">R</span></code> on your system and setting up the appropriate <code class="docutils literal notranslate"><span class="pre">environment</span></code>, you will be able to open all the <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Notebooks</span></code>, <code class="docutils literal notranslate"><span class="pre">R</span> <span class="pre">scripts</span></code>, as well as <code class="docutils literal notranslate"><span class="pre">R</span> <span class="pre">markdown</span></code> files and go through the whole content of the course locally.</p>
 <p>To get things up and running, please follow these steps:</p>
