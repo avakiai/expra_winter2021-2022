@@ -18,9 +18,6 @@ Please visit these pages again in the next few weeks for further information.
 
 This is the course book for EXPRA - Group 6 for the Winter Semester 2021-2022 at Goethe University. 
 
-![logo](https://ohbm.github.io/hackathon2019/img/dogeLove.gif)\
-<sub><sup><sub><sup>https://ohbm.github.io/hackathon2019/img/dogeLove.gif</sup></sub></sup></sub>
-
 ## About this course
 
 This course is designed to provide you with an introduction to the theory and practice of scientific research. Its primary goals are to:
@@ -49,19 +46,23 @@ The three symbols in the top allow to enable full screen mode, link to the under
 
 ## EXPRA
 
-You can use the following sections to navigate through the content of the lecture:
+You can use the following sections to navigate through the content of the course:
 
-* [Course Overview](https://github.com/avakiai/expra_winter2021-2022/course_overview.html): What's this course all about? How are things implemented and supposed to work? 
+* [Course Overview](https://avakiai.github.io/expra_winter2021-2022/course_overview.html)
 
-* [Syllabus](https://github.com/avakiai/expra_winter2021-2022/syllabus.html): What are the specific topics and aspects taught?
+* [Syllabus](https://avakiai.github.io/expra_winter2021-2022/syllabus.html)
 
-* [Software Setup](https://github.com/avakiai/expra_winter2021-2022/setup.html): What do I need to follow and participate in the course?
+* [Software Setup](https://avakiai.github.io/expra_winter2021-2022/setup.html): Hardware & software requirements for this course. 
 
-* [Introductory Materials](https://github.com/avakiai/expra_winter2021-2022/introduction/introduction.html)
+* [Lectures](https://avakiai.github.io/expra_winter2021-2022/lectures/lectures.html): Slides and other material mostly presented in Module I.
 
-* [Projects](https://github.com/avakiai/expra_winter2021-2022/projects.html)
+* [Open Science](https://avakiai.github.io/expra_winter2021-2022/open_science.html): Resources for carrying out your experiments in an open, transparent, and reproducible manner. 
 
-* [Experimentation](https://github.com/avakiai/expra_winter2021-2022/experimentation/experimentation.html)
+* [Projects](https://avakiai.github.io/expra_winter2021-2022/projects.html): Resources for each project.
 
-* [Project Finalization](https://github.com/avakiai/expra_winter2021-2022/finalization/finalization.html)
+* [Experimentation](https://github.com/avakiai/expra_winter2021-2022/experimentation/experimentation.html): Resources for Module II.
 
+* [Project Finalization](https://github.com/avakiai/expra_winter2021-2022/finalization/finalization.html): Resources for Module III.
+
+
+See you there!

@@ -72,11 +72,6 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/undraw_Processing_re_tbdu_expra.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">EXPRA Team 6 2021-2022</h1>
@@ -111,18 +106,18 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="introduction/introduction.html">
+  <a class="reference internal" href="lectures/lectures.html">
    Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="introduction/open_science.html">
-   Open Science
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="projects.html">
    Projects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="open_science.html">
+   Open Science
   </a>
  </li>
  <li class="toctree-l1">
@@ -263,6 +258,16 @@
     <a class="reference internal nav-link" href="#assignments">
      Assignments
     </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#coding-troubleshooting">
+     Coding Troubleshooting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#language">
+     Language
+    </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#acknowledgements">
@@ -318,7 +323,7 @@ We may choose to hold some classes on Zoom throughout the semester, however the 
 </div>
 <div class="section" id="getting-set-up">
 <h3>Getting Set Up<a class="headerlink" href="#getting-set-up" title="Permalink to this headline">¶</a></h3>
-<p>In this class, we will rely heavily on software designed for statistics and data science, such as R and some Python. We will use only open source and free software. To get you set up for this course, check out this <a class="reference external" href="https://avakiai.github.io/expra_winter2021-2022/setup.html">comprehensive installation instruction</a> from a fellow EXPRA instructor, Peer Herholz. In a step-by-step manner it will guide you through the installation process, covering several <code class="docutils literal notranslate"><span class="pre">OS</span></code>: <code class="docutils literal notranslate"><span class="pre">windows</span></code>, <code class="docutils literal notranslate"><span class="pre">macos</span></code> and <code class="docutils literal notranslate"><span class="pre">linux</span></code>.</p>
+<p>In this class, we will rely heavily on software designed for statistics and data science, such as R and some Python. We will use only open source and free software. To get you set up for this course, check out this <a class="reference external" href="https://avakiai.github.io/expra_winter2021-2022/setup.html">comprehensive installation instruction</a> from a fellow EXPRA instructor, Peer Herholz. This will guide you through the installation process, covering several <code class="docutils literal notranslate"><span class="pre">OS</span></code>: <code class="docutils literal notranslate"><span class="pre">Windows</span></code>, <code class="docutils literal notranslate"><span class="pre">Mac</span></code> and <code class="docutils literal notranslate"><span class="pre">Linux</span></code>.</p>
 </div>
 <div class="section" id="course-materials">
 <h3>Course Materials<a class="headerlink" href="#course-materials" title="Permalink to this headline">¶</a></h3>
@@ -335,13 +340,29 @@ Journal articles for journal clubs/your projects (tbd)
 <ul class="simple">
 <li><p><strong>Read articles/materials</strong> for your project/that are assigned for class (individually)</p></li>
 <li><p>Present a research article (<strong>journal club</strong>) related to your project (individually)</p></li>
+<li><p>Prepare an interim <strong>project presentation</strong> (in groups)</p></li>
 <li><p>Prepare a <strong>scientific poster</strong> showcasing the results of your experiment (in groups)</p></li>
 </ul>
 <p>However, your grade will come from two written reports, the Demo Report on the subject of the demo experiment we will conduct and analyze together, and the final report: a 15-page written report in the style of a journal article.</p>
-<p>| Assignment | Who? | percentage of final grade  | deadline (date, time) |
+<p>| Assignment | Who? | % of final grade  | Deadline |
 |————–|———–|————|
-| demo experiment report | with pod | 40% | Dec. 3, 2021, 11:59 PM CET |
-| final report | individually | 60% | Feb. 24, 2022, 11:59 PM CET |</p>
+| Demo Experiment Report | with pod | 40% | Dec. 3, 2021, 11:59 PM CET |
+| Final Project Report | individually | 60% | Feb. 24, 2022, 11:59 PM CET |</p>
+</div>
+<div class="section" id="coding-troubleshooting">
+<h3>Coding Troubleshooting<a class="headerlink" href="#coding-troubleshooting" title="Permalink to this headline">¶</a></h3>
+<p>In this class, you may find yourself having to do analyses and using data wrangling methods you’ve never used before. This process can at times be quite frustrating. My job is to help you through challenges like this, so you should feel free to ask me for help when you’re stuck. However, the goal of this class is also to help you become a but more independent in finding solutions to experimental issues on your own. Therefore, I ask that you follow this troubleshooting guideline first, and if your problem persists, I’ll be happy to help:</p>
+<ol class="simple">
+<li><p>Write down (in plain language or using a diagram) the problem you are trying to solve. If applicable, make a diagram on paper of how the loop/routine/chunk of code should work.</p></li>
+<li><p>Search Google using a simplified phrasing of your problem, and look particularly for results from programming help forums like <a class="reference external" href="https://community.rstudio.com/">RStudio Community</a> (for R-related issues), <a class="reference external" href="https://stackoverflow.com/">Stack Overflow</a> (for programming), <a class="reference external" href="https://stats.stackexchange.com/">Cross Validated</a> (for stats).</p></li>
+<li><p>Try a few things out and keep a record (preferably in your .RMarkdown file) of what you tried and what results it gave.</p></li>
+</ol>
+<p>If at this point, or after about 30 minutes of trying, you can’t find the solution, write me on Slack.</p>
+</div>
+<div class="section" id="language">
+<h3>Language<a class="headerlink" href="#language" title="Permalink to this headline">¶</a></h3>
+<p>As you have probably guessed, this class will be held in English. This means that EXPRA reports should also be written in English.
+If you feel absolutely unable to do so, you may submit in German.</p>
 <div class="section" id="acknowledgements">
 <h4>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h4>
 <p>Some of the materials and resources for this course were borrowed from another EXPRA tutor, <a class="reference external" href="https://peerherholz.github.io/EXPRA_Winter2021/index.html">Peer Herholz</a>.</p>
