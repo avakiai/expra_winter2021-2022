@@ -9,11 +9,6 @@ titlesonly: true
 
 # Welcome to EXPRA!
 
-````{margin}
-```{warning} 
-These pages are currently under construction and will be updated continuously.
-Please visit these pages again in the next few weeks for further information.
-````
 <br/>
 
 This is the course book for EXPRA - Group 6 for the Winter Semester 2021-2022 at Goethe University. 
@@ -66,3 +61,8 @@ You can use the following sections to navigate through the content of the course
 
 
 See you there!
+
+````{margin}
+```{warning} 
+Note that these pages will be continuously updated. So check back frequently.
+````
