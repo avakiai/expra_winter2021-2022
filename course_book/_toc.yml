@@ -7,10 +7,6 @@ chapters:
 - file: lectures/lectures.md
 - file: projects.md
 - file: open_science.md
-- file: experimentation/landing.md
-  sections:
-  - file: experimentation/experimentation.md
-  - file: experimentation/data_analyses.md
-- file: finalization/landing.md
-  sections:
-  - file: finalization/finalization.md
+- file: experimentation/experimentation.md
+- file: experimentation/data_analyses.md
+- file: finalization/finalization.md
