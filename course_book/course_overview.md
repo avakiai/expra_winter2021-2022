@@ -2,15 +2,20 @@
   
 ### Hi! I'm your instructor!
 
-The contact information of the instructor are as follows:
-
-- Ava Kiai
+- [Ava Kiai](https://avakiai.com/)
 - Office Hours: [By appointment](https://calendly.com/avakiai)
 - E-mail: kiai@psych.uni-frankfurt.de
 
+Feel free to contact me by email, however the main form of communication for project-related matters in this class will be Slack. This is in part because Slack allows for better tracking of conversation history, particularly when mutliple people and multiple issues are being discussed. 
+
+
+![kitty](static/catmicro.jpg)
+Let's get started!
+
+
 ### Overview
 
-This course will be held weekly, and includes a mix of traditional lectures, interactive demonstrations, tutorials, journal clubs, discussion, and project Workshop (“workshop”). Outside of class, you will be expected to meet with your pods (project groups) to implement your experiment, collect data, and complete your analysis and summary reports. 
+This course will be held weekly, and includes a mix of traditional lectures, interactive demonstrations, tutorials, journal clubs, discussion, and "Project Workshops" where you'll have time to work together with your group ("pod") on your project as well as ask me questions. Outside of class, you will be expected to meet with your pods to implement your experiment, collect data, and complete your analysis and summary reports. 
 
 As the term goes on, we will spend less time on lectures and more time addressing particular questions/issues/tasks you have to deal with in carrying out and analyzing your results. We may choose not to meet in person on some weeks, or to meet only for part of class time. Depending on common preference, groups can arrange to meet with me separately to discuss particular issues, instead of meeting for the whole Projects Workshop slot. Therefore, the schedule for weeks to come is to be taken merely as a guideline unless otherwise stated.
 
@@ -18,7 +23,7 @@ As the term goes on, we will spend less time on lectures and more time addressin
 
 Every Thursday from Oct. 21, 2021 until February 10th, 2022 at 14:00 - 18:00.
 
-Please note that semester from December 18th, 2021 - January 13th, 2022 and no classes will take place within this time period.  
+Please note that winter break this term is December 18th, 2021 - January 13th, 2022 and no classes will take place within this time period.
 
 
 #### Where
@@ -35,7 +40,6 @@ We may choose to hold some classes on Zoom throughout the semester, however the 
 **Projects**: Experiments with human participants will be done online, while experiments with animal participants will be done in person, unless otherwise noted. 
 
 **Deadlines**: Until we/your hear otherwise, the deadlines are the deadlines. :)
-
 
 #### Getting Set Up
 
@@ -61,7 +65,7 @@ You will be expected to:
 However, your grade will come from two written reports, the Demo Report on the subject of the demo experiment we will conduct and analyze together, and the final report: a 15-page written report in the style of a journal article.
 
 | Assignment | Who? | % of final grade  | Deadline |
-|--------------|-----------|------------|
+|--------------|-----------|------------|------------|
 | Demo Experiment Report | with pod | 40% | Dec. 3, 2021, 11:59 PM CET |
 | Final Project Report | individually | 60% | Feb. 24, 2022, 11:59 PM CET |
 

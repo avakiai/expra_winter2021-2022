@@ -2,7 +2,6 @@
 
 There are a few things you need to get working on your machine in order to follow this course. However, don't worry as it's all gonna be [open source](), won't require a lot of storage and will be explained in detail.
 
-
 Don't worry, you got this!
 
 ## General things
@@ -13,7 +12,7 @@ There are a few computing requirements for the course that are absolutely necess
 1. You must have at least 20 GB of free disk space on your computer (but more is recommended, just to be safe).
 1. If you are using Windows you must be using Windows 10; Windows 7 and 8 will (most likely) not be sufficient for this course.
 
-If you foresee any of these being a problem please reach out to one of the instructors for what steps you can take to ensure you are ready for the course start.
+If you foresee any of these being a problem, please reach out to me by the first week of class. 
 
 ## Required software
 
@@ -118,7 +117,7 @@ _Please note_: If you already have `R` & `RStudio` installed, please check that 
 **Zotero**
 
 1. Go to https://www.zotero.org/ and click the "Log in" button followed by the "Register for a free account" button on the subsequent page.
-2. Register for a free account via providing the necessary information. N.B.: Think about the email address you are using for the registration. While it might seem feasible/appropriate to use your university account, please remember that you won't have access to it anymore after you finished your studies. Obviously, you could just change it when the time comes but you could also just use a different one right away (which might be less prone to problems anyway). 
+2. Register for a free account via providing the necessary information. N.B.: Think about the email address you are using for the registration. While it might seem feasible/appropriate to use your university account, please remember that you won't have access to it anymore after you finished your studies.  
 3. Download the [Zotero Desktop App for macOS](https://www.zotero.org/download/client/dl?channel=release&platform=mac&version=5.0.96.3) from the [Download page](https://www.zotero.org/download/), run the downloaded file and follow the instructions on your screen.
 4. Open the `Zotero Desktop App`, go to `Zotero` -> `Preferences` -> `Sync` and log in with your user credentials.
 
@@ -167,6 +166,8 @@ To get things up and running, please follow these steps:
 3. Open [RStudio](https://www.rstudio.com/).
 ```
 
-## Go get yourself a nice drink!
+### All done!
 
-Once you reached this point, you're good to go. Congrats, fantastic work!
+Well done! Once you reached this point, you're good to go. Go get yourself a nice drink!
+
+![cat](static/catsetup.gif)
