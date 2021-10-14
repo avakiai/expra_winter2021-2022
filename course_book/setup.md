@@ -4,7 +4,7 @@ There are a few things you need to get working on your machine in order to follo
 
 Don't worry, you got this!
 
-## General things
+## Hardware
 
 There are a few computing requirements for the course that are absolutely necessary (beyond the few software packages you should install, described below):
 
@@ -14,16 +14,22 @@ There are a few computing requirements for the course that are absolutely necess
 
 If you foresee any of these being a problem, please reach out to me by the first week of class. 
 
-## Required software
+## Software
 
-To get the most out of the course, we ask that you install the following software asap but latest after the first lecture:
+Please install the following software before the first week of class, and at the absolute latest by Week 2. This way, I can help with any install issues during class on Week 1, so we can jump directly into data analysis on Week 2.
+
+Required:
 
 - Data Analysis: [R](https://www.r-project.org/) and [RStudio](https://www.rstudio.com/)
 - Communication Tool: [Slack](https://slack.com/intl/en-de/)
 - Reference manager: [Zotero](https://www.zotero.org/)
 - A modern browser: [Chrome](https://www.google.com/chrome/index.html), [Brave](https://brave.com/), [Opera](https://www.opera.com/)
 
-If you already have all of the above software installed, you are all set!
+Optional:
+
+- A Plain Markdown Editor: [SublimeText](https://www.sublimetext.com/3). You may find it easier to write documentation for your project in a lightweight [Markdown](https://www.markdownguide.org/) editor, rather than rely on Word, OpenOffice, Google Docs, or similar. If you already have a plain text editor, that will work great! However, this is largely up to individual preference. After installation, you must install a Markdown plug-in (such as [MarkdownPreview](https://facelessuser.github.io/MarkdownPreview/install/#using-package-control-recommended)) to start writing Markdown files.
+- Online/Experiment Builder: [PsycoPy](https://www.psychopy.org/index.html). Online experiments will be run using [PsycoPy](https://www.psychopy.org/index.html). For now, it is not necessary that you download this software, however any changes to this will be discussed in class. 
+
 The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (`Windows`, `Mac OS`, and `Linux`).
 
 ### Some quick general notes on instructions
@@ -48,7 +54,7 @@ _Please note_: If you already have `R` & `RStudio` installed, please check that 
 
 1. Go to https://www.zotero.org/ and click the "Log in" button followed by the "Register for a free account" button on the subsequent page.
 2. Register for a free account. N.B.: Think about the email address you are using for the registration. While it might seem feasible/appropriate to use your university account, please remember that you won't have access to it anymore after you finished your studies.
-3. Download the [Zotero Desktop App for windows](https://www.zotero.org/download/client/dl?channel=release&platform=win32&version=5.0.96.3) from the [Download page](https://www.zotero.org/download/), run the downloaded `.exe` file and follow the instructions on your screen.
+3. Download the [Zotero Desktop App for Windows](https://www.zotero.org/download/client/dl?channel=release&platform=win32&version=5.0.96.3) from the [Download page](https://www.zotero.org/download/), run the downloaded `.exe` file and follow the instructions on your screen.
 4. Open the `Zotero Desktop App`, go to `Zotero` -> `Preferences` -> `Sync` and log in with your user credentials.
 
 **Slack**
@@ -63,9 +69,10 @@ Install Firefox or Chrome. (Safari will also work.)
 
 A few of the tools you installed additionally nicely integrate with one another.
 
-1. Go to https://www.zotero.org/download/ and install the connector for your respective browser. With that you can directly get `articles`, `books`, `blog posts`, etc. and their `meta-data` from the web and added to your `zotero` library. Please note: the `Zotero Desktop App` needs to be open for this to work. 
-2. Make sure the `connector` also added the `Zotero plug in` to `Google Docs`, which should look like the following. Please note: the `Zotero Desktop App` needs to be open for the plug in to work.
+1. Go to https://www.zotero.org/download/ and install the connector for your browser. With this you can directly download `articles`, `books`, etc. from your browser to your `Zotero` library. Please note: the `Zotero Desktop App` needs to be open for this to work. Please note: the `Zotero Desktop App` needs to be open for the plug in to work.
+2. You can [download the connectors](https://www.zotero.org/support/plugins) for your word processor and for RStudio. Please note: the `Zotero Desktop App` needs to be open for the plug in to work. 
 
+Example for Google Docs:
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-menu.png?w=400&tok=55835d" alt="logo" title="logo" width="300" height="150" hspace=50 />
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-toolbar.png?w=300&tok=799a8a" alt="logo" title="logo" width="300" height="150" />
 ```
@@ -96,11 +103,12 @@ Install Firefox or Chrome. (Safari will also work.)
 
 **Integrations**
 
-A few of the tools you installed additionally nicely integrate with one another. It's of course up to you to make use of that but it's definitely recommended as it will ease up your (research/work/study) life quite a bit.
+A few of the tools you installed additionally nicely integrate with one another.
 
-1. Go to https://www.zotero.org/download/ and install the connector for your respective browser. With that you can directly get `articles`, `books`, `blog posts`, etc. and their `meta-data` from the web and added to your `zotero` library. Please note: the `Zotero Desktop App` needs to be open for this to work. 
-2. Make sure the `connector` also added the `Zotero plug in` to `google docs`, which should look like the following. Please note: the `Zotero Desktop App` needs to be open for the plug in to work.
+1. Go to https://www.zotero.org/download/ and install the connector for your browser. With this you can directly download `articles`, `books`, etc. from your browser to your `Zotero` library. Please note: the `Zotero Desktop App` needs to be open for this to work. Please note: the `Zotero Desktop App` needs to be open for the plug in to work.
+2. You can [download the connectors](https://www.zotero.org/support/plugins) for your word processor and for RStudio. Please note: the `Zotero Desktop App` needs to be open for the plug in to work. 
 
+Example for Google Docs:
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-menu.png?w=400&tok=55835d" alt="logo" title="logo" width="300" height="150" hspace=50 />
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-toolbar.png?w=300&tok=799a8a" alt="logo" title="logo" width="300" height="150" />
 ```
@@ -123,7 +131,7 @@ _Please note_: If you already have `R` & `RStudio` installed, please check that 
 
 **Slack**
 
-Go to https://slack.com/intl/en-de/ and download and install Slack. You will be invited to the course Slack channel via e-mail.
+Go to https://slack.com/intl/en-de/ and download and install Slack. You will be invited to the course Slack channel via email.
 
 **Modern web browser**
 
@@ -131,11 +139,12 @@ Install Firefox or Chrome. (Safari will also work.)
 
 **Integrations**
 
-A few of the tools you installed additionally nicely integrate with one another. It's of course up to you to make use of that but it's definitely recommended as it will ease up your (research/work/study) life quite a bit.
+A few of the tools you installed additionally nicely integrate with one another.
 
-1. Go to https://www.zotero.org/download/ and install the connector for your respective browser. With that you can directly get `articles`, `books`, `blog posts`, etc. and their `meta-data` from the web and added to your `zotero` library. Please note: the `Zotero Desktop App` needs to be open for this to work. 
-2. Make sure the `connector` also added the `Zotero plug in` to `google docs`, which should look like the following. Please note: the `Zotero Desktop App` needs to be open for the plug in to work.
+1. Go to https://www.zotero.org/download/ and install the connector for your browser. With this you can directly download `articles`, `books`, etc. from your browser to your `Zotero` library. Please note: the `Zotero Desktop App` needs to be open for this to work. Please note: the `Zotero Desktop App` needs to be open for the plug in to work.
+2. You can [download the connectors](https://www.zotero.org/support/plugins) for your word processor and for RStudio. Please note: the `Zotero Desktop App` needs to be open for the plug in to work. 
 
+Example for Google Docs:
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-menu.png?w=400&tok=55835d" alt="logo" title="logo" width="300" height="150" hspace=50 />
 <img align="center" src="https://www.zotero.org/support/_media/google-docs-toolbar.png?w=300&tok=799a8a" alt="logo" title="logo" width="300" height="150" />
 ```

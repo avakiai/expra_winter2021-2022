@@ -10,6 +10,7 @@ Feel free to contact me by email, however the main form of communication for pro
 
 
 ![kitty](static/catmicro.jpg)
+
 Let's get started!
 
 
@@ -46,21 +47,24 @@ We may choose to hold some classes on Zoom throughout the semester, however the 
 In this class, we will rely heavily on software designed for statistics and data science, such as R and some Python. We will use only open source and free software. To get you set up for this course, check out this [comprehensive installation instruction](https://avakiai.github.io/expra_winter2021-2022/setup.html) from a fellow EXPRA instructor, Peer Herholz. This will guide you through the installation process, covering several `OS`: `Windows`, `Mac` and `Linux`. 
 
 #### Course Materials
-Readings assigned for class (see [Syllabus](https://avakiai.github.io/expra_winter2021-2022/syllabus.html))
-Journal articles for journal clubs/your projects (tbd)
-[Statistical Rethinking](https://statsthinking21.org/)
-[Resources for programming and statistics](https://github.com/avakiai/Scientific-Resources)
+
+* Readings assigned for class (see [Syllabus](https://avakiai.github.io/expra_winter2021-2022/syllabus.html))
+* Journal articles for journal clubs/your projects (tbd)
+* [Statistical Thinking](https://statsthinking21.org/)
+* [Statistical Rethinking](https://github.com/avakiai/stat_rethinking_2020)
+* [Resources for programming and statistics](https://github.com/avakiai/Scientific-Resources)
 
 **Highly Recommended:**
-[The Sense of Style](https://www.amazon.de/-/en/Steven-Pinker/dp/0241957710/ref=sr_1_1?dchild=1&keywords=the+sense+of+style&qid=1632410527&sr=8-1) by Steven Pinker
+
+* [The Sense of Style](https://www.amazon.de/-/en/Steven-Pinker/dp/0241957710/ref=sr_1_1?dchild=1&keywords=the+sense+of+style&qid=1632410527&sr=8-1) by Steven Pinker
 
 #### Assignments
 
 You will be expected to:
 * **Read articles/materials** for your project/that are assigned for class (individually)
 * Present a research article (**journal club**) related to your project (individually)
-* Prepare an interim **project presentation** (in groups)
-* Prepare a **scientific poster** showcasing the results of your experiment (in groups) 
+* Prepare an interim **project presentation** (in pods)
+* Prepare a **scientific poster** showcasing the results of your experiment (in pods) 
  
 However, your grade will come from two written reports, the Demo Report on the subject of the demo experiment we will conduct and analyze together, and the final report: a 15-page written report in the style of a journal article.
 
