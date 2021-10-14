@@ -13,9 +13,8 @@ titlesonly: true
 
 This is the course book for EXPRA - Group 6 for the Winter Semester 2021-2022 at Goethe University. 
 
-<div>
-<img src="attachment:static/dogeLove.gif" width="500"/>
-</div>
+from IPython.display import Image
+Image(url='https://github.com/avakiai/expra_winter2021-2022/tree/master/course_book/static/dogeLove.gif', width=200)
 
 ## About this course
 
