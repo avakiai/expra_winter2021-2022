@@ -13,7 +13,7 @@ titlesonly: true
 
 This is the course book for EXPRA - Group 6 for the Winter Semester 2021-2022 at Goethe University. 
 
-<img src="static/dogeLove.gif" alt="doge" width="200"/>
+![doge]<img src="static/dogeLove.gif" alt="doge" width="200"/>
 
 
 ## About this course
