@@ -1,7 +1,13 @@
 # Projects
 
-## The Repeated Presentation Illusion
+### Replicating The Repeated Presentation Illusion
 
-## Individual variability in musical liking across genres: musicians vs. non-musicians
+Coming soon!
 
-## Echocolation vs. Communication in Neotropical Bats
+### Individual variability in musical liking across genres: musicians vs. non-musicians
+
+Coming soon!
+
+### Investigating echocolation and communication call parameters in neotropical bats (_C. Perspicillata_)
+
+Coming soon!
