@@ -13,8 +13,6 @@ titlesonly: true
 
 This is the course book for EXPRA - Group 6 for the Winter Semester 2021-2022 at Goethe University. 
 
-![doge](static/dogeLove.gif)
-
 ## About this course
 
 This course is designed to provide you with an introduction to the theory and practice of scientific research. Its primary goals are to:
