@@ -5,8 +5,9 @@ chapters:
 - file: syllabus.md
 - file: setup.md
 - file: lectures/lectures.md
-- file: projects.md
 - file: open_science.md
+- file: demo/demo_exp.md
+- file: projects.md
 - file: experimentation/landing.md
   sections:
   - file: experimentation/experimentation.md
