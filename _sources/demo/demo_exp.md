@@ -10,6 +10,13 @@ You can download the repository as a .zip file by clicking on the `Code` button 
 
 <img src="./static/download_repo.png" alt="download_repo" class="bg-primary" width="200px">
 
+```{image} ./static/download_repo.png
+:alt: download_repo
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
+
 You can also find the analyses files in this section as an executable (R Markdown) file. (Coming soon.)
 
 Don't worry if some of this jargon sounds strange! We'll go over everything in class. In the meantime, checkout the [GitHub glossary](https://docs.github.com/en/get-started/quickstart/github-glossary). 
