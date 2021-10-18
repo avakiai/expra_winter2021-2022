@@ -8,8 +8,7 @@
 
 Feel free to contact me by email, however the main form of communication for project-related matters in this class will be Slack. This is in part because Slack allows for better tracking of conversation history, particularly when mutliple people and multiple issues are being discussed. 
 
-
-![kitty](static/catmicro.jpg)
+<img src="static/catmicro.jpg" alt="cat" class="mx-auto d-block" width="400px">
 
 Let's get started!
 
