@@ -13,6 +13,8 @@ titlesonly: true
 
 This is the course book for EXPRA - Group 6 for the Winter Semester 2021-2022 at Goethe University. 
 
+<img src="static/dogeLove.gif" alt="gif" class=".float-left" width="450px">
+
 ## About this course
 
 This course is designed to provide you with an introduction to the theory and practice of scientific research. Its primary goals are to:
@@ -32,6 +34,11 @@ Moreover, in this module, you will be encouraged to look at science with a wide-
 ## About this course book
 
 This  [jupyter book](https://jupyterbook.org/intro.html) will house all important information about this course, including course materials, pratical resources, and our class schedule. 
+
+````{margin}
+```{warning} 
+Note that these pages will be continuously updated. So check back frequently.
+````
 
 You can navigate through the  sections via the Table of Contents on the left side and within sections via the Contents on the right side of the page. 
 
@@ -61,8 +68,3 @@ You can use the following sections to navigate through the content of the course
 
 
 See you there!
-
-````{margin}
-```{warning} 
-Note that these pages will be continuously updated. So check back frequently.
-````
