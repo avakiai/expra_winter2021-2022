@@ -8,9 +8,9 @@ You can use the folder structure of the demo experiment repository to follow alo
 I also encourage you to use a similar structure for your term projects. 
 You can download the repository as a .zip file by clicking on the `Code` button on the upper right above the repository folder listing.
 
-<img src="./static/download_repo.png" alt="download_repo" class="bg-primary" width="200px">
+<img src="../static/download_repo.png" alt="download_repo" class="bg-primary" width="200px">
 
-```{image} ./static/download_repo.png
+```{image} ../static/download_repo.png
 :alt: download_repo
 :class: bg-primary mb-1
 :width: 200px
