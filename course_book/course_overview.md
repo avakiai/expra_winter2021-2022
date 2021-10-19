@@ -19,6 +19,11 @@ This course will be held weekly, and includes a mix of traditional lectures, int
 
 As the term goes on, we will spend less time on lectures and more time addressing particular questions/issues/tasks you have to deal with in carrying out and analyzing your results. We may choose not to meet in person on some weeks, or to meet only for part of class time. Depending on common preference, groups can arrange to meet with me separately to discuss particular issues, instead of meeting for the whole Projects Workshop slot. Therefore, the schedule for weeks to come is to be taken merely as a guideline unless otherwise stated.
 
+```{admonition} Regulations & Requirements
+This class is listed as Modul PsyBSc10: Empirisch-experimentelles Praktikum
+(Pflichtmodul) and is worth 8 CP. You must have passed PsyBSc1, PsyBSc2 & PsyBSc7 to take part in this course, as per the Goethe Uni [Studienordnung for the Bachelor in Psychology](https://www.psychologie.uni-frankfurt.de/91860275/BA_Psychologie_2020_09_08.pdf). We unfortunately cannot make any exceptions. 
+```
+
 #### When
 
 Every Thursday from Oct. 21, 2021 until February 10th, 2022 at 14:00 - 18:00.
