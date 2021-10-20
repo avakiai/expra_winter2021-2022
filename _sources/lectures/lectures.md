@@ -5,12 +5,16 @@ A (tentative/optimistic) outline of planned lectures is as follows:
 
 #### Introduction to Experimentation
 
-Slides: TK
+Slides: Coming soon!
+
+<img src="static/peach-cat-boba-tea.gif" alt="bubbletea!" class="mx-auto d-block" width="200px">
 
 #### Open Science
 See the page on [Open Science](https://avakiai.github.io/expra_winter2021-2022/open_science.html) for a list of resources. 
 
 Slides: TK
+
+A folder with articles discussed in class can be found [here](../../open_science_readings). 
 
 #### Philosophy of Experimentation
 
