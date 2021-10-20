@@ -60,6 +60,8 @@ You can use the following sections to navigate through the content of the course
 
 * [Open Science](https://avakiai.github.io/expra_winter2021-2022/open_science.html): Resources for carrying out your experiments in an open, transparent, and reproducible manner. 
 
+* [Demonstration Experiment](https://avakiai.github.io/expra_winter2021-2022/demo/demo_exp.html): Resources for following along with and writing your demo reports. 
+
 * [Projects](https://avakiai.github.io/expra_winter2021-2022/projects.html): Resources for each project.
 
 * [Experimentation](https://github.com/avakiai/expra_winter2021-2022/experimentation/experimentation.html): Resources for Module II.
