@@ -7,7 +7,7 @@ A (tentative/optimistic) outline of planned lectures is as follows:
 
 Slides: Coming soon!
 
-<img src="static/peach-cat-boba-tea.gif" alt="bubbletea!" class="mx-auto d-block" width="200px">
+<img src="../static/peach-cat-boba-tea.gif" alt="bubbletea!" class=".float-right" width="200px">
 
 #### Open Science
 See the page on [Open Science](https://avakiai.github.io/expra_winter2021-2022/open_science.html) for a list of resources. 
