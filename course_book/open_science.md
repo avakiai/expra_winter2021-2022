@@ -8,7 +8,7 @@ Do check out [*The Turing Way*](https://the-turing-way.netlify.app/welcome), whi
 
 #### Documentation
 ##### Preregistration
-We will do a preregistration together for the Demo Experiment. You will also submit a preregistration along with your pod for your prorject. The template can be found on [AsPredicted.org](https://aspredicted.org/).
+We will do a preregistration together for the Demo Experiment. You will also submit a preregistration along with your pod for your project. A template can be found on [AsPredicted.org](https://aspredicted.org/).
 
 ##### Project & Preprint Servers
 [OSF](https://osf.io/) is a place to store preregistrations, documentation, protocols, and other material related to your project. This creates a public record of your project that you, collaborators, and others can view.
