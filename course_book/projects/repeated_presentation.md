@@ -1,7 +1,7 @@
 # Repeated Presentation Experiment
 
 ## Literature
-A couple references to get you started can be found [here](https://avakiai.github.io/expra_winter2021-2022/projects/repeated_presentation/literature). 
+A couple references to get you started can be found [here](https://github.com/avakiai/expra_winter2021-2022/tree/master/course_book/projects/repeated_presentation/literature). 
 
 ## Stimuli
 
