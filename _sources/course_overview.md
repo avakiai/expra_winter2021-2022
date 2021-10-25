@@ -2,7 +2,7 @@
   
 ### Hi! I'm your instructor!
 
-- [Ava Kiai](https://avakiai.com/)
+- [Ava Kiai](https://avakiai.github.io/)
 - Office Hours: [By appointment](https://calendly.com/avakiai)
 - E-mail: kiai@psych.uni-frankfurt.de
 
