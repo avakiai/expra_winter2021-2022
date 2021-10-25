@@ -7,7 +7,10 @@ chapters:
 - file: lectures/lectures.md
 - file: open_science.md
 - file: demo/demo_exp.md
-- file: projects.md
+- file: projects/projects.md
+  sections: 
+  - file: projects/repeated_presentation.md
+  - file: projects/vocal_adaptation.md
 - file: experimentation/landing.md
   sections:
   - file: experimentation/experimentation.md
