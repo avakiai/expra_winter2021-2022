@@ -2,7 +2,7 @@
 
 ## Literature
 
-A couple articles to get you started can be found [here](https://avakiai.github.io/expra_winter2021-2022/projects/vocal_adaptation/literature). 
+A couple articles to get you started can be found [here](https://github.com/avakiai/expra_winter2021-2022/tree/master/course_book/projects/vocal_adaptation/literature). 
 
 ## Stimuli
 
