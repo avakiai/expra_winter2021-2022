@@ -4,7 +4,10 @@ chapters:
 - file: course_overview.md
 - file: syllabus.md
 - file: setup.md
-- file: lectures/lectures.md
+- file: lectures/landing.md
+  sections:
+  - file: lectures/lectures.md
+  - file: lectures/workshops.md
 - file: open_science.md
 - file: demo/demo_exp.md
 - file: projects/projects.md

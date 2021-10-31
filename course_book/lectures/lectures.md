@@ -21,13 +21,11 @@ Slides:
 
 A folder with articles discussed in class can be found [here](https://github.com/avakiai/expra_winter2021-2022/tree/master/open_science_readings). 
 
-#### Philosophy of Experimentation
+#### Philosophy of Experimentation & Inference
 
-Slides: TK
+Slides: 
 
-#### Literature Review & Scientific Writing Workshop
-
-Slides: TK
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ72nbzhhO6ETa7fBOdLWtMet7ErTjlmJXvtnc0okHELn2Rek585DfBOdeO0LuZ7O5MjVLUQtDc6QDg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" style="border: 1px solid #464646;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 #### Logic & Causality
 

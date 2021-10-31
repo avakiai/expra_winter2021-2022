@@ -56,7 +56,7 @@ You can use the following sections to navigate through the content of the course
 
 * [Software Setup](https://avakiai.github.io/expra_winter2021-2022/setup.html): Hardware & software requirements for this course. 
 
-* [Lectures](https://avakiai.github.io/expra_winter2021-2022/lectures/lectures.html): Slides and other material mostly presented in Module I.
+* [Lectures & Workshops](https://avakiai.github.io/expra_winter2021-2022/lectures/landing.html): Slides and other material mostly presented in Module I.
 
 * [Open Science](https://avakiai.github.io/expra_winter2021-2022/open_science.html): Resources for carrying out your experiments in an open, transparent, and reproducible manner. 
 
