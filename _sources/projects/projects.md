@@ -19,3 +19,8 @@ Bats are highly social creatures that live in groups of up to hundreds of indivi
 In this experiment, we're going to test how flexible bats can be with the frequency and temporal parameters of their calls in the presence of acoustic playback of a naturalistic sound (i.e. distress calls recorded from conspecifics.)
 
 Some questions/ideas to get you started can be found [here](https://avakiai.github.io/expra_winter2021-2022/projects/vocal_adaptation.html). 
+
+
+Slides containing an overview of the projects can be viewed here: 
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRSx_RjUEBQi5NZjcbX1t16Lh92KvXuK_jyiSqq4MwVNnDa9SxhqI6-ggP8nYRLC-Zm1xlsfFz1X_l2/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

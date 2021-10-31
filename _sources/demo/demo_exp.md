@@ -24,5 +24,8 @@ A repository is the most basic element of GitHub. They're easiest to imagine as 
 
 The experiment itself is coded in PsychoPy/Python, and in a public repository on the [Pavlovia GitLab](https://gitlab.pavlovia.org/akiai/yanny-laurel).
 
+Some slides on the demo experiment can be found here: 
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT8birLcEFtPtgJlgusgTMo5G4I2ukiogtCVhxkbvVy1g2lrWacwfrqB3FyeUmwEyqEME0B9WiDgJ2H/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
