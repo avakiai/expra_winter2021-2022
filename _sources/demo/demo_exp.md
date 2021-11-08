@@ -2,7 +2,8 @@
 
 We will do a "demonstration experiment" together, that will help you get an overview of the scientific process as you prepare for your own experiments. 
 
-```{note} Demo Report
+```{admonition} Demo Report
+:class: note
 Each pod (experiment group) will write up a "demo report" together. 
 
 The report should be 10 pages long and in [APA](https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_style_introduction.html) format. It must include Introduction, Methods, Results, and Discussion sections, as well as a Preregistration in the appendix. As per open science principles, alongside the "manuscript," you must submit a clean and fully executable analsis script and the data used for analysis. 
