@@ -1,0 +1,937 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Experiment Analysis, Part I &#8212; EXPRA Team 6 2021-2022</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/Logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">EXPRA Team 6 2021-2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Welcome to EXPRA!
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../course_overview.html">
+   Course overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../setup.html">
+   Setup for the course
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lectures/landing.html">
+   Lectures &amp; Workshops
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lectures/lectures.html">
+     Lectures
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lectures/workshops.html">
+     Workshops
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../open_science.html">
+   Open Science
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="demo_exp.html">
+   Demo Experiment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/projects.html">
+   Projects
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/repeated_presentation.html">
+     Repeated Presentation Experiment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/vocal_adaptation.html">
+     Vocal Adaptation Experiment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../experimentation/landing.html">
+   Experimentation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../experimentation/experimentation.html">
+     Experimentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../experimentation/data_analyses.html">
+     Data Analyses
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../finalization/landing.html">
+   Finalization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../finalization/finalization.html">
+     Finalization
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/demo/yannylaurel_analysis_v1.Rmd"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.Rmd</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/avakiai/expra_winter2021-2022"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/avakiai/expra_winter2021-2022/issues/new?title=Issue%20on%20page%20%2Fdemo/yannylaurel_analysis_v1.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Demo Experiment Analysis, Part I
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-started-r-markdown">
+     Getting Started: R Markdown
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-setup">
+     1a. Setup
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#set-paths">
+       Set paths
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#load-packages-functions">
+       Load Packages &amp; Functions
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#load-data">
+       Load Data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-wrangle-data">
+     1b. Wrangle Data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#saved-data">
+       Saved Data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exploring-the-data">
+     2. Exploring the data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calculate-proportion-yanny">
+       Calculate Proportion Yanny
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aggregating-data-plotting">
+     4. Aggregating Data &amp; Plotting
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#logistic-regression">
+       Logistic Regression
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#odd-ratio-confidence-intervals">
+         Odd Ratio &amp; Confidence Intervals
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#predicted-vs-observed-values">
+         Predicted vs. Observed Values
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#multiple-logistic-regression">
+       Multiple Logistic Regression
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         Predicted vs. Observed Values
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#model-comparison">
+         Model Comparison
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#writing-it-up">
+       Writing it up…
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="demo-experiment-analysis-part-i">
+<h1>Demo Experiment Analysis, Part I<a class="headerlink" href="#demo-experiment-analysis-part-i" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started-r-markdown">
+<h2>Getting Started: R Markdown<a class="headerlink" href="#getting-started-r-markdown" title="Permalink to this headline">¶</a></h2>
+<p>This is an <a class="reference external" href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
+<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
+<p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
+<p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="a-setup">
+<h2>1a. Setup<a class="headerlink" href="#a-setup" title="Permalink to this headline">¶</a></h2>
+<p>Hello!</p>
+<p>Let’s get started. You should have downloaded the Yanny/Laurel demo repository from Github, but if not you can do so now via <a class="reference external" href="https://github.com/avakiai/yanny-laurel-demo">this link</a>.
+Save it someplace convenient.
+If you already have the repository downloaded, you can make sure you have this up-to-date file; you can either do this by downloading this individual script as well as the file <code class="docutils literal notranslate"><span class="pre">helper_functions.R</span></code> from the <code class="docutils literal notranslate"><span class="pre">2_analysis</span></code> folder, or using git (if you are familiar with it, otherwise no stress!).</p>
+<p>First, set working directory to where this file is by going to the <code class="docutils literal notranslate"><span class="pre">Session</span></code> tab, then <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Workspace</span> <span class="pre">Directory</span> <span class="pre">&gt;</span> <span class="pre">To</span> <span class="pre">Source</span> <span class="pre">File</span> <span class="pre">Location</span></code>.</p>
+<p>Something like this should show up in your console: <code class="docutils literal notranslate"><span class="pre">setwd(&quot;[wherever</span> <span class="pre">you</span> <span class="pre">saved</span> <span class="pre">the</span> <span class="pre">repository]/yanny-laurel-demo/2_analysis&quot;)</span></code></p>
+<p>We like to use relative paths instead of absolute paths. Absolute paths are directories
+that are specific to your computer. For example, this file is located on my computer
+by the following path: <code class="docutils literal notranslate"><span class="pre">setwd(&quot;~/Repos/yanny-laurel-demo/2_analysis&quot;)</span></code></p>
+<p>But if I put that in the code, then it would fail when you try to run it because that
+path probably does not exist on your computer.</p>
+<p>A much better (i.e. more reproducible and resilient) way of coding is to organize
+your project so that you or anyone else can simply set the working directory to the
+folder where the analysis scripts are (or the main folder of the directory), and
+“access” everything else from there.</p>
+<p><strong>Note</strong>: You can simply run the following chunks of code up to [Section 2](## 2. Exploring the data), where the interactive part starts.</p>
+<p>Code where you have to fill in some parts to run it are commented out, uncomment them first and then proceed! :)</p>
+<div class="section" id="set-paths">
+<h3>Set paths<a class="headerlink" href="#set-paths" title="Permalink to this headline">¶</a></h3>
+<p>So what would this look like?
+Like so:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># set working directory to source file location</span>
+<span class="n">data_path</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">path</span><span class="p">(</span><span class="s1">&#39;../data&#39;</span><span class="p">)</span> 
+<span class="n">results_path</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">path</span><span class="p">(</span><span class="s1">&#39;../3_results&#39;</span><span class="p">)</span>
+<span class="c1"># the &#39;.&#39; means &quot;working directory&quot;</span>
+<span class="c1"># the &#39;/&#39; means go down one folder level</span>
+<span class="c1"># the &#39;../&#39; means go up one folder level</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>So since we are setting the working directory to this file, we have to go up one
+level (to the main folder), then down to access the ‘data’ and ‘results’ folders.</p>
+</div>
+<div class="section" id="load-packages-functions">
+<h3>Load Packages &amp; Functions<a class="headerlink" href="#load-packages-functions" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#install.packages(&quot;tidyverse&quot;) # if you don&#39;t have tidyverse installed, install it now</span>
+<span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+<span class="c1"># Helper functions</span>
+<span class="n">source</span><span class="p">(</span><span class="s1">&#39;./helper_functions.R&#39;</span><span class="p">)</span> <span class="c1"># this loads a file called `helper_functions.R` that you should have sitting in the same folder as this script</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Note</strong>: You should have a version of R that is at least as recent as R 4.1.0
+You should also have the latest version of tidyverse, 1.3.1.</p>
+<p>To check your R installation, type <code class="docutils literal notranslate"><span class="pre">R.version</span></code> in the console.
+To check which version of a certain package you have, you can type <code class="docutils literal notranslate"><span class="pre">packageVersion(&quot;tidyverse&quot;)</span></code>
+into the console. Replace the part in the “” to adapt it to any other packages you want to check.</p>
+</div>
+<div class="section" id="load-data">
+<h3>Load Data<a class="headerlink" href="#load-data" title="Permalink to this headline">¶</a></h3>
+<p>Now let’s load and inspect the data…</p>
+<p>Careful! If you did this before and saved the data, skip to [Saved Data](#### Saved Data).</p>
+<p>You’ll notice we cannot immediately start analyzing this data.
+There’s information that’s redundant (like the OS) and the automatically generated variable
+names are not really useful or informative.</p>
+<p>Once we have an idea what these mean, and we decide what variables we want to keep, we can
+“wrangle” the data to get it into the format we need.</p>
+</div>
+</div>
+<div class="section" id="b-wrangle-data">
+<h2>1b. Wrangle Data<a class="headerlink" href="#b-wrangle-data" title="Permalink to this headline">¶</a></h2>
+<p>Note that you almost certainly will have to do data wrangling several times in the course
+of an analysis, as different visualization and statistical methods require different formats
+for the data.</p>
+<p>Let’s start by cleaning up the data a bit, knowing a few things about our experiment:</p>
+<ol class="simple">
+<li><p>We know that the slider used to get responses (called <code class="docutils literal notranslate"><span class="pre">report</span></code>) in each trial
+shows up 0.2 seconds after trial start, but the audio stimulus is played 0.5 s after start.
+Since the reaction time on the <code class="docutils literal notranslate"><span class="pre">report</span></code> is calculated relative to the start of that
+component, we have to subtract 0.3 from the reaction time to get a meaningful reaction
+time - one that is relative to the onset of the auditory stimulus.</p></li>
+<li><p>In Python, indexing starts at 0 (e.g. the first element of a list is element <code class="docutils literal notranslate"><span class="pre">0</span></code>, then <code class="docutils literal notranslate"><span class="pre">1</span></code>, etc.) so you might want to re-number trial values to be a bit more intuitive.</p></li>
+<li><p>Our slider had been programmed to have two “tick marks,” 1 = “Laurel” and 2 = “Yanny.”
+Since we want to get the proportion of “Yanny” responses, we should rescale the responses so that
+0 = “Laurel” and 1 = “Yanny”. Then, a simple mean over trials would give us the % of trials
+on which participants heard “Yanny.”</p></li>
+</ol>
+<div class="section" id="saved-data">
+<h3>Saved Data<a class="headerlink" href="#saved-data" title="Permalink to this headline">¶</a></h3>
+<p>Save the wrangled data to a data frame. Note that once you do this, you don’t need to repeat the steps above on the next time you
+come to do an analysis, you can just run the lower line…
+But be careful! When you load the .csv file, your columns may not all have quite the same format as before.</p>
+<p>For our purposes, make sure that the variables <code class="docutils literal notranslate"><span class="pre">participant</span></code> and <code class="docutils literal notranslate"><span class="pre">sex</span></code> are coded as factors.
+You can either modify the column type after you load in the data (see option 1) or in the read.csv() function,
+by specifying the column type (see option 2).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># uncomment the line below if you haven&#39;t saved the data to a .csv yet</span>
+<span class="c1">#write.csv(data, file.path(data_path,&quot;data.csv&quot;), row.names = FALSE) </span>
+
+<span class="c1"># option 1: a bit easier to interpret</span>
+<span class="c1">#data &lt;- read.csv(file.path(data_path,&quot;data.csv&quot;), row.names = NULL) %&gt;% </span>
+<span class="c1">#                      dplyr::mutate(participant = as.factor(participant), # code as categorical variables</span>
+<span class="c1">#                                    sex = as.factor(sex))</span>
+
+<span class="c1"># option 2: a bit more concise</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="n">file</span><span class="o">.</span><span class="n">path</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span><span class="s2">&quot;data.csv&quot;</span><span class="p">),</span> <span class="n">row</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="n">NULL</span><span class="p">,</span> <span class="n">colClasses</span><span class="o">=</span><span class="n">c</span><span class="p">(</span><span class="s2">&quot;participant&quot;</span> <span class="o">=</span> <span class="s2">&quot;factor&quot;</span><span class="p">,</span> <span class="s2">&quot;sex&quot;</span> <span class="o">=</span> <span class="s2">&quot;factor&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exploring-the-data">
+<h2>2. Exploring the data<a class="headerlink" href="#exploring-the-data" title="Permalink to this headline">¶</a></h2>
+<p>Use ```summary`` to get an overview of the data and variables…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">summary</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>What are we looking at here? Let’s explore some of these variables…</p>
+<p>First let’s look at the participant variables. What is the demographic breakdown of our dataset?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>hist(data$age) 
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here, it’s counting up all the observations. How can we get it to count only the unique occurences?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>age_dat &lt;- data %&gt;% dplyr::group_by(participant) %&gt;% summarise(age = unique(age))
+ 
+hist(age_dat$age)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Okay, let’s move on to our IV &amp; DV’s. We’re going to focus on the proportion of trials in which participants responded ‘Yanny’.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>hist(data$resp)
+</pre></div>
+</div>
+</div>
+</div>
+<p>What we actually want to know is how people’s responses varied based on the level of acoustic manipulation, indexed by <code class="docutils literal notranslate"><span class="pre">stim_idx</span></code>. We also want a summary based on each participant. So:</p>
+<div class="section" id="calculate-proportion-yanny">
+<h3>Calculate Proportion Yanny<a class="headerlink" href="#calculate-proportion-yanny" title="Permalink to this headline">¶</a></h3>
+<p>Here we will start using tidyverse functions heavily. A lot of functions for data wrangling
+come from the <code class="docutils literal notranslate"><span class="pre">dplyr</span></code> package. It may be helpful to check out the <a class="reference external" href="https://dplyr.tidyverse.org/">dplyr documentation</a>
+get a sense of how these functions operate. (Also, Google is your friend. :))</p>
+<p><strong>Note</strong>: You can always check the documentation of a function by typing <code class="docutils literal notranslate"><span class="pre">?</span> <span class="pre">[funcion</span> <span class="pre">name]</span></code> in the console.</p>
+<p>We’ll use <code class="docutils literal notranslate"><span class="pre">summarise</span></code> to get some summary statistics from our data in data.frame format:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">prop_data</span> <span class="o">&lt;-</span> <span class="n">data</span> <span class="o">%&gt;%</span> <span class="n">dplyr</span><span class="p">::</span><span class="n">group_by</span><span class="p">(</span><span class="n">participant</span><span class="p">,</span> <span class="n">dB_ratio</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="c1"># &quot;group_by&quot; does what it sounds like it&#39;s doing! any later operations, </span>
+                                                                 <span class="c1"># like mean(), will be done separately for each level of the variables</span>
+                                                                 <span class="c1"># passed to &quot;group_by&quot;</span>
+                      <span class="n">dplyr</span><span class="p">::</span><span class="n">summarise</span><span class="p">(</span><span class="n">prop_yanny</span> <span class="o">=</span> <span class="n">mean</span><span class="p">(</span><span class="n">resp</span><span class="p">),</span>  <span class="c1"># &quot;summarise&quot; lets you list a series of operations on a data set</span>
+                                       <span class="n">median_RT</span> <span class="o">=</span> <span class="n">median</span><span class="p">(</span><span class="n">RT</span><span class="p">),</span>
+                                       <span class="n">iqr_RT</span> <span class="o">=</span> <span class="n">IQR</span><span class="p">(</span><span class="n">RT</span><span class="p">),</span>
+                                       <span class="n">mad_RT</span> <span class="o">=</span> <span class="n">mad</span><span class="p">(</span><span class="n">RT</span><span class="p">))</span>
+<span class="n">prop_data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Plot…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ggplot(data = prop_data, mapping = aes(dB_ratio, prop_yanny, color = participant)) +
+  geom_point() + # show me the points
+  #geom_smooth(aes(group = 1)) + # Challenge! Toggle this! See what it does. Look up geom_smooth for help.
+  geom_line(mapping = aes(group = participant)) + # draw a separate line for each participants, linking their responses
+  scale_y_continuous(name = &quot;Prop. &#39;Yanny&#39;&quot;, limits = c(0,1)) +
+  scale_x_discrete(name = &quot;High/low ratio (dB)&quot;, limits = unique(prop_data$dB_ratio)) + 
+  theme_classic()
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="aggregating-data-plotting">
+<h2>4. Aggregating Data &amp; Plotting<a class="headerlink" href="#aggregating-data-plotting" title="Permalink to this headline">¶</a></h2>
+<p>Let’s look at how the levels of the low/high frequency dB ratio affected the mean proportion of “Yanny” (vs. “Laurel”) responses, across all participants/blocks/trials…</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">aggregate</span></code> function lets you perform a function (in this case, take the mean) of the
+values in the variable that comes <em>before</em> the tilda (~). You can group those values by the
+variable that comes <em>after</em> the tilda.</p>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">aggregate</span></code>, or the <code class="docutils literal notranslate"><span class="pre">dplyr::summarise()</span></code> method to get summary info from your data.
+Think!: What might be the difference between these two? Look at your data closely…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data_agg</span> <span class="o">&lt;-</span> <span class="n">aggregate</span><span class="p">(</span><span class="n">resp</span> <span class="o">~</span> <span class="n">dB_ratio</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">FUN</span><span class="o">=</span><span class="n">mean</span><span class="p">)</span>
+
+<span class="n">data_agg</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>group_means &lt;- aggregate(prop_yanny~dB_ratio,data=prop_data, FUN=mean)
+
+ggplot(data = prop_data, mapping = aes(dB_ratio, prop_yanny, color = participant)) +
+  geom_point() + 
+  geom_line(mapping = aes(group = participant)) + 
+  geom_line(data = group_means, aes(dB_ratio, prop_yanny, group = 1), color = &quot;red&quot;, size = 1.5) + 
+  scale_y_continuous(name = &quot;Prop. &#39;Yanny&#39;&quot;, limits = c(0,1)) +
+  scale_x_discrete(name = &quot;High/low ratio (dB)&quot;, limits = unique(prop_data$dB_ratio)) + 
+  theme_classic()
+</pre></div>
+</div>
+</div>
+</div>
+<p>Suppose you wanted to aggregate the data so that you saw the effect of age, sex, and years of musical experience. How would you do it?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># As before, you can use either of these methods. How are they different, again? ;)</span>
+<span class="n">prop_data_demog</span> <span class="o">&lt;-</span> <span class="n">aggregate</span><span class="p">(</span><span class="n">resp</span> <span class="o">~</span> <span class="n">sex</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">,</span> <span class="n">FUN</span><span class="o">=</span><span class="n">mean</span><span class="p">)</span>
+
+<span class="n">prop_data_demo2</span> <span class="o">&lt;-</span> <span class="n">data</span> <span class="o">%&gt;%</span> <span class="n">dplyr</span><span class="p">::</span><span class="n">group_by</span><span class="p">(</span><span class="n">sex</span><span class="p">,</span> <span class="n">dB_ratio</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+                      <span class="n">dplyr</span><span class="p">::</span><span class="n">summarise</span><span class="p">(</span><span class="n">prop_yanny</span> <span class="o">=</span> <span class="n">mean</span><span class="p">(</span><span class="n">resp</span><span class="p">),</span>
+                                       <span class="n">sd</span> <span class="o">=</span> <span class="n">sd</span><span class="p">(</span><span class="n">resp</span><span class="p">),</span>
+                                       <span class="n">median_RT</span> <span class="o">=</span> <span class="n">median</span><span class="p">(</span><span class="n">RT</span><span class="p">),</span>
+                                       <span class="n">iqr_RT</span> <span class="o">=</span> <span class="n">IQR</span><span class="p">(</span><span class="n">RT</span><span class="p">),</span>
+                                       <span class="n">mad_RT</span> <span class="o">=</span> <span class="n">mad</span><span class="p">(</span><span class="n">RT</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Try plotting the effect of sex, age, or musical experience on proportion yanny responses…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ggplot(data = prop_data_demo2, mapping = aes(dB_ratio, prop_yanny, color = sex)) +
+ geom_point() +
+ geom_line(mapping = aes(group = sex)) +
+ scale_y_continuous(name = &quot;Prop. &#39;Yanny&#39;&quot;, limits = c(0,1)) +
+ scale_x_discrete(name = &quot;High/low ratio (dB)&quot;, limits = unique(prop_data$dB_ratio)) + 
+ theme_classic()
+
+# ggplot(data = ???, mapping = aes(dB_ratio, prop_yanny, color = ???)) +
+#  geom_point() +
+#  geom_line(mapping = aes(group = ???)) +
+#  scale_y_continuous(name = &quot;Prop. &#39;Yanny&#39;&quot;, limits = c(0,1)) +
+#  scale_x_discrete(name = &quot;High/low ratio (dB)&quot;) +
+#  theme_classic()
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="logistic-regression">
+<h3>Logistic Regression<a class="headerlink" href="#logistic-regression" title="Permalink to this headline">¶</a></h3>
+<p>We are interested in the effects of the dB ratio level on perception of Yanny/Laurel…
+Since we’re interested in the likelihood of participant choosing one of two categorical variables, we can model this as a binomial (“two-variable”) logistic regression.</p>
+<p>You can read more about logistic regression <a class="reference external" href="https://uc-r.github.io/logistic_regression#eval">here</a>, and in many other places online.</p>
+<p>We will first go the simplest route, using only the low/high dB ratio as a predictor:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">model1</span> <span class="o">&lt;-</span> <span class="n">glm</span><span class="p">(</span><span class="n">resp</span> <span class="o">~</span> <span class="n">stim_idx</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="n">binomial</span><span class="p">(</span><span class="n">link</span><span class="o">=</span><span class="s1">&#39;logit&#39;</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">)</span>
+
+<span class="n">summary</span><span class="p">(</span><span class="n">model1</span><span class="p">)</span>
+
+<span class="c1"># Tip: You can save the model output for reference (and so you don&#39;t have to run it each time) using he following command. </span>
+<span class="c1"># Challenge: look up how to load it in for next time!</span>
+<span class="c1"># saveRDS(model1, file.path(results_path,&quot;model.rds&quot;))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The logistic regression coefficients give the change in the log odds of the outcome for a one unit increase in the predictor variable.</p>
+<ul class="simple">
+<li><p>For every one unit change in the dB ratio, the log odds of hearing Yanny (versus Laurel) increases by 0.623.</p></li>
+</ul>
+<div class="section" id="odd-ratio-confidence-intervals">
+<h4>Odd Ratio &amp; Confidence Intervals<a class="headerlink" href="#odd-ratio-confidence-intervals" title="Permalink to this headline">¶</a></h4>
+<p>Usually, the results of a logistic regression are expressed as an “odds ratio.” To get this, you need to basically remove the “log” part of the “log odd” interpretation of the coefficients. So, you exponentiate the coefficients!</p>
+<p>To get the confidence intervals we use the <code class="docutils literal notranslate"><span class="pre">confint()</span></code> function…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">coef</span><span class="p">(</span><span class="n">model1</span><span class="p">)</span>
+
+<span class="c1"># odds ratio</span>
+<span class="n">exp</span><span class="p">(</span><span class="n">coef</span><span class="p">(</span><span class="n">model1</span><span class="p">))</span>
+
+<span class="n">exp</span><span class="p">(</span> <span class="n">cbind</span><span class="p">(</span><span class="n">odd_ratio</span> <span class="o">=</span> <span class="n">coef</span><span class="p">(</span><span class="n">model1</span><span class="p">),</span> <span class="n">confint</span><span class="p">(</span><span class="n">model1</span><span class="p">,</span><span class="n">level</span> <span class="o">=</span> <span class="mf">.95</span><span class="p">))</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we can say that for a one unit increase in the stimulus, the odds of hearing Yanny increase by a factor of about 1.87. Note that the odds ratio for the intercept is not generally interpreted.</p>
+<p>Note! Mathematically, probability and odds ratio are two different things. Probability is the likelihood that an event will occur. Odds ratio is the likelihood that an event will occur in relation to the likelihood that an event will not occur:</p>
+<p>$$prob = p(event)$$
+$$odds = p(event)/ p(!event)$$</p>
+<p>, where “!” means “not”</p>
+<p>That means than an odds ratio &gt; 1 indicates an increased likelihood of the event occuring, while an OR &lt; 1 indicates a decreased likelihood.
+Take a look again at the table we generated above. How would you read this in plain language?</p>
+</div>
+<div class="section" id="predicted-vs-observed-values">
+<h4>Predicted vs. Observed Values<a class="headerlink" href="#predicted-vs-observed-values" title="Permalink to this headline">¶</a></h4>
+<p>To make sure our model is not overfitted (only describing our data, not generalizable) or
+underfitted (doing a poor job of capturing the variance in our data), we want to plot the
+values the data “predicts” against our data.</p>
+<p>To do this, we use the predict() function. It takes the model and the data as inputs,
+and generates predicted values for the outcome variable (what comes before the tilda
+in the model).</p>
+<p>Note that if we add the argument <code class="docutils literal notranslate"><span class="pre">type</span> <span class="pre">=</span> <span class="pre">&quot;response&quot;</span></code> to the function call,
+the <code class="docutils literal notranslate"><span class="pre">predict()</span></code> function returns values on on the same scale as the data. Thus,
+we’re getting the odds and not the log-odds.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+#You should still have prop_data in your variable space... if not, go back and run it.
+
+pred &lt;- data.frame(p_pred = predict(model1, data, type=&quot;response&quot;), # predicted scores
+                   dB_ratio = data$dB_ratio) # add the variables we&#39;re interested in
+
+ggplot() +
+  geom_point(data = prop_data, mapping = aes(dB_ratio, prop_yanny)) +
+  geom_line(pred, mapping = aes(dB_ratio, p_pred, group = 1)) + 
+  scale_y_continuous(name = &quot;Prop. &#39;Yanny&#39;&quot;, limits = c(0,1)) +
+  scale_x_discrete(name = &quot;High/low ratio (dB)&quot;) + 
+  theme_classic()
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="multiple-logistic-regression">
+<h3>Multiple Logistic Regression<a class="headerlink" href="#multiple-logistic-regression" title="Permalink to this headline">¶</a></h3>
+<p>Now suppose we also want to model the other variables in our dataset, such as age, sex and years of musical experience.
+How would we do that?</p>
+<p>Give it a try, then go ahead and calculate the odd ratio and confidence intervals.</p>
+<p>Here we modelled the proportion Yanny responses as predicted by dB ratio, age, sex, and
+years of musical experience.</p>
+<p>We use the <code class="docutils literal notranslate"><span class="pre">anova()</span></code> function to look at the amount of variance explained by each predictor.
+Note that the order matters here!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">model2</span> <span class="o">&lt;-</span> <span class="n">glm</span><span class="p">(</span><span class="n">resp</span> <span class="o">~</span> <span class="n">stim_idx</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="n">sex</span> <span class="o">+</span> <span class="n">music_yrs</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="n">binomial</span><span class="p">(</span><span class="n">link</span><span class="o">=</span><span class="s1">&#39;logit&#39;</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">)</span> 
+ 
+<span class="n">summary</span><span class="p">(</span><span class="n">model2</span><span class="p">)</span>
+
+<span class="n">anova</span><span class="p">(</span><span class="n">model2</span><span class="p">,</span> <span class="n">test</span> <span class="o">=</span> <span class="s2">&quot;Chisq&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We decided to remove the variable of sex. Can you recall the argument as to why?</p>
+<p>How does the model look now with only three predictors?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">model3</span> <span class="o">&lt;-</span> <span class="n">glm</span><span class="p">(</span><span class="n">resp</span> <span class="o">~</span> <span class="n">stim_idx</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="n">music_yrs</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="n">binomial</span><span class="p">(</span><span class="n">link</span><span class="o">=</span><span class="s1">&#39;logit&#39;</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">)</span>
+ 
+<span class="n">summary</span><span class="p">(</span><span class="n">model3</span><span class="p">)</span>
+
+<span class="n">anova</span><span class="p">(</span><span class="n">model3</span><span class="p">,</span> <span class="n">test</span> <span class="o">=</span> <span class="s2">&quot;Chisq&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Looking just at dB ratio + age, what has happened to the explained variance attributed
+to each of these variables?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">model4</span> <span class="o">&lt;-</span> <span class="n">glm</span><span class="p">(</span><span class="n">resp</span> <span class="o">~</span> <span class="n">stim_idx</span> <span class="o">+</span> <span class="n">age</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="n">binomial</span><span class="p">(</span><span class="n">link</span><span class="o">=</span><span class="s1">&#39;logit&#39;</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">)</span>
+
+<span class="n">summary</span><span class="p">(</span><span class="n">model4</span><span class="p">)</span>
+
+<span class="n">anova</span><span class="p">(</span><span class="n">model4</span><span class="p">,</span> <span class="n">test</span> <span class="o">=</span> <span class="s2">&quot;Chisq&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h4>Predicted vs. Observed Values<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>Plotting the predicted values from multiple regression can be a bit more complicated
+than plotting the predicted values from single regression. We saw that when plotting the
+predicted results from models 2-4.</p>
+<p>In fact, our data set in quite small, so the risk of overfitting is high.
+However, once you have 3 or more variables predicting an outcome, the regression <em>line</em> that best
+describes the data turns into a regression <em>plane.</em> (2 variables can be described on a 2D plane,
+but the interplay of 3 or more needs a 3D plane.)
+Plotting multiple regression on an x-y plane may look weird even if it’s a decent model for the data.</p>
+<p>So, we’re not going to worry about plotting predictions over observed values for these later models.</p>
+<p>Rather, look at the analysis of deviance tables for each models, and at the model comparison table…</p>
+</div>
+<div class="section" id="model-comparison">
+<h4>Model Comparison<a class="headerlink" href="#model-comparison" title="Permalink to this headline">¶</a></h4>
+<p>To directly compare how well different models capture the variance in the data, we
+can again use the <code class="docutils literal notranslate"><span class="pre">anova()</span></code> function, but just pass to it each model we defined…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">anova</span><span class="p">(</span><span class="n">model1</span><span class="p">,</span> <span class="n">model2</span><span class="p">,</span> <span class="n">model3</span><span class="p">,</span> <span class="n">model4</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="s2">&quot;Chisq&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The deviance tells us how well our model is doing against a “null” model (a model with only the intercept). It’s a measure of how well our model fits the data.</p>
+<p>Keep in mind what the chi-square test is measuring:
+$$\chi^2 = \sum \frac {(Observed - Expected)^2}{Expected}$$
+As we discussed, Model 2 appears to best describe the data.
+However, does the output make sense to you?</p>
+<p>Think about what the model “thinks” is driving the responses.</p>
+<p>We said that although Model 2 appears to capture more overall variability than any other model,
+we believe Model 1 is the best fit for the data. Our argument is not merely numerical, but philosophical.</p>
+<p>We said:</p>
+<ol class="simple">
+<li><p><strong>dB ratio</strong> clearly affects responses, as observed in all models. There is a straightforward reason why this might be the case: we are directly manipulating the features that we have reason to believe drive the effect. In addition, the predictor dB ratio accounts for a huge portion of the variance in every model we test. This suggests it consistently is driving the effect.</p></li>
+</ol>
+<p>Thus, we hold on to Model 1 for now…</p>
+<ol class="simple">
+<li><p>While <strong>sex</strong> could have an effect, the data went against our tentative hypothesis that women were more likely than Men to hear “Yanny” due to their having higher-pitched voices and potentially greater hearing sensitivity in higher frequencies. We rather observed that men’s 50% threshold for hearing “Yanny” was lower than women’s. Without a good explanation for why this might be, plus the small sample and the unbalanced gender population, plus the minuscule amount of variance explained by the predictor, and finally, the absurdly high effect predicted by the model, we decided not to put too much stock in this result.</p></li>
+</ol>
+<p>Thus we exclude Model 2 from the candidate model pool…</p>
+<ol class="simple">
+<li><p>While we measured <strong>years of musical experience</strong>, we had no specific hypothesis or prediction as to its effect on Yanny/Laurel responses. This variable may well influence responses, however its effect is hard to interpret in real life conditions. (E.g. why should being a musician make you more likely to hear Yanny, as in Model 3?) The variance explained by this predictor also changed wildly depending on the other factors in the model. As we don’t have a working causal model of how this might be interacting with the other predictors, we could just say for now that we doubt its effect is genuine.</p></li>
+</ol>
+<p>Thus, we exclude Model 3 from the pool…</p>
+<ol class="simple">
+<li><p>We measured <strong>age</strong> with the tentative hypothesis that older subjects may be biased towards “Laurel,” as elder populations are likely to suffer from hearing loss in the upper frequencies. However, our sample includes only subjects aged &lt; 30, none of whom reported having any significant hearing loss (no comments in class, anyway!). We are doubtful that this predictor is capturing anything but noise. In all models, age accounted for a pretty small amount of deviance.</p></li>
+</ol>
+<p>Thus, we leave Model 4 aside and finally select… Model 1. 🎉</p>
+</div>
+</div>
+<div class="section" id="writing-it-up">
+<h3>Writing it up…<a class="headerlink" href="#writing-it-up" title="Permalink to this headline">¶</a></h3>
+<p>There’s no clear format for reporting the results of a logistic regression in APA format (as far as I know), but most often you will see people report the odds ratios and CIs, as well as indicate which coefficients/variables were significant.</p>
+<p>Thus, for the univariate logistic regression, we might write:</p>
+<p>“The results of the binomial logistic regression indicated that there was a significant association between the low/high dB ratio and the probability of hearing “Yanny” over “Laurel”. The odds ratio was 1.87, and the 95% confidence interval suggested the true value of the population odds lies between 1.69 and 2.09.”</p>
+<p>For the multivariate logistic regression, write up the results for models 2-4, in which we evaluated the influence of all
+predictors on participant responses.</p>
+<p>Make sure to include the results of the model comparison at the end, and a clear justification (in your own words!) of why we chose Model 1.</p>
+<p><strong>Important!</strong>: Submit the .Rmd or “knitted” .html version (by clicking the “Knit” button at the top of the script) of your analysis along with your report,
+so that I can check your results against your analysis. 😎</p>
+</div>
+</div>
+</div>
+<div class="section" id="resources">
+<h1>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h1>
+<p>Some info Logistic Regression in R can be found  <a class="reference external" href="https://www.r-bloggers.com/2015/09/how-to-perform-a-logistic-regression-in-r/">here</a>.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./demo"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Ava Kiai<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
