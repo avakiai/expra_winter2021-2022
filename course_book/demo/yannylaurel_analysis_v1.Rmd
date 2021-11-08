@@ -1,0 +1,500 @@
+---
+title: "Yanny-Laurel Analysis, Part I"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Demo Experiment Analysis, Part I
+
+## Getting Started: R Markdown
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+---
+
+## 1a. Setup
+Hello!
+
+Let's get started. You should have downloaded the Yanny/Laurel demo repository from Github, but if not you can do so now via [this link](https://github.com/avakiai/yanny-laurel-demo). 
+Save it someplace convenient. 
+If you already have the repository downloaded, you can make sure you have this up-to-date file; you can either do this by downloading this individual script as well as the file ```helper_functions.R``` from the ```2_analysis``` folder, or using git (if you are familiar with it, otherwise no stress!).
+
+First, set working directory to where this file is by going to the ```Session``` tab, then ```Set Workspace Directory > To Source File Location```.
+
+Something like this should show up in your console: ```setwd("[wherever you saved the repository]/yanny-laurel-demo/2_analysis")```
+
+We like to use relative paths instead of absolute paths. Absolute paths are directories
+that are specific to your computer. For example, this file is located on my computer
+by the following path: ```setwd("~/Repos/yanny-laurel-demo/2_analysis")```
+
+But if I put that in the code, then it would fail when you try to run it because that
+path probably does not exist on your computer. 
+
+A much better (i.e. more reproducible and resilient) way of coding is to organize
+your project so that you or anyone else can simply set the working directory to the
+folder where the analysis scripts are (or the main folder of the directory), and 
+"access" everything else from there. 
+
+**Note**: You can simply run the following chunks of code up to [Section 2](## 2. Exploring the data), where the interactive part starts. 
+
+Code where you have to fill in some parts to run it are commented out, uncomment them first and then proceed! :)
+
+### Set paths
+So what would this look like? 
+Like so: 
+```{r}
+# set working directory to source file location
+data_path = file.path('../data') 
+results_path = file.path('../3_results')
+# the '.' means "working directory"
+# the '/' means go down one folder level
+# the '../' means go up one folder level
+
+```
+So since we are setting the working directory to this file, we have to go up one
+level (to the main folder), then down to access the 'data' and 'results' folders. 
+
+### Load Packages & Functions
+```{r warning=FALSE}
+#install.packages("tidyverse") # if you don't have tidyverse installed, install it now
+library(tidyverse)
+# Helper functions
+source('./helper_functions.R') # this loads a file called `helper_functions.R` that you should have sitting in the same folder as this script
+```
+
+**Note**: You should have a version of R that is at least as recent as R 4.1.0
+You should also have the latest version of tidyverse, 1.3.1. 
+
+To check your R installation, type ```R.version``` in the console. 
+To check which version of a certain package you have, you can type ```packageVersion("tidyverse")``` 
+into the console. Replace the part in the "" to adapt it to any other packages you want to check. 
+
+
+### Load Data
+Now let's load and inspect the data...
+
+Careful! If you did this before and saved the data, skip to [Saved Data](#### Saved Data).
+```{r eval=FALSE, include=FALSE}
+# first let's check to make sure we're in the right place:
+files <- list.files(data_path, pattern = ".csv")
+
+# Note that putting () around a command will cause it to print the result directly to the console. If you assign a variable without using (), it will silently perform the assignment, and you'd have to run the variable itself to see its contents in the console. You don't need () if you are just running a command without assigning it to anything. 
+
+# now load
+data_raw <- data.frame() 
+
+
+# This loop reads in each file, "cleans" it up by adding a "block" column, and 
+# filters by removing rows where there was an NA in the first column. On my computer,
+# the first column is called `report.response`. If you get an error here, you may need to
+# inspect your data to make sure you've named the first column correctly. 
+## add blocking
+for (f in files) {
+  incoming <- read.csv(file.path(data_path, f)) # load
+    breaks <- which(!is.na(incoming$block.thisRepN)) # get some info about the blocks
+    bks <- length(breaks)
+    ns <- c(breaks[1],diff(breaks))-1
+  cleaned <- incoming[!is.na(incoming$`report.response`),]  # filter
+  cleaned$block <- rep_block(bks,ns) # use that helper function we loaded earlier
+  data_raw <- rbind(data_raw,cleaned) # bind all data files together
+}
+
+data_raw # visualize data below this chunk
+```
+
+You'll notice we cannot immediately start analyzing this data.
+There's information that's redundant (like the OS) and the automatically generated variable
+names are not really useful or informative. 
+
+Once we have an idea what these mean, and we decide what variables we want to keep, we can 
+"wrangle" the data to get it into the format we need. 
+
+## 1b. Wrangle Data
+Note that you almost certainly will have to do data wrangling several times in the course
+of an analysis, as different visualization and statistical methods require different formats
+for the data. 
+
+Let's start by cleaning up the data a bit, knowing a few things about our experiment:
+
+1. We know that the slider used to get responses (called `report`) in each trial
+shows up 0.2 seconds after trial start, but the audio stimulus is played 0.5 s after start. 
+Since the reaction time on the `report` is calculated relative to the start of that 
+component, we have to subtract 0.3 from the reaction time to get a meaningful reaction
+time - one that is relative to the onset of the auditory stimulus.
+
+2. In Python, indexing starts at 0 (e.g. the first element of a list is element `0`, then `1`, etc.) so you might want to re-number trial values to be a bit more intuitive. 
+
+3. Our slider had been programmed to have two "tick marks," 1 = "Laurel" and 2 = "Yanny."
+Since we want to get the proportion of "Yanny" responses, we should rescale the responses so that
+0 = "Laurel" and 1 = "Yanny". Then, a simple mean over trials would give us the % of trials 
+on which participants heard "Yanny."
+
+```{r eval=FALSE, include=FALSE}
+data_orig <- data_raw %>% dplyr::rename(music_yrs = years.musical.experience, # rename variables
+                                    resp = report.response, # whether they responded yanny (2) or laurel (1)
+                                    RT = report.rt, # reaction time
+                                    trial_rep_n = trials.thisRepN, # whether its the 1st or 2nd time this token
+                                                                   # was played in this block
+                                    trial_n = trials.thisN, # occurence in the block
+                                    stim_idx = trials.thisIndex, # stimulus identifier
+                                    stim = audio) %>% # stimulus filename
+                      # pick which vars to keep, and in which order
+                      dplyr::select(participant, sex, age, music_yrs, # pariticpant variables
+                                    block, trial_n, stim, stim_idx, trial_rep_n, # independent variables
+                                    resp, RT) %>% # dependent variables
+                      # get data into format we'd like
+                      dplyr::mutate(trial_n = trial_n+1, # rescale to adjust for Python indexing
+                                    stim_idx = stim_idx+1,
+                                    trial_rep_n = trial_rep_n+1,
+                                    resp = round(resp)-1, # convert 1,2 responses to 0,1
+                                    RT = RT-0.3) %>% # adjust for trial timing
+                      dplyr::mutate(participant = as.factor(participant), # code as categorical variables
+                                    sex = as.factor(sex))
+
+# make sure you have complete data for all observations
+nrow(data_orig)      
+nrow(data_orig %>% na.omit()) # see also dplyr::complete.cases
+
+data <- data_orig %>%
+  dplyr::mutate(dB_ratio = ordered(stim_idx, labels = c(-60,-48,-36,-24,-12,0,12,24,36,48,60))) # make a copy
+# data
+#data$participant %>% unique()
+```
+
+#### Saved Data
+Save the wrangled data to a data frame. Note that once you do this, you don't need to repeat the steps above on the next time you
+come to do an analysis, you can just run the lower line...
+But be careful! When you load the .csv file, your columns may not all have quite the same format as before. 
+
+For our purposes, make sure that the variables ```participant``` and ```sex``` are coded as factors.
+You can either modify the column type after you load in the data (see option 1) or in the read.csv() function, 
+by specifying the column type (see option 2).
+```{r}
+# uncomment the line below if you haven't saved the data to a .csv yet
+#write.csv(data, file.path(data_path,"data.csv"), row.names = FALSE) 
+
+# option 1: a bit easier to interpret
+#data <- read.csv(file.path(data_path,"data.csv"), row.names = NULL) %>% 
+#                      dplyr::mutate(participant = as.factor(participant), # code as categorical variables
+#                                    sex = as.factor(sex))
+
+# option 2: a bit more concise
+data <- read.csv(file.path(data_path,"data.csv"), row.names = NULL, colClasses=c("participant" = "factor", "sex" = "factor"))
+```
+
+
+## 2. Exploring the data
+
+Use ```summary`` to get an overview of the data and variables...
+```{r}
+summary(data)
+```
+What are we looking at here? Let's explore some of these variables...
+
+First let's look at the participant variables. What is the demographic breakdown of our dataset? 
+```{r}
+hist(data$age) 
+
+```
+Here, it's counting up all the observations. How can we get it to count only the unique occurences?
+ 
+```{r}
+age_dat <- data %>% dplyr::group_by(participant) %>% summarise(age = unique(age))
+ 
+hist(age_dat$age)
+```
+
+Okay, let's move on to our IV & DV's. We're going to focus on the proportion of trials in which participants responded 'Yanny'.
+
+```{r}
+hist(data$resp)
+```
+What we actually want to know is how people's responses varied based on the level of acoustic manipulation, indexed by ```stim_idx```. We also want a summary based on each participant. So: 
+
+#### Calculate Proportion Yanny
+Here we will start using tidyverse functions heavily. A lot of functions for data wrangling
+come from the ```dplyr``` package. It may be helpful to check out the [dplyr documentation](https://dplyr.tidyverse.org/)
+get a sense of how these functions operate. (Also, Google is your friend. :))
+
+**Note**: You can always check the documentation of a function by typing ```? [funcion name]``` in the console. 
+
+We'll use ```summarise``` to get some summary statistics from our data in data.frame format:
+```{r message=FALSE, warning=FALSE}
+prop_data <- data %>% dplyr::group_by(participant, dB_ratio) %>% # "group_by" does what it sounds like it's doing! any later operations, 
+                                                                 # like mean(), will be done separately for each level of the variables
+                                                                 # passed to "group_by"
+                      dplyr::summarise(prop_yanny = mean(resp),  # "summarise" lets you list a series of operations on a data set
+                                       median_RT = median(RT),
+                                       iqr_RT = IQR(RT),
+                                       mad_RT = mad(RT))
+prop_data
+```
+
+Plot... 
+```{r warning=FALSE}
+ggplot(data = prop_data, mapping = aes(dB_ratio, prop_yanny, color = participant)) +
+  geom_point() + # show me the points
+  #geom_smooth(aes(group = 1)) + # Challenge! Toggle this! See what it does. Look up geom_smooth for help.
+  geom_line(mapping = aes(group = participant)) + # draw a separate line for each participants, linking their responses
+  scale_y_continuous(name = "Prop. 'Yanny'", limits = c(0,1)) +
+  scale_x_discrete(name = "High/low ratio (dB)", limits = unique(prop_data$dB_ratio)) + 
+  theme_classic()
+```
+
+## 4. Aggregating Data & Plotting
+
+Let's look at how the levels of the low/high frequency dB ratio affected the mean proportion of "Yanny" (vs. "Laurel") responses, across all participants/blocks/trials...
+
+The ```aggregate``` function lets you perform a function (in this case, take the mean) of the
+values in the variable that comes _before_ the tilda (~). You can group those values by the
+variable that comes _after_ the tilda. 
+
+
+You can use ```aggregate```, or the ```dplyr::summarise()``` method to get summary info from your data. 
+Think!: What might be the difference between these two? Look at your data closely...
+```{r}
+data_agg <- aggregate(resp ~ dB_ratio, data=data, FUN=mean)
+
+data_agg
+```
+
+```{r}
+group_means <- aggregate(prop_yanny~dB_ratio,data=prop_data, FUN=mean)
+
+ggplot(data = prop_data, mapping = aes(dB_ratio, prop_yanny, color = participant)) +
+  geom_point() + 
+  geom_line(mapping = aes(group = participant)) + 
+  geom_line(data = group_means, aes(dB_ratio, prop_yanny, group = 1), color = "red", size = 1.5) + 
+  scale_y_continuous(name = "Prop. 'Yanny'", limits = c(0,1)) +
+  scale_x_discrete(name = "High/low ratio (dB)", limits = unique(prop_data$dB_ratio)) + 
+  theme_classic()
+```
+
+Suppose you wanted to aggregate the data so that you saw the effect of age, sex, and years of musical experience. How would you do it?
+```{r message=FALSE, warning=FALSE}
+# As before, you can use either of these methods. How are they different, again? ;)
+prop_data_demog <- aggregate(resp ~ sex, data = data, FUN=mean)
+
+prop_data_demo2 <- data %>% dplyr::group_by(sex, dB_ratio) %>% 
+                      dplyr::summarise(prop_yanny = mean(resp),
+                                       sd = sd(resp),
+                                       median_RT = median(RT),
+                                       iqr_RT = IQR(RT),
+                                       mad_RT = mad(RT))
+```
+
+Try plotting the effect of sex, age, or musical experience on proportion yanny responses...
+```{r}
+ggplot(data = prop_data_demo2, mapping = aes(dB_ratio, prop_yanny, color = sex)) +
+ geom_point() +
+ geom_line(mapping = aes(group = sex)) +
+ scale_y_continuous(name = "Prop. 'Yanny'", limits = c(0,1)) +
+ scale_x_discrete(name = "High/low ratio (dB)", limits = unique(prop_data$dB_ratio)) + 
+ theme_classic()
+
+# ggplot(data = ???, mapping = aes(dB_ratio, prop_yanny, color = ???)) +
+#  geom_point() +
+#  geom_line(mapping = aes(group = ???)) +
+#  scale_y_continuous(name = "Prop. 'Yanny'", limits = c(0,1)) +
+#  scale_x_discrete(name = "High/low ratio (dB)") +
+#  theme_classic()
+```
+
+
+### Logistic Regression
+We are interested in the effects of the dB ratio level on perception of Yanny/Laurel...
+Since we're interested in the likelihood of participant choosing one of two categorical variables, we can model this as a binomial ("two-variable") logistic regression. 
+
+You can read more about logistic regression [here](https://uc-r.github.io/logistic_regression#eval), and in many other places online. 
+
+We will first go the simplest route, using only the low/high dB ratio as a predictor:
+```{r}
+model1 <- glm(resp ~ stim_idx, family = binomial(link='logit'), data = data)
+
+summary(model1)
+
+# Tip: You can save the model output for reference (and so you don't have to run it each time) using he following command. 
+# Challenge: look up how to load it in for next time!
+# saveRDS(model1, file.path(results_path,"model.rds"))
+```
+The logistic regression coefficients give the change in the log odds of the outcome for a one unit increase in the predictor variable.
+
+* For every one unit change in the dB ratio, the log odds of hearing Yanny (versus Laurel) increases by 0.623.
+
+#### Odd Ratio & Confidence Intervals
+
+Usually, the results of a logistic regression are expressed as an "odds ratio." To get this, you need to basically remove the "log" part of the "log odd" interpretation of the coefficients. So, you exponentiate the coefficients!
+
+To get the confidence intervals we use the ```confint()``` function...
+
+```{r}
+coef(model1)
+
+# odds ratio
+exp(coef(model1))
+
+exp( cbind(odd_ratio = coef(model1), confint(model1,level = .95)) )
+```
+Now we can say that for a one unit increase in the stimulus, the odds of hearing Yanny increase by a factor of about 1.87. Note that the odds ratio for the intercept is not generally interpreted.
+
+Note! Mathematically, probability and odds ratio are two different things. Probability is the likelihood that an event will occur. Odds ratio is the likelihood that an event will occur in relation to the likelihood that an event will not occur: 
+
+$$prob = p(event)$$
+$$odds = p(event)/ p(!event)$$
+
+, where "!" means "not"
+
+That means than an odds ratio > 1 indicates an increased likelihood of the event occuring, while an OR < 1 indicates a decreased likelihood. 
+Take a look again at the table we generated above. How would you read this in plain language?
+
+#### Predicted vs. Observed Values
+To make sure our model is not overfitted (only describing our data, not generalizable) or
+underfitted (doing a poor job of capturing the variance in our data), we want to plot the 
+values the data "predicts" against our data. 
+
+To do this, we use the predict() function. It takes the model and the data as inputs, 
+and generates predicted values for the outcome variable (what comes before the tilda
+in the model). 
+
+Note that if we add the argument ```type = "response"``` to the function call, 
+the ```predict()``` function returns values on on the same scale as the data. Thus, 
+we're getting the odds and not the log-odds. 
+```{r}
+
+#You should still have prop_data in your variable space... if not, go back and run it.
+
+pred <- data.frame(p_pred = predict(model1, data, type="response"), # predicted scores
+                   dB_ratio = data$dB_ratio) # add the variables we're interested in
+
+ggplot() +
+  geom_point(data = prop_data, mapping = aes(dB_ratio, prop_yanny)) +
+  geom_line(pred, mapping = aes(dB_ratio, p_pred, group = 1)) + 
+  scale_y_continuous(name = "Prop. 'Yanny'", limits = c(0,1)) +
+  scale_x_discrete(name = "High/low ratio (dB)") + 
+  theme_classic()
+```
+
+
+### Multiple Logistic Regression
+Now suppose we also want to model the other variables in our dataset, such as age, sex and years of musical experience. 
+How would we do that? 
+
+Give it a try, then go ahead and calculate the odd ratio and confidence intervals.
+
+Here we modelled the proportion Yanny responses as predicted by dB ratio, age, sex, and
+years of musical experience. 
+
+We use the ```anova()``` function to look at the amount of variance explained by each predictor. 
+Note that the order matters here!
+```{r}
+model2 <- glm(resp ~ stim_idx + age + sex + music_yrs, family = binomial(link='logit'), data = data) 
+ 
+summary(model2)
+
+anova(model2, test = "Chisq")
+```
+
+We decided to remove the variable of sex. Can you recall the argument as to why?
+
+How does the model look now with only three predictors?
+```{r}
+model3 <- glm(resp ~ stim_idx + age + music_yrs, family = binomial(link='logit'), data = data)
+ 
+summary(model3)
+
+anova(model3, test = "Chisq")
+```
+
+Looking just at dB ratio + age, what has happened to the explained variance attributed
+to each of these variables?
+```{r}
+model4 <- glm(resp ~ stim_idx + age, family = binomial(link='logit'), data = data)
+
+summary(model4)
+
+anova(model4, test = "Chisq")
+```
+
+#### Predicted vs. Observed Values
+Plotting the predicted values from multiple regression can be a bit more complicated 
+than plotting the predicted values from single regression. We saw that when plotting the 
+predicted results from models 2-4. 
+
+In fact, our data set in quite small, so the risk of overfitting is high. 
+However, once you have 3 or more variables predicting an outcome, the regression _line_ that best
+describes the data turns into a regression _plane._ (2 variables can be described on a 2D plane, 
+but the interplay of 3 or more needs a 3D plane.) 
+Plotting multiple regression on an x-y plane may look weird even if it's a decent model for the data. 
+
+So, we're not going to worry about plotting predictions over observed values for these later models. 
+
+Rather, look at the analysis of deviance tables for each models, and at the model comparison table...
+
+#### Model Comparison
+To directly compare how well different models capture the variance in the data, we
+can again use the ```anova()``` function, but just pass to it each model we defined...
+```{r}
+anova(model1, model2, model3, model4, test="Chisq")
+```
+
+The deviance tells us how well our model is doing against a "null" model (a model with only the intercept). It's a measure of how well our model fits the data. 
+
+Keep in mind what the chi-square test is measuring:
+$$\chi^2 = \sum \frac {(Observed - Expected)^2}{Expected}$$
+As we discussed, Model 2 appears to best describe the data. 
+However, does the output make sense to you?
+
+Think about what the model "thinks" is driving the responses.
+
+We said that although Model 2 appears to capture more overall variability than any other model, 
+we believe Model 1 is the best fit for the data. Our argument is not merely numerical, but philosophical. 
+
+We said:
+
+1. **dB ratio** clearly affects responses, as observed in all models. There is a straightforward reason why this might be the case: we are directly manipulating the features that we have reason to believe drive the effect. In addition, the predictor dB ratio accounts for a huge portion of the variance in every model we test. This suggests it consistently is driving the effect.
+
+Thus, we hold on to Model 1 for now... 
+
+2. While **sex** could have an effect, the data went against our tentative hypothesis that women were more likely than Men to hear "Yanny" due to their having higher-pitched voices and potentially greater hearing sensitivity in higher frequencies. We rather observed that men's 50% threshold for hearing "Yanny" was lower than women's. Without a good explanation for why this might be, plus the small sample and the unbalanced gender population, plus the minuscule amount of variance explained by the predictor, and finally, the absurdly high effect predicted by the model, we decided not to put too much stock in this result. 
+
+Thus we exclude Model 2 from the candidate model pool...
+
+3. While we measured **years of musical experience**, we had no specific hypothesis or prediction as to its effect on Yanny/Laurel responses. This variable may well influence responses, however its effect is hard to interpret in real life conditions. (E.g. why should being a musician make you more likely to hear Yanny, as in Model 3?) The variance explained by this predictor also changed wildly depending on the other factors in the model. As we don't have a working causal model of how this might be interacting with the other predictors, we could just say for now that we doubt its effect is genuine. 
+
+Thus, we exclude Model 3 from the pool...
+
+4. We measured **age** with the tentative hypothesis that older subjects may be biased towards "Laurel," as elder populations are likely to suffer from hearing loss in the upper frequencies. However, our sample includes only subjects aged < 30, none of whom reported having any significant hearing loss (no comments in class, anyway!). We are doubtful that this predictor is capturing anything but noise. In all models, age accounted for a pretty small amount of deviance.
+
+Thus, we leave Model 4 aside and finally select... Model 1. 🎉
+
+### Writing it up... 
+There's no clear format for reporting the results of a logistic regression in APA format (as far as I know), but most often you will see people report the odds ratios and CIs, as well as indicate which coefficients/variables were significant. 
+
+Thus, for the univariate logistic regression, we might write: 
+
+"The results of the binomial logistic regression indicated that there was a significant association between the low/high dB ratio and the probability of hearing "Yanny" over "Laurel". The odds ratio was 1.87, and the 95% confidence interval suggested the true value of the population odds lies between 1.69 and 2.09."
+
+For the multivariate logistic regression, write up the results for models 2-4, in which we evaluated the influence of all 
+predictors on participant responses. 
+
+Make sure to include the results of the model comparison at the end, and a clear justification (in your own words!) of why we chose Model 1.  
+
+**Important!**: Submit the .Rmd or "knitted" .html version (by clicking the "Knit" button at the top of the script) of your analysis along with your report, 
+so that I can check your results against your analysis. 😎
+
+# Resources
+Some info Logistic Regression in R can be found  [here](https://www.r-bloggers.com/2015/09/how-to-perform-a-logistic-regression-in-r/).
+
