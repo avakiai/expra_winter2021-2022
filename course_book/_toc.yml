@@ -11,7 +11,7 @@ chapters:
 - file: open_science.md
 - file: demo/demo_exp.md
   sections:
-    - file: yannylaurel_analysis_v1.Rmd
+  - file: yannylaurel_analysis_v1.Rmd
 - file: projects/projects.md
   sections: 
   - file: projects/repeated_presentation.md
