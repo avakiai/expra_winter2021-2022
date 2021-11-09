@@ -67,15 +67,11 @@ In this class, we will rely heavily on software designed for statistics and data
 You will be expected to:
 * **Read articles/materials** for your project/that are assigned for class (individually)
 * Present a research article (**journal club**) related to your project (individually)
-* Prepare an interim **project presentation** (in pods)
+* Submit a 10-page **demo report** in APA format (in pods), due by Dec. 3rd
 * Prepare a **scientific poster** showcasing the results of your experiment (in pods) 
  
-However, your grade will come from two written reports, the Demo Report on the subject of the demo experiment we will conduct and analyze together, and the final report: a 15-page written report in the style of a journal article.
+However, your grade will be based on the **final project report**: 15 pages in APA format (individually), due by Feb. 24th, 2022
 
-| Assignment | Who? | % of final grade  | Deadline |
-|--------------|-----------|------------|------------|
-| Demo Experiment Report | with pod | 40% | Dec. 3, 2021, 11:59 PM CET |
-| Final Project Report | individually | 60% | Feb. 24, 2022, 11:59 PM CET |
 
 #### Coding Troubleshooting
 In this class, you may find yourself having to do analyses and using data wrangling methods you've never used before. This process can at times be quite frustrating. My job is to help you through challenges like this, so you should feel free to ask me for help when you're stuck. However, the goal of this class is also to help you become a but more independent in finding solutions to experimental issues on your own. Therefore, I ask that you follow this troubleshooting guideline first, and if your problem persists, I'll be happy to help:
