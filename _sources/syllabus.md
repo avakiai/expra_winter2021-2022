@@ -33,14 +33,14 @@ Key:
 |<td colspan=5>**`Module I`  Introduction & Project Conceptualization** |
 | Week 1: Oct. 21 | 👩‍🏫<br>💻 | • Introductions<br>• Intro to EXPRA<br>• Intro to Experimental Psych<br>• Demo Experiment<br>• Open Science | na |  • [Demo Literature Review](https://github.com/avakiai/yanny-laurel-demo)<br>• [Install software](https://avakiai.github.io/expra_winter2021-2022/setup.html)<br>• [Review R Material from PsyBSc 2 & 7](https://pandar.netlify.app/lehre/) |
 | Week 2: Oct. 28 | 👩‍🏫<br>🚀|• Philosophy of Experimentation & Inference<br>• Projects Presentation|  Reading: [Newell 1973](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Newell_20%20Questions.pdf)  | Start [Projects](https://avakiai.github.io/expra_winter2021-2022/projects/projects.html) Literature Review |
-| Week 3: Nov. 4 | 💻<br>🚀|• Demo Experiment Analysis<br> • Pod Projects Discussion | na | • Begin Demo Report Draft<br>• Projects Literature Review |
-| Week 4: Nov. 11 | 👩‍🏫<br>💻<br>🚀|• Literature Review & Scientific Writing Workshop<br> • First Projects Workshop! | na |• Demo Report Draft<br>• Project Conceptualization<br>• Project Preregistration | 
+| Week 3: Nov. 4 | 💻<br>🚀|• Demo Experiment Analysis, I<br> • Pod Projects Discussion | na | • Begin Demo Report Draft<br>• Projects Literature Review |
+| Week 4: Nov. 11 | 👩‍🏫<br>💻<br>🚀|• Demo Experiment Analysis, II<br> • Literature Review & Scientific Writing Workshop<br> • Projects Workshop | na |• Demo Report Draft<br>• Project Conceptualization<br>• Begin Project Preregistration | 
 |<td colspan=4>**`Module II`  Project Execution** |
-| Week 5: Nov. 18 | 🚀|• Preregistration Peer Review<br> • Projects Workshop  | Project Preregistration | Project Conceptualization |
-| Week 6: Nov. 25 | 🚀x🔬| Projects Workshop | Data Management Plan |• Get Experiments Running<br>• Reading: [Mensh & Kording 2017](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Mensh%26Kording_Ten%20simple%20rules%20for%20structuring%20papers.pdf) |
-| Week 7: Dec. 2 | 📊<br>👩‍🏫<br>🚀|• **Journal Club: Session I**<br>• Formal Logic, Causal Inference, & Causal Paradoxes<br>• Projects Workshop  | • **Friday, Dec. 3: Demo Reports Due**<br>• Reading: [The Book of Why, chapters tbd]() | Projects Execution |
+| Week 5: Nov. 18 | 🚀<br>💻| • Projects Workshop (feat. Data Management Workshop)  | na | Project Conceptualization |
+| Week 6: Nov. 25 | 🚀x🔬| Projects Workshop | Project Preregistration & Data Management Plan |• Get Experiments Running<br>• Reading: [Mensh & Kording 2017](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Mensh%26Kording_Ten%20simple%20rules%20for%20structuring%20papers.pdf) |
+| Week 7: Dec. 2 | 📊<br>👩‍🏫<br>🚀|• **Journal Club: Session I**<br>• Projects Workshop<br>_• Formal Logic, Causal Inference, & Causal Paradoxes (if time allows)_  | • **Friday, Dec. 3: Demo Reports Due**<br>• Reading: [The Book of Why, chapters tbd]() | Projects Execution |
 | Week 8: Dec. 9 | 🚀x🔬| Projects Workshop | na | Projects Execution | 
-| Week 9: Dec. 16 | 👩‍🏫<br>📊 or 🚀|• Principles of Combat in Academia: Extreme Ownership<br>• *Interim Project Presentations & Discussion or Projects Workshop* | na | Projects Execution |
+| Week 9: Dec. 16 | 👩‍🏫<br>🚀|• Principles of Combat in Academia: Extreme Ownership<br>• Projects Workshop | na | Projects Execution |
 |<td colspan=5> ⛄ Winter Break ⛄ |
 |<td colspan=5>**`Module III`  Project Finalization** |
 | Week 10: Jan. 13 | 👩‍🏫<br>💻<br>🚀| • Demo Report Feedback<br>• Data Visualization Workshop<br>• Projects Workshop  | na  | • Reading: [Makin & Orban de Xivry 2019](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Makin%26OrbandeXivry_Ten%20common%20statistical%20mistakes.pdf)<br>• Projects Finalization |
