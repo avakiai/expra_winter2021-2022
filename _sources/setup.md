@@ -158,22 +158,34 @@ By installing `R` on your system and setting up the appropriate `environment`, y
 To get things up and running, please follow these steps:
 
 1. Open [RStudio](https://www.rstudio.com/).
-2. Run the following code to get the required `R packages`. **Please note**: you need a working internet connection to do so.
+2. Run the following code to get the required & recommended `R packages`. **Please note**: you need a working internet connection to do so.
 
-         install.packages("dplyr")
-         install.packages("ggplot2")
+         # for general-purpose data wrangling & plotting:
+         install.packages("tidyverse") # required
+
+         # for interactive plotting:
          install.packages("esquisse")
-         install.packages("tidyverse")
-         install.packages("lubridate")
-         install.packages("knitr")
+  
+         # to be able to generate R Markdown reports:
+         install.packages("rmarkdown") # required
+         install.packages("knitr") # required
+         # ... with interactive tables:
          install.packages("dt")
-         install.packages("rmarkdown")
-         install.packages("janitor")
+         # ... and visualizations:
          install.packages("plotly")
-         install.packages("rjson")
 
 3. Open [RStudio](https://www.rstudio.com/).
 ```
+
+To get started with these packages, Google them and check out any pages that document the package (like `https://cran.r-project.org`, and `https://www.rdocumentation.org`). 
+Tutorials in the R universe are sometimes called `vignettes`. You can also often find helpful tips on the Github pages of the package or the package developer. 
+
+Some helpful resources for the packages we will be using:
+* [Tidyverse](https://www.tidyverse.org/) is like a package of packages (including `dplyr`, `ggplot2`, `lubridate`, and lots of other useful packages). 
+* [Esquisse](https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html) installed a GUI in RStudio that allows you to interactively make plots. Feel free to use this to manipulate your data, however we will put an emphasis on coding your figures yourselves. 
+* [RMarkdown](https://bookdown.org/yihui/rmarkdown/installation.html) and [KnitR](https://yihui.org/knitr/) will allow you to generate RMarkdown reports in html format. By the end of the course, you will learn to `knit` your `RMarkdown` file(s) to an `html`. 
+* [DT (DataTables)](https://rstudio.github.io/DT/) allows you to make table outputs interactive in html format. 
+* [Plotly](https://plotly.com/r/getting-started/), while a bit tricky to use if you're used to ggplot2, allows you to make your plots interactive for you and for the reader of your beautiful html outputs later on. 
 
 ### All done!
 
