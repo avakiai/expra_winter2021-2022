@@ -12,6 +12,7 @@ chapters:
 - file: demo/demo_exp.md
   sections:
   - file: demo/yannylaurel_analysis_v1.Rmd
+  - file: demo/yannylaurel_analysis2_v1.Rmd
 - file: projects/projects.md
   sections: 
   - file: projects/repeated_presentation.md
