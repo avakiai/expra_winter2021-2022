@@ -27,14 +27,10 @@ Slides:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ72nbzhhO6ETa7fBOdLWtMet7ErTjlmJXvtnc0okHELn2Rek585DfBOdeO0LuZ7O5MjVLUQtDc6QDg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" style="border: 1px solid #464646;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-#### Logic & Causality
-
-Slides: TK
-
 #### Extreme Ownership
 
-Slides: TK
+Slides: Coming soon!
 
 #### Comparative Cognition
 
-Slides: TK
+Slides: Coming soon!
