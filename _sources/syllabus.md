@@ -38,7 +38,7 @@ Key:
 |<td colspan=4>**`Module II`  Project Execution** |
 | Week 5: Nov. 18 | 🚀<br>💻| • Projects Workshop (feat. Data Management Workshop)  | na | Project Conceptualization |
 | Week 6: Nov. 25 | 🚀x🔬| Projects Workshop | Project Preregistration & Data Management Plan |• Get Experiments Running<br>• Reading: [Mensh & Kording 2017](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Mensh%26Kording_Ten%20simple%20rules%20for%20structuring%20papers.pdf) |
-| Week 7: Dec. 2 | 📊<br>👩‍🏫<br>🚀|• **Journal Club: Session I**<br>• Projects Workshop<br>_• Formal Logic, Causal Inference, & Causal Paradoxes (if time allows)_  | • **Friday, Dec. 3: Demo Reports Due**<br>• Reading: [The Book of Why, chapters tbd]() | Projects Execution |
+| Week 7: Dec. 2 | 📊<br>👩‍🏫<br>🚀|• **Journal Club: Session I**<br>• Projects Workshop  | • **Friday, Dec. 3: Demo Reports Due** | Projects Execution |
 | Week 8: Dec. 9 | 🚀x🔬| Projects Workshop | na | Projects Execution | 
 | Week 9: Dec. 16 | 👩‍🏫<br>🚀|• Principles of Combat in Academia: Extreme Ownership<br>• Projects Workshop | na | Projects Execution |
 |<td colspan=5> ⛄ Winter Break ⛄ |
