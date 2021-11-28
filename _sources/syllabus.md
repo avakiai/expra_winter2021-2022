@@ -38,8 +38,8 @@ Key:
 |<td colspan=4>**`Module II`  Project Execution** |
 | Week 5: Nov. 18 | 🚀<br>💻| Project Workshop  | na | Project Conceptualization |
 | Week 6: Nov. 25 | 🚀| Project Workshop | Project Preregistration |• Project Refinement <br>• Reading: [Mensh & Kording 2017](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Mensh%26Kording_Ten%20simple%20rules%20for%20structuring%20papers.pdf) |
-| Week 7: Dec. 2 | 🚀x🔬| Project Workshop  | **Friday, Dec. 3: Demo Reports Due** | Project Finalization |
-| Week 8: Dec. 9 | 🚀x🔬| Project Workshop | **Upload Pre-registration to OSF Project** | Project Execution: Get Experiment Running | 
+| Week 7: Dec. 2 | 🚀x🔬| Project Workshop  | **Friday, Dec. 3: Demo Reports Due** | Project Finalization: Program Experiment |
+| Week 8: Dec. 9 | 🚀x🔬| Project Workshop | **Upload Pre-registration to OSF Project** | Project Execution: Data Collection | 
 | Week 9: Dec. 16 | 📊<br>🚀|• **Journal Club: Session I**<br>• Projects Workshop | na | Project Execution: Data Collection |
 |<td colspan=5> ⛄ Winter Break ⛄ |
 |<td colspan=5>**`Module III`  Project Finalization** |
