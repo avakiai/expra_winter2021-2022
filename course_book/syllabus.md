@@ -33,20 +33,20 @@ Key:
 |<td colspan=5>**`Module I`  Introduction & Project Conceptualization** |
 | Week 1: Oct. 21 | 👩‍🏫<br>💻 | • Introductions<br>• Intro to EXPRA<br>• Intro to Experimental Psych<br>• Demo Experiment<br>• Open Science | na |  • [Demo Literature Review](https://github.com/avakiai/yanny-laurel-demo)<br>• [Install software](https://avakiai.github.io/expra_winter2021-2022/setup.html)<br>• [Review R Material from PsyBSc 2 & 7](https://pandar.netlify.app/lehre/) |
 | Week 2: Oct. 28 | 👩‍🏫<br>🚀|• Philosophy of Experimentation & Inference<br>• Projects Presentation|  Reading: [Newell 1973](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Newell_20%20Questions.pdf)  | Start [Projects](https://avakiai.github.io/expra_winter2021-2022/projects/projects.html) Literature Review |
-| Week 3: Nov. 4 | 💻<br>🚀|• Demo Experiment Analysis, I<br> • Pod Projects Discussion | na | • Begin Demo Report Draft<br>• Projects Literature Review |
-| Week 4: Nov. 11 | 👩‍🏫<br>💻<br>🚀|• Demo Experiment Analysis, II<br> • Literature Review & Scientific Writing Workshop<br> • Projects Workshop | na |• Demo Report Draft<br>• Project Conceptualization<br>• Begin Project Preregistration | 
+| Week 3: Nov. 4 | 💻<br>🚀|• Demo Experiment Analysis, I<br> • Pod Projects Discussion | na | • Begin Demo Report Draft<br>• Project Literature Review |
+| Week 4: Nov. 11 | 👩‍🏫<br>💻<br>🚀|• Demo Experiment Analysis, II<br> • Literature Review & Scientific Writing Workshop<br> • Project Workshop | na |• Demo Report Draft<br>• Project Conceptualization<br>• Begin Project Preregistration | 
 |<td colspan=4>**`Module II`  Project Execution** |
-| Week 5: Nov. 18 | 🚀<br>💻| • Projects Workshop (feat. Data Management Workshop)  | na | Project Conceptualization |
-| Week 6: Nov. 25 | 🚀x🔬| Projects Workshop | Project Preregistration & Data Management Plan |• Get Experiments Running<br>• Reading: [Mensh & Kording 2017](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Mensh%26Kording_Ten%20simple%20rules%20for%20structuring%20papers.pdf) |
-| Week 7: Dec. 2 | 📊<br>👩‍🏫<br>🚀|• **Journal Club: Session I**<br>• Projects Workshop  | • **Friday, Dec. 3: Demo Reports Due** | Projects Execution |
-| Week 8: Dec. 9 | 🚀x🔬| Projects Workshop | na | Projects Execution | 
-| Week 9: Dec. 16 | 👩‍🏫<br>🚀|• Principles of Combat in Academia: Extreme Ownership<br>• Projects Workshop | na | Projects Execution |
+| Week 5: Nov. 18 | 🚀<br>💻| Project Workshop  | na | Project Conceptualization |
+| Week 6: Nov. 25 | 🚀| Project Workshop | Project Preregistration |• Project Execution<br>• Reading: [Mensh & Kording 2017](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Mensh%26Kording_Ten%20simple%20rules%20for%20structuring%20papers.pdf) |
+| Week 7: Dec. 2 | 🚀| Project Workshop  | • **Friday, Dec. 3: Demo Reports Due** | Project Execution |
+| Week 8: Dec. 9 | 🚀x🔬| Project Workshop | na | Project Execution | 
+| Week 9: Dec. 16 | 📊<br>🚀|• **Journal Club: Session I**<br>• Projects Workshop | na | Project Execution |
 |<td colspan=5> ⛄ Winter Break ⛄ |
 |<td colspan=5>**`Module III`  Project Finalization** |
-| Week 10: Jan. 13 | 👩‍🏫<br>💻<br>🚀| • Demo Report Feedback<br>• Data Visualization Workshop<br>• Projects Workshop  | na  | • Reading: [Makin & Orban de Xivry 2019](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Makin%26OrbandeXivry_Ten%20common%20statistical%20mistakes.pdf)<br>• Projects Finalization |
-| Week 11: Jan. 20 | 🚀x🔬| Projects Workshop | na | Projects Finalization |
-| Week 12: Jan. 27 |📊<br>💻<br>🚀|• **Journal Club: Session II**<br>• Scientific Poster Workshop<br> • Projects Workshop | na | • Poster Draft<br> • Projects Finalization | 
-| Week 13: Feb. 3 | 👩‍🏫<br>🚀|• Comparative Cognition: The Minds of Other Animals<br>• Projects Workshop<br>**Last Chance for Analysis Help!** | **Friday, Feb. 4: Posters Due** | Projects Finalization |
+| Week 10: Jan. 13 | 👩‍🏫<br>💻<br>🚀| • Demo Report Feedback<br>• Data Visualization Workshop<br>• Project Workshop  | na  | • Reading: [Makin & Orban de Xivry 2019](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Makin%26OrbandeXivry_Ten%20common%20statistical%20mistakes.pdf)<br>• Project Finalization |
+| Week 11: Jan. 20 | 🚀x🔬| Project Workshop | na | Project Finalization |
+| Week 12: Jan. 27 |📊<br>💻<br>🚀|• **Journal Club: Session II**<br>• Scientific Poster Workshop<br> • Project Workshop | na | • Poster Draft<br> • Projects Finalization | 
+| Week 13: Feb. 3 | 👩‍🏫<br>🚀|• Projects Workshop<br>**Last Chance for Analysis Help!**<br>• _Possibly: Comparative Cognition: The Minds of Other Animals_<br> | **Friday, Feb. 4: Posters Due** | Project Finalization |
 | Week 14: Feb. 10 | 📊<br>🎉<br>💬|• **Poster Session** & Party<br>• Scientific Outreach & Communication<br>• Feedback & Wrap-up | **Thursday, Feb. 24: Final Reports Due** | na |
 
 Reports should be emailed to me by 11:59 pm on the due date. 😊
