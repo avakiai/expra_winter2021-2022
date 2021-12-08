@@ -47,6 +47,6 @@ Key:
 | Week 11: Jan. 20 | 🚀x🔬| Project Workshop: Analysis II<br>• Data Visualization Workshop | na | Project Finalization: Analysis |
 | Week 12: Jan. 27 |📊<br>💻<br>🚀|• **Journal Club: Session II**<br> • Project Workshop: Analysis III<br>• Scientific Poster Workshop | na | • Poster Draft<br> • Projects Finalization: Analysis | 
 | Week 13: Feb. 3 | 👩‍🏫<br>🚀|• Projects Workshop: Analysis IV<br>**Last Chance for Analysis Help!**<br>• _Possibly: Comparative Cognition: The Minds of Other Animals_<br> | **Friday, Feb. 4: Posters Due** | Project Finalization: Discussion, Writing, & Presentation |
-| Week 14: Feb. 10 | 📊<br>🎉<br>💬|• **Poster Session** & Party<br>• Scientific Outreach & Communication<br>• Feedback & Wrap-up | **Thursday, Feb. 24: Final Reports Due** | Project Finalization: Writing |
+| Week 14: Feb. 10 | 📊<br>🎉<br>💬|• **Poster Session** & Party<br>• Scientific Outreach & Communication<br>• Feedback & Wrap-up | **Thursday, March. 10: Final Reports Due** | Project Finalization: Writing |
 
 Reports should be emailed to me by 11:59 pm on the due date. 😊
