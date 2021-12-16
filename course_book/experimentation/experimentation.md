@@ -11,6 +11,13 @@ The stimuli can be found in the project GitLab repository under `materials/stimu
 
 The experiment was programmed in PsychoPy and is written in Python & JavaScript (rather, PsychoJS - a JS library designed for psychology). 
 
+```{admonition} Note
+:class: note
+
+This page will be frequently updated. It will soon contain more links and information to help clarify some of the references to software, etc. Let your instructor know if you want anything in particular better explained!
+
+```
+
 ## Data Management
 
 To download the raw data (Pavlovia) repository, click on the little cloud icon and download the whole repository as a zip file and export it to somewhere convenient. 
@@ -27,6 +34,12 @@ EXPRA/
 | expra_repeated_recording/
 
 | expra_RRI/
+
+````{margin}
+```{warning} 
+Since we are beginning the process of analysis while data collection is still underway, you will need to download new data. To do this, the simplest way would be to delete *only* the **expra_repeated_recording/data** folder from your folders, and to download that folder anew from the data repository. 
+
+````
 
 ## Preprocessing
 
