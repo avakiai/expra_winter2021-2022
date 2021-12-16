@@ -21,7 +21,14 @@ This page will be frequently updated. It will soon contain more links and inform
 ## Data Management
 
 To download the raw data (Pavlovia) repository, click on the little cloud icon and download the whole repository as a zip file and export it to somewhere convenient. 
-<img src="static/save_data.png" alt="savegit" class="mx-auto d-block" width="400px">
+
+<img src="../static/save_data.png" alt="savegit" class="mx-auto d-block" width="400px">
+
+````{margin}
+```{warning} 
+Since we are beginning the process of analysis while data collection is still underway, you will need to download new data. To do this, the simplest way would be to delete *only* the **expra_repeated_recording/data** folder from your folders, and to download that folder anew from the data repository. 
+
+````
 
 To download our working (GitHub) repository, click on `Code` and download as a zip file. **Be sure to export this folder to the same folder as you saved the data repository.**
 
@@ -35,11 +42,7 @@ EXPRA/
 
 | expra_RRI/
 
-````{margin}
-```{warning} 
-Since we are beginning the process of analysis while data collection is still underway, you will need to download new data. To do this, the simplest way would be to delete *only* the **expra_repeated_recording/data** folder from your folders, and to download that folder anew from the data repository. 
 
-````
 
 ## Preprocessing
 
