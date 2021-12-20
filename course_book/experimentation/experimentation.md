@@ -20,7 +20,7 @@ This page will be frequently updated. It will soon contain more links and inform
 
 ## Data Management
 
-To download the raw data (Pavlovia) repository, click on the little cloud icon and download the whole repository as a zip file and export it to somewhere convenient. 
+To download the raw data (Pavlovia) repository, click on the little cloud icon and download the whole repository as a zip file and export it to somewhere convenient. Rename the folder `RRI_data_materials`.
 
 <img src="../static/save_data.png" alt="savegit" class="mx-auto d-block" width="400px">
 
@@ -30,22 +30,20 @@ Since we are beginning the process of analysis while data collection is still un
 
 ````
 
-To download our working (GitHub) repository, click on `Code` and download as a zip file. **Be sure to export this folder to the same folder as you saved the data repository.**
+To download our working (GitHub) repository, click on `Code` and download as a zip file. **Be sure to export this folder to the same folder as you saved the data repository.** Rename this folder `RRI_analysis`.
 
 So, your folder structure should look something like this:
 
 EXPRA/
 
-| 
+|--- RRI_data_materials/
 
-| expra_repeated_recording/
-
-| expra_RRI/
+|--- RRI_analysis/
 
 
 
 ## Preprocessing
 
-We will first check on the progress of our data collection and condition randomization using the file `expra_repeated_recording/materials/randomize_wm_task.R`. 
+We will first check on the progress of our data collection and condition randomization using the file `expra_repeated_recording/materials/check_participation_progress.Rmd`. 
 
 We will then wrangle and begin analysis with the file `expra_RRI/analysis/RRI_Analysis_1.Rmd`
