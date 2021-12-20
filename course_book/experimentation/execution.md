@@ -60,9 +60,16 @@ EXPRA/
 
 |--- RRI_analysis/ (<-- Here is where the `analysis` repository lives.)
 
-```{warning} Keep Your Data Folder Up To Date!
+```{warning} Timestamping Your Partial Data Analysis & Keeping Your Data Folder Up To Date
 
-Since we are beginning the process of analysis while data collection is still underway, you will need to download new data. To do this, the simplest way would be to go to the `Pavlovia` repository and re-download *only* the **RRI_data_materials/data** folder. You can replace your old /data folder with the new one. 
+Since we are beginning the process of analysis while data collection is still underway, you will need to download new data when we complete data collection. 
+For now, as we are just getting our pipeline up and ready, it's sufficient to work with partial data. 
+
+**Timestamping**: It is important that you note the date and time at which you downloaded the data. You can record this information either at the top of your script(s), or (preferably) in a separate text file in your analysis folder titled 'readme.'
+
+Stricltly speaking, "peeking at data" is discouraged and one should consider adding a penalty to your hypothesis tests in the form of a lower alpha criterion for significance. However, in our case we will be strict with ourselves and not change our analysis or collection protocol based on what we find. We are just getting ahead of the game. 
+
+**Updating**: The simplest way to sync your local data folder with the latest data (after data collection is complete) is to go to the `Pavlovia` repository and re-download *only* the **RRI_data_materials/data** folder. You can replace your old /data folder with the new one. 
 
 ````
 
@@ -71,9 +78,9 @@ Since we are beginning the process of analysis while data collection is still un
 
 As we work through analyses, I may update the scripts we use (sometimes with bug fixes, othertimes with solutions to coding problems). If you get a ping on Slack that a new script or new helper functions have been added, navigate to the `analysis` repository. 
 
-Helper Functions: The `analysis/funs.R` file, which contains helper functions, can just be replaced with the new one.
+**Helper Functions**: The `analysis/funs.R` file, which contains helper functions, can just be replaced with the new one.
 
-Scripts: New components or chunks added to analysis files can be incorporated into your scripts however you prefer. Make sure to clean up your workspace by deleteing any old or unused files and use consistent file naming protocols if you would like to keep multiple versions of a file. For example:
+**Scripts**: New components or chunks added to analysis files can be incorporated into your scripts however you prefer. Make sure to clean up your workspace by deleteing any old or unused files and use consistent file naming protocols if you would like to keep multiple versions of a file. For example:
 
 analysis_v1.Rmd
 
