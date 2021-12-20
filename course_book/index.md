@@ -50,9 +50,9 @@ The three symbols in the top allow to enable full screen mode, link to the under
 
 You can use the following sections to navigate through the content of the course:
 
-* [Course Overview](https://avakiai.github.io/expra_winter2021-2022/course_overview.html)
+* [Course Overview](https://avakiai.github.io/expra_winter2021-2022/course_overview.html): Basic information & requirements for this course.
 
-* [Syllabus](https://avakiai.github.io/expra_winter2021-2022/syllabus.html)
+* [Syllabus](https://avakiai.github.io/expra_winter2021-2022/syllabus.html): Daily breakdown of activities, tasks, and deadlines.
 
 * [Software Setup](https://avakiai.github.io/expra_winter2021-2022/setup.html): Hardware & software requirements for this course. 
 

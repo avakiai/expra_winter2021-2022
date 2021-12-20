@@ -12,29 +12,29 @@ of our report and/or poster to the same.
 
 We'll divide up our analyses into four parts, which we'll tackle and finalize in the few weeks of `Module III`.
 
-#### Analysis I:
+#### Analysis I: Modelling, Part I
 
 Hypothesis 3: Did WM load and explicit information affect liking (rating scores)? 
 
-Method: LM on Z-scores
+Method: Linear model on z-scored ratings.
 
-#### Analysis II:
+#### Analysis II: Modelling, Part II
 
 Hypothesis 3: Did WM load and explicit information affect liking (rating scores)?
 
-Method: LM on aggregate scores/PCA
+Method: Linear model on aggregate scores/PCA.
 
-#### Analysis III:
+#### Analysis III: Classification
 
 Hypothesis 1 & 2: Did WM load, explicit information manipulate rates at which people fell for the illusion?
 
-Method: Analyze Open-Text Boxes
+Method: Analyze Open-Text Boxes and classify participants into fell/did not fall for the illusion. Logistic modelling of classification.
 
-#### Analysis IV: Bring it all together
+#### Analysis IV: Individual Differences & Bring it all together
 
 Exploratory Hypotheses: Evaluate role of musical experience in modulating illusion effect.
 
-Method: Aggregate GSI ratings. 
+Method: Aggregate GSI ratings. Model rate of falling for the illusion, ratings based on musical expertise.
 
 
 ### Data Visualization
