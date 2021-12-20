@@ -1,3 +1,0 @@
-# Finalization
-
-Content coming soon!
