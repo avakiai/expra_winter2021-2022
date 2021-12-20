@@ -19,8 +19,6 @@ chapters:
   - file: projects/vocal_adaptation.md
 - file: experimentation/landing.md
   sections:
-  - file: experimentation/experimentation.md
-  - file: experimentation/data_analyses.md
-- file: finalization/landing.md
-  sections:
-  - file: finalization/finalization.md
+  - file: experimentation/conceptualization.md
+  - file: experimentation/execution.md
+  - file: experimentation/finalization.md
