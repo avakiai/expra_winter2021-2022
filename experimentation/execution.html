@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experimentation &#8212; EXPRA Team 6 2021-2022</title>
+    <title>Execution &#8212; EXPRA Team 6 2021-2022</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,8 +52,6 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Data Analyses" href="data_analyses.html" />
-    <link rel="prev" title="Experimentation" href="landing.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -97,7 +95,7 @@
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../course_overview.html">
    Course overview
@@ -184,43 +182,16 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="landing.html">
    Experimentation
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Experimentation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="data_analyses.html">
-     Data Analyses
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../finalization/landing.html">
-   Finalization
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../finalization/finalization.html">
-     Finalization
-    </a>
-   </li>
+  <ul class="simple">
   </ul>
  </li>
 </ul>
@@ -264,7 +235,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/experimentation/experimentation.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/experimentation/execution.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -284,7 +255,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/avakiai/expra_winter2021-2022/issues/new?title=Issue%20on%20page%20%2Fexperimentation/experimentation.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/avakiai/expra_winter2021-2022/issues/new?title=Issue%20on%20page%20%2Fexperimentation/execution.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -311,8 +282,18 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#stimuli-implementation">
-   Stimuli &amp; Implementation
+  <a class="reference internal nav-link" href="#implementation">
+   Implementation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stimuli">
+   Stimuli
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analysis">
+   Analysis
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -321,8 +302,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preprocessing">
-   Preprocessing
+  <a class="reference internal nav-link" href="#data-check">
+   Data Check
   </a>
  </li>
 </ul>
@@ -336,40 +317,67 @@
         
               <div>
                 
-  <div class="section" id="experimentation">
-<h1>Experimentation<a class="headerlink" href="#experimentation" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://gitlab.pavlovia.org/akiai/expra_repeated_recording">Pavlovia GitLab Repository</a>: where experiment scripts, stimuli, and raw data live.</p>
-<p><a class="reference external" href="https://github.com/avakiai/expra_repeated_recording_illusion">Repated Recording Illusion GitHub Repository</a>: where our analses, processed data, and related materials live.</p>
-<div class="section" id="stimuli-implementation">
-<h2>Stimuli &amp; Implementation<a class="headerlink" href="#stimuli-implementation" title="Permalink to this headline">¶</a></h2>
-<p>The stimuli can be found in the project GitLab repository under <code class="docutils literal notranslate"><span class="pre">materials/stimuli</span></code>. The original files (<code class="docutils literal notranslate"><span class="pre">/originals</span></code>) were converted to formats readable by the free software Praat (<code class="docutils literal notranslate"><span class="pre">/converted</span></code>). We then saved the clipped files (i.e. Beatles in full, Bruckner shortened to contain only last 2 mins 48 sec.) to their own <code class="docutils literal notranslate"><span class="pre">clipped</span></code> folder. Finally, we equalized the intensity to 71 dB SPL on both recordings as well as set both to the same sampling rate, 44100 (<code class="docutils literal notranslate"><span class="pre">final</span></code>).</p>
-<p>The experiment was programmed in PsychoPy and is written in Python &amp; JavaScript (rather, PsychoJS - a JS library designed for psychology).</p>
+  <div class="section" id="execution">
+<h1>Execution<a class="headerlink" href="#execution" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">Module</span> <span class="pre">II</span></code></p>
+<p>In the execution phase of our study, we worked on getting the experiment implemented (i.e. gathering and polishing our stimuli, writing our experiment code, getting ready to collect data from participants).</p>
+<a class="mx-auto d-block reference internal image-reference" href="../_images/the_process_2.png"><img alt="the process-stage 2" class="mx-auto d-block" src="../_images/the_process_2.png" style="width: 550px;" /></a>
+<div class="section" id="implementation">
+<h2>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h2>
+<p>We built our experiment using PsychoPy (written in Python &amp; PsychoJS, a JavaScript library), which we rendered fully online using Pavlovia (a server for PsychoPy experiments). Thus, the scripts that run our experiment, all experiment components, and all raw data live in a single repository, the <a class="reference external" href="https://gitlab.pavlovia.org/akiai/expra_repeated_recording">Repeated Recording Illusion/Pavlovia GitLab Repository</a> (hereafter, the <code class="docutils literal notranslate"><span class="pre">Pavlovia</span></code> respository).</p>
+</div>
+<div class="section" id="stimuli">
+<h2>Stimuli<a class="headerlink" href="#stimuli" title="Permalink to this headline">¶</a></h2>
+<p>The stimuli we used for our experiment featured a song by the Beatles and a symphony by Anton Bruckner. The raw files we obtained as .mp4 files. However, the stimuli had to undergo some processing before we could use it.</p>
+<p>The stimuli can be found in the project <code class="docutils literal notranslate"><span class="pre">Pavlovia</span></code> repository under <code class="docutils literal notranslate"><span class="pre">materials/stimuli</span></code>.</p>
+<p>The original files (<code class="docutils literal notranslate"><span class="pre">/originals</span></code>) were converted to formats readable by the free software Praat (<code class="docutils literal notranslate"><span class="pre">/converted</span></code>). We then saved the clipped files (i.e. Beatles in full, Bruckner shortened to contain only last 2 mins 48 sec.) to their own <code class="docutils literal notranslate"><span class="pre">clipped</span></code> folder. Finally, we equalized the intensity to 71 dB SPL on both recordings as well as set both to the same sampling rate, 44100 (<code class="docutils literal notranslate"><span class="pre">final</span></code>).</p>
 <div class="note admonition">
 <p class="admonition-title">Note</p>
 <p>This page will be frequently updated. It will soon contain more links and information to help clarify some of the references to software, etc. Let your instructor know if you want anything in particular better explained!</p>
 </div>
 </div>
+<div class="section" id="analysis">
+<h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h2>
+<p>While the above-mentioned Pavlovia repository holds our raw data, we want a separate repository where we house our analysis scripts, and where we can save our “wrangled data” (if necessary), as well as figures, tables, and knitted .Rmd reports.</p>
+<p>We created such a repository on GitHub for the project: <a class="reference external" href="https://github.com/avakiai/expra_repeated_recording_illusion">Repated Recording Illusion/Analysis GitHub Repository</a> (hereafter, <code class="docutils literal notranslate"><span class="pre">analysis</span></code> repository).</p>
+<p>In this repository we will store the analysis for our data preprocessing, inferential stats, figures, etc. Since we will use R Markdown (.Rmd) files that will be publicly available, anyone should be able to follow our Data Management procedure to generate the same results.</p>
+</div>
 <div class="section" id="data-management">
 <h2>Data Management<a class="headerlink" href="#data-management" title="Permalink to this headline">¶</a></h2>
-<p>To download the raw data (Pavlovia) repository, click on the little cloud icon and download the whole repository as a zip file and export it to somewhere convenient. Rename the folder <code class="docutils literal notranslate"><span class="pre">RRI_data_materials</span></code>.</p>
+<p>Alright, so now that we have all the components at hand, let’s get them on our local computers:</p>
+<ol class="simple">
+<li><p>To download the raw data from the <code class="docutils literal notranslate"><span class="pre">Pavlovia</span></code> repository, navigate to the main page of that repository, click on the little cloud icon and download the whole repository as a zip file. Export it to somewhere convenient.</p></li>
+<li><p>Important! For ease of reference, rename the folder <code class="docutils literal notranslate"><span class="pre">RRI_data_materials</span></code>. (This is how we will refer to it in later scripts.)</p></li>
+</ol>
 <a class="mx-auto d-block reference internal image-reference" href="../_images/save_data.png"><img alt="savegit" class="mx-auto d-block" src="../_images/save_data.png" style="width: 400px;" /></a>
-<div class="margin sidebar">
-<p class="sidebar-title"></p>
+<ol class="simple">
+<li><p>To download our <code class="docutils literal notranslate"><span class="pre">analysis</span></code> repository, navigate to that repository, click on <code class="docutils literal notranslate"><span class="pre">Code</span></code> and download the whole repository as a zip file. <strong>Be sure to export this folder to the same folder as you saved the data repository.</strong></p></li>
+<li><p>Rename this folder <code class="docutils literal notranslate"><span class="pre">RRI_analysis</span></code>.</p></li>
+</ol>
+<p>Now, your folder structure should look something like this:</p>
+<p>EXPRA/</p>
+<p>|— RRI_data_materials/ (&lt;– Here is where the <code class="docutils literal notranslate"><span class="pre">Pavlovia</span></code> repository lives.)</p>
+<p>|— RRI_analysis/ (&lt;– Here is where the <code class="docutils literal notranslate"><span class="pre">analysis</span></code> repository lives.)</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Since we are beginning the process of analysis while data collection is still underway, you will need to download new data. To do this, the simplest way would be to delete <em>only</em> the <strong>expra_repeated_recording/data</strong> folder from your folders, and to download that folder anew from the data repository.</p>
+<p>Keep Your Data Folder Up To Date!</p>
+<p>Since we are beginning the process of analysis while data collection is still underway, you will need to download new data. To do this, the simplest way would be to go to the <code class="docutils literal notranslate"><span class="pre">Pavlovia</span></code> repository and re-download <em>only</em> the <strong>RRI_data_materials/data</strong> folder. You can replace your old /data folder with the new one.</p>
+</div>
+<div class="admonition-get-fresh-annotated-analysis-as-they-become-available admonition">
+<p class="admonition-title">Get Fresh, Annotated Analysis As They Become Available!</p>
+<p>As we work through analyses, I may update the scripts we use (sometimes with bug fixes, othertimes with solutions to coding problems). If you get a ping on Slack that a new script or new helper functions have been added, navigate to the <code class="docutils literal notranslate"><span class="pre">analysis</span></code> repository.</p>
+<p>Helper Functions: The <code class="docutils literal notranslate"><span class="pre">analysis/funs.R</span></code> file, which contains helper functions, can just be replaced with the new one.</p>
+<p>Scripts: New components or chunks added to analysis files can be incorporated into your scripts however you prefer. Make sure to clean up your workspace by deleteing any old or unused files and use consistent file naming protocols if you would like to keep multiple versions of a file. For example:</p>
+<p>analysis_v1.Rmd</p>
+<p>analysis_v2.Rmd</p>
+<p>analysis_v3.Rmd</p>
 </div>
 </div>
-<p>To download our working (GitHub) repository, click on <code class="docutils literal notranslate"><span class="pre">Code</span></code> and download as a zip file. <strong>Be sure to export this folder to the same folder as you saved the data repository.</strong> Rename this folder <code class="docutils literal notranslate"><span class="pre">RRI_analysis</span></code>.</p>
-<p>So, your folder structure should look something like this:</p>
-<p>EXPRA/</p>
-<p>|— RRI_data_materials/</p>
-<p>|— RRI_analysis/</p>
-</div>
-<div class="section" id="preprocessing">
-<h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h2>
-<p>We will first check on the progress of our data collection and condition randomization using the file <code class="docutils literal notranslate"><span class="pre">expra_repeated_recording/materials/check_participation_progress.Rmd</span></code>.</p>
-<p>We will then wrangle and begin analysis with the file <code class="docutils literal notranslate"><span class="pre">expra_RRI/analysis/RRI_Analysis_1.Rmd</span></code></p>
+<div class="section" id="data-check">
+<h2>Data Check<a class="headerlink" href="#data-check" title="Permalink to this headline">¶</a></h2>
+<p>Since our experiment features a between-subjects design, we implemented a feature in our experiment code that assigns participant to different groups based on the participant number and a randomly shuffled vector later in the experiment. This means an imbalance in participant distribution between conditions can occur. So, without looking at the data itself (i.e. the dependent variables), we can perform a quick check to make sure our data look ok:</p>
+<p>To progress of our data collection and condition randomization, we use the file <code class="docutils literal notranslate"><span class="pre">RRI_data_materials/materials/check_participation_progress.Rmd</span></code>.</p>
+<p>Along with a helper function in the adjacent .R file, this script allows us to calculate the number of complete data sets (and the participanat numbers), and which of those were assigned to the Working Memory condition (0 (no) or 1 (yes)), which saw which musical genre first (classical, rock or rock, classical), and which were presented with which order of explicit information or prestige suggestion (baseline, low, high vs. baseline, high, low).</p>
 </div>
 </div>
 
@@ -397,21 +405,7 @@
               
         
             <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="landing.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Experimentation</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="data_analyses.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data Analyses</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
         
         </div>

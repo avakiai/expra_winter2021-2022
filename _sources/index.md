@@ -64,9 +64,7 @@ You can use the following sections to navigate through the content of the course
 
 * [Projects](https://avakiai.github.io/expra_winter2021-2022/projects/projects.html): Resources for each project.
 
-* [Experimentation](https://github.com/avakiai/expra_winter2021-2022/experimentation/experimentation.html): Resources for Module II.
-
-* [Project Finalization](https://github.com/avakiai/expra_winter2021-2022/finalization/finalization.html): Resources for Module III.
+* [EXPRA Experiment (Experimentation)](https://github.com/avakiai/expra_winter2021-2022/experimentation/landing.html): Resources to guide you through the three stages of an experiment, with specific links to our main EXPRA Experiment.
 
 
 See you there!
