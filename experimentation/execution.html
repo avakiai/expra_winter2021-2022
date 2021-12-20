@@ -377,14 +377,18 @@
 <p>|— RRI_analysis/ (&lt;– Here is where the <code class="docutils literal notranslate"><span class="pre">analysis</span></code> repository lives.)</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Keep Your Data Folder Up To Date!</p>
-<p>Since we are beginning the process of analysis while data collection is still underway, you will need to download new data. To do this, the simplest way would be to go to the <code class="docutils literal notranslate"><span class="pre">Pavlovia</span></code> repository and re-download <em>only</em> the <strong>RRI_data_materials/data</strong> folder. You can replace your old /data folder with the new one.</p>
+<p>Timestamping Your Partial Data Analysis &amp; Keeping Your Data Folder Up To Date</p>
+<p>Since we are beginning the process of analysis while data collection is still underway, you will need to download new data when we complete data collection.
+For now, as we are just getting our pipeline up and ready, it’s sufficient to work with partial data.</p>
+<p><strong>Timestamping</strong>: It is important that you note the date and time at which you downloaded the data. You can record this information either at the top of your script(s), or (preferably) in a separate text file in your analysis folder titled ‘readme.’</p>
+<p>Stricltly speaking, “peeking at data” is discouraged and one should consider adding a penalty to your hypothesis tests in the form of a lower alpha criterion for significance. However, in our case we will be strict with ourselves and not change our analysis or collection protocol based on what we find. We are just getting ahead of the game.</p>
+<p><strong>Updating</strong>: The simplest way to sync your local data folder with the latest data (after data collection is complete) is to go to the <code class="docutils literal notranslate"><span class="pre">Pavlovia</span></code> repository and re-download <em>only</em> the <strong>RRI_data_materials/data</strong> folder. You can replace your old /data folder with the new one.</p>
 </div>
 <div class="admonition-get-fresh-annotated-analysis-as-they-become-available admonition">
 <p class="admonition-title">Get Fresh, Annotated Analysis As They Become Available!</p>
 <p>As we work through analyses, I may update the scripts we use (sometimes with bug fixes, othertimes with solutions to coding problems). If you get a ping on Slack that a new script or new helper functions have been added, navigate to the <code class="docutils literal notranslate"><span class="pre">analysis</span></code> repository.</p>
-<p>Helper Functions: The <code class="docutils literal notranslate"><span class="pre">analysis/funs.R</span></code> file, which contains helper functions, can just be replaced with the new one.</p>
-<p>Scripts: New components or chunks added to analysis files can be incorporated into your scripts however you prefer. Make sure to clean up your workspace by deleteing any old or unused files and use consistent file naming protocols if you would like to keep multiple versions of a file. For example:</p>
+<p><strong>Helper Functions</strong>: The <code class="docutils literal notranslate"><span class="pre">analysis/funs.R</span></code> file, which contains helper functions, can just be replaced with the new one.</p>
+<p><strong>Scripts</strong>: New components or chunks added to analysis files can be incorporated into your scripts however you prefer. Make sure to clean up your workspace by deleteing any old or unused files and use consistent file naming protocols if you would like to keep multiple versions of a file. For example:</p>
 <p>analysis_v1.Rmd</p>
 <p>analysis_v2.Rmd</p>
 <p>analysis_v3.Rmd</p>
