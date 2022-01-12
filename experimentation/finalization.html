@@ -42,7 +42,7 @@
     <script src="../_static/copybutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -256,7 +256,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -290,7 +290,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -303,23 +303,23 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analysis-i-modelling-part-i">
-     Analysis I: Modelling, Part I
+    <a class="reference internal nav-link" href="#week-10-analysis-i">
+     Week 10: Analysis I
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analysis-ii-modelling-part-ii">
-     Analysis II: Modelling, Part II
+    <a class="reference internal nav-link" href="#week-11-analysis-ii">
+     Week 11: Analysis II
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analysis-iii-classification">
-     Analysis III: Classification
+    <a class="reference internal nav-link" href="#week-12-analysis-iii">
+     Week 12: Analysis III
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analysis-iv-individual-differences-bring-it-all-together">
-     Analysis IV: Individual Differences &amp; Bring it all together
+    <a class="reference internal nav-link" href="#week-13-analysis-iv">
+     Week 13: Analysis IV
     </a>
    </li>
   </ul>
@@ -347,37 +347,132 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Finalization</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analysis">
+   Analysis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#week-10-analysis-i">
+     Week 10: Analysis I
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#week-11-analysis-ii">
+     Week 11: Analysis II
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#week-12-analysis-iii">
+     Week 12: Analysis III
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#week-13-analysis-iv">
+     Week 13: Analysis IV
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-visualization">
+   Data Visualization
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preparing-a-poster">
+   Preparing a Poster
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preparing-your-report">
+   Preparing your Report
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
   <div class="section" id="finalization">
 <h1>Finalization<a class="headerlink" href="#finalization" title="Permalink to this headline">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">Module</span> <span class="pre">III</span></code></p>
-<p>In the final stage of a study, we’ll generate our results by systematically stepping through our analysis plan, focus on polishing our figures to be maximally effective, revisit our hypothesis and infer some conclusions from our results, and get our study into a form ready for others to consume (whether as a poster, presentation, or written document). We’ll also wrap up our study by linking our <code class="docutils literal notranslate"><span class="pre">analysis</span></code> repository and <code class="docutils literal notranslate"><span class="pre">Pavlovia</span></code> repository to our OSF project, and posting a version
-of our report and/or poster to the same.</p>
+<p>In the final stage of a study, we’ll generate our results by systematically stepping through our analysis plan, focus on polishing our figures to be maximally effective, revisit our hypothesis and infer some conclusions from our results, and get our study into a form ready for others to consume (whether as a poster, presentation, or written document). We’ll also wrap up our study by linking our <code class="docutils literal notranslate"><span class="pre">analysis</span></code> repository and <code class="docutils literal notranslate"><span class="pre">Pavlovia</span></code> repository to our OSF project, and posting a version of our report and/or poster to the same.</p>
 <a class="mx-auto d-block reference internal image-reference" href="../_images/the_process_0.png"><img alt="the process" class="mx-auto d-block" src="../_images/the_process_0.png" style="width: 550px;" /></a>
 <div class="section" id="analysis">
 <h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h2>
 <p>We’ll divide up our analyses into four parts, which we’ll tackle and finalize in the few weeks of <code class="docutils literal notranslate"><span class="pre">Module</span> <span class="pre">III</span></code>.</p>
-<div class="section" id="analysis-i-modelling-part-i">
-<h3>Analysis I: Modelling, Part I<a class="headerlink" href="#analysis-i-modelling-part-i" title="Permalink to this headline">¶</a></h3>
-<p>Hypothesis 3: Did WM load and explicit information affect liking (rating scores)?</p>
-<p>Method: Linear model on z-scored ratings.</p>
+<div class="section" id="week-10-analysis-i">
+<h3>Week 10: Analysis I<a class="headerlink" href="#week-10-analysis-i" title="Permalink to this headline">¶</a></h3>
+<p>Aim: Analysis of Liking (Likert scale) Rating.</p>
+<ul class="simple">
+<li><p>Ordinal Logistic Regression</p></li>
+<li><p>Answer <code class="docutils literal notranslate"><span class="pre">Hypothesis</span> <span class="pre">3</span></code>: Did WM load and explicit information affect liking (rating scores)?</p></li>
+</ul>
+<p>Materials: <a class="reference external" href="https://github.com/avakiai/expra_repeated_recording_illusion/blob/master/analysis/RRI_Analysis_I.Rmd">Script</a></p>
+<p>Deadlines for this week (by end of week):</p>
+<ol class="simple">
+<li><p>Complete liking ratings analysis</p></li>
+<li><p>Begin classification of participants</p></li>
+</ol>
 </div>
-<div class="section" id="analysis-ii-modelling-part-ii">
-<h3>Analysis II: Modelling, Part II<a class="headerlink" href="#analysis-ii-modelling-part-ii" title="Permalink to this headline">¶</a></h3>
-<p>Hypothesis 3: Did WM load and explicit information affect liking (rating scores)?</p>
-<p>Method: Linear model on aggregate scores/PCA.</p>
+<div class="section" id="week-11-analysis-ii">
+<h3>Week 11: Analysis II<a class="headerlink" href="#week-11-analysis-ii" title="Permalink to this headline">¶</a></h3>
+<p>Aim: Classification of participants according to whether they fell for the illusion or not.</p>
+<ul class="simple">
+<li><p>Analysis of open-text responses.</p></li>
+<li><p>Preparation to answering <code class="docutils literal notranslate"><span class="pre">Hypothesis</span> <span class="pre">1</span></code>: Did WM load, explicit information manipulate rates at which people fell for the illusion?</p></li>
+</ul>
+<p>Materials: <a class="reference external" href="https://github.com/avakiai/expra_repeated_recording_illusion/blob/master/analysis/RRI_Analysis_II.Rmd">Script</a></p>
+<p>Deadlines for this week (by start of class):</p>
+<ol class="simple">
+<li><p>Continue classification of participants</p></li>
+<li><p>Begin programming chi-square analysis &amp; demographic analyses</p></li>
+</ol>
 </div>
-<div class="section" id="analysis-iii-classification">
-<h3>Analysis III: Classification<a class="headerlink" href="#analysis-iii-classification" title="Permalink to this headline">¶</a></h3>
-<p>Hypothesis 1 &amp; 2: Did WM load, explicit information manipulate rates at which people fell for the illusion?</p>
-<p>Method: Analyze Open-Text Boxes and classify participants into fell/did not fall for the illusion. Logistic modelling of classification.</p>
+<div class="section" id="week-12-analysis-iii">
+<h3>Week 12: Analysis III<a class="headerlink" href="#week-12-analysis-iii" title="Permalink to this headline">¶</a></h3>
+<p>Aim: Analysis of rate of falling for the illusion</p>
+<ul class="simple">
+<li><p>Chi-square Analysis of frequency of falling for illusion under different conditions</p></li>
+<li><p>Answer <code class="docutils literal notranslate"><span class="pre">Hypothesis</span> <span class="pre">1</span></code>: Did WM load, explicit information manipulate rates at which people fell for the illusion?</p></li>
+</ul>
+<p>Materials: <a class="reference external" href="https://github.com/avakiai/expra_repeated_recording_illusion/blob/master/analysis/RRI_Analysis_III.Rmd">Script</a></p>
+<p>Deadlines for this week (by start of class):</p>
+<ol class="simple">
+<li><p>Complete classification of participants</p></li>
+<li><p>Complete chi-square analysis</p></li>
+</ol>
 </div>
-<div class="section" id="analysis-iv-individual-differences-bring-it-all-together">
-<h3>Analysis IV: Individual Differences &amp; Bring it all together<a class="headerlink" href="#analysis-iv-individual-differences-bring-it-all-together" title="Permalink to this headline">¶</a></h3>
-<p>Exploratory Hypotheses: Evaluate role of musical experience in modulating illusion effect.</p>
-<p>Method: Aggregate GSI ratings. Model rate of falling for the illusion, ratings based on musical expertise.</p>
+<div class="section" id="week-13-analysis-iv">
+<h3>Week 13: Analysis IV<a class="headerlink" href="#week-13-analysis-iv" title="Permalink to this headline">¶</a></h3>
+<p>Aim: Explore secondary analyses regarding role of sex, age, musical experience.</p>
+<ul class="simple">
+<li><p>Summarise demographic breakdown.</p></li>
+<li><p>Examine GSI ratings. (Optional: Examine rate of falling for the illusion given musical expertise.)</p></li>
+</ul>
+<p>Materials: <a class="reference external" href="https://github.com/avakiai/expra_repeated_recording_illusion/blob/master/analysis/RRI_Analysis_IV.Rmd">Script</a></p>
+<p>Deadlines for this week (by start of class):</p>
+<ol class="simple">
+<li><p>Any final questions about analyses.</p></li>
+</ol>
+<p>–</p>
 </div>
 </div>
 <div class="section" id="data-visualization">
@@ -416,8 +511,8 @@ of our report and/or poster to the same.</p>
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="execution.html" title="previous page">
         <i class="fas fa-angle-left"></i>
@@ -427,19 +522,17 @@ of our report and/or poster to the same.</p>
         </div>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Ava Kiai<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By Ava Kiai<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
 </main>
 
 

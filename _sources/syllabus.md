@@ -43,10 +43,10 @@ Key:
 | Week 9: Dec. 16 | 📊<br>🚀|• **Journal Club: Session I**<br>• Projects Workshop | na | Data Collection |
 |<td colspan=5> ⛄ Winter Break ⛄ |
 |<td colspan=5>**`Module III`  Project Finalization** |
-| Week 10: Jan. 13 | 👩‍🏫<br>💻<br>🚀| • Demo Report Feedback<br>• Project Workshop: Analysis I  | na  | • Reading: [Makin & Orban de Xivry 2019](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Makin%26OrbandeXivry_Ten%20common%20statistical%20mistakes.pdf)<br>• Analysis |
-| Week 11: Jan. 20 | 🚀x🔬| Project Workshop: Analysis II<br>• Data Visualization Workshop | na | Analysis |
-| Week 12: Jan. 27 |📊<br>💻<br>🚀|• **Journal Club: Session II**<br> • Project Workshop: Analysis III<br>• Scientific Poster Workshop | na | • Poster Draft<br> • Analysis | 
-| Week 13: Feb. 3 | 🚀|• Projects Workshop: Analysis IV<br>**Last Chance for Analysis Help!** | **Friday, Feb. 4: Posters Due** | Discussion, Writing, & Presentation |
+| Week 10: Jan. 13 | 👩‍🏫<br>💻<br>🚀| • Demo Report Feedback<br>• Project Workshop: Analysis I  | na  | • Reading: [Makin & Orban de Xivry 2019](https://github.com/avakiai/expra_winter2021-2022/blob/master/assigned_readings/Makin%26OrbandeXivry_Ten%20common%20statistical%20mistakes.pdf)<br>• Liking analysis |
+| Week 11: Jan. 20 | 🚀x🔬| Project Workshop: Analysis II<br>• Data Visualization Workshop | See [Finalization](https://avakiai.com/expra_winter2021-2022/experimentation/finalization.html)  | Classification analysis |
+| Week 12: Jan. 27 |📊<br>💻<br>🚀|• **Journal Club: Session II**<br> • Project Workshop: Analysis III<br>• Scientific Poster Workshop | See [Finalization](https://avakiai.com/expra_winter2021-2022/experimentation/finalization.html) | • Chi-square analysis<br>• Poster Draft | 
+| Week 13: Feb. 3 | 🚀|• Projects Workshop: Analysis IV<br>**Last Chance for Analysis Help!** | • **Wednesday, Feb. 2: Posters Due**<br>• See [Finalization](https://avakiai.com/expra_winter2021-2022/experimentation/finalization.html) | • Demographic analysis <br>• Discussion, Writing, & Presentation |
 | Week 14: Feb. 10 | 📊<br>🎉<br>💬|• **Poster Session** & Party<br>• Scientific Outreach & Communication<br>• Feedback & Wrap-up | **Thursday, March. 10: Final Reports Due** | Writing |
 
 Reports should be emailed to me by 11:59 pm on the due date. 😊
