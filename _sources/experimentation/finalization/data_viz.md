@@ -29,26 +29,25 @@ my categorical variable *sex* affect my continuous variable *weight*.")
 Here's an example procedure you may follow when starting out on your visualization quest. 
 There's a set of questions you should ask yourself and, for each of these, actions you should take:
 
-#### Steps, Part I:
+#### Steps, Part I: Plot
 
 1. What is the structure of my data? --> **View data frame**
-2. What message do I want to convey with my data? What graph should I use for which type of data? --> **Select a type of graph (See [](choose-graph)**
+2. What message do I want to convey with my data? What graph should I use for which type of data? --> **Select a type of graph (See** [](choose-graph)**)**
 3. What package(s) or tool(s) do I need to plot my data? --> **Select package/function, identify required data format**
 3. Which variables do I need? --> **Filter data frame**
 4. What format should my data be in? --> **Wrangle data**
+5. Plot data! 🎉🎉
 
-At this stage, you are ready to plot your data! 🎉🎉 Once you have your preliminary plot, it's time 
-to turn your attention to the finer details.
+Once you have your preliminary plot, it's time to turn your attention to the finer details to make sure your plot is intelligible to others (and to yourself in the future).
 
-To make sure your plot is intelligible to others (and to yourself in the future),
-here's a (non-comprehensive) list of questions and actions you should take:
+Here's a (non-comprehensive) list of questions and actions you should take:
 
-#### Steps, Part II:
+#### Steps, Part II: Refine
 
 1. Are the units of my variables appropriate? --> **Modify data frame by transforming units (e.g. miliseconds to seconds)**
 2. Are the axes limits appropriate (espcially with multiple plots)? --> **Define axes limits**
 3. Are my axes ticks, axes labels, legend labels, title, subtitle, and/or captions complete and appropriate? --> **Modify plot components**
-4. Is my color scheme consistent across plots, appealing, and color-blind friendly? --> **Select and apply a color palette (See [](choose-palette))**
+4. Is my color scheme consistent across plots, appealing, and color-blind friendly? --> **Select and apply a color palette (See** [](choose-palette)**)**
 
 As you can see, data visualization requires some amount of data wrangling first. 
 For this reason, you will see many tutorials begin by manipulating the data into the right format
@@ -75,6 +74,7 @@ If you're stuck on a plotting issue and want to get help from the scientific com
 Your question will have a greater chance of getting answered if you post a **reproducible** example using one an in-built dataset such as `mtcars` or `iris`.
 ```
 
+
 (choose-graph)=
 ### Choosing the right graph
 
@@ -86,6 +86,7 @@ Even for seasoned plotters, it's useful to reference a visualization cheat sheet
 
 Both of these resources (and many others) can give you some inspiration for how to plot whatever data you have. 
 The R Graph Gallery additionally features tutorials in R for visualizing each type of graph, mainly using `ggplot2`.
+
 
 (choose-palette)=
 ### Choosing a color palette
@@ -120,6 +121,7 @@ Tools for creating your own palettes:
 * [Adobe Color Wheel](https://color.adobe.com/create/color-wheel) (with Color-Blind feature)
 
 A list of all colors available in base R can be found [here](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf).
+
 
 ### Advanced Tools
 
