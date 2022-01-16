@@ -70,7 +70,7 @@ You will be expected to:
 * Submit a 10-page **demo report** in APA format (in pods), due by Dec. 3rd
 * Prepare a **scientific poster** showcasing the results of your experiment (in pods) 
  
-However, your grade will be based on the **final project report**: 15 pages in APA format (individually), due by Feb. 24th, 2022
+However, your grade will be based on the **final project report**: 15 pages in APA format (individually), due by March 10th, 2022
 
 
 #### Coding Troubleshooting

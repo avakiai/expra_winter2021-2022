@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Visualization &#8212; EXPRA Team 6 2021-2022</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Analysis" href="analysis.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/Logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">EXPRA Team 6 2021-2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../index.html">
+   Welcome to EXPRA!
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../course_overview.html">
+   Course overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../setup.html">
+   Software Setup
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../lectures/landing.html">
+   Lectures &amp; Workshops
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../lectures/lectures.html">
+     Lectures
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../lectures/workshops.html">
+     Workshops
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../open_science.html">
+   Open Science
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../demo/demo_exp.html">
+   Demo Experiment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../demo/yannylaurel_analysis_v1.html">
+     Demo Experiment Analysis, Part I
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../demo/yannylaurel_analysis2_v1.html">
+     Demo Experiment Analysis, Part II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../projects/projects.html">
+   Projects
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../projects/repeated_presentation.html">
+     Repeated Presentation Experiment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../projects/vocal_adaptation.html">
+     Vocal Adaptation Experiment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../landing.html">
+   Experimentation
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../conceptualization.html">
+     Conceptualization
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../execution.html">
+     Execution
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="landing.html">
+     Finalization
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="analysis.html">
+       Analysis
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Data Visualization
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/experimentation/finalization/data_viz.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/avakiai/expra_winter2021-2022"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/avakiai/expra_winter2021-2022/issues/new?title=Issue%20on%20page%20%2Fexperimentation/finalization/data_viz.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started-a-brief-checklist">
+   Getting Started: A Brief Checklist
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comprehensive-tutorials-worked-examples-in-r">
+   Comprehensive Tutorials &amp; Worked Examples in R
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-data">
+   Example Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#choosing-the-right-graph">
+   Choosing the right graph
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#choosing-a-color-palette">
+   Choosing a color palette
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#advanced-tools">
+   Advanced Tools
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Data Visualization</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started-a-brief-checklist">
+   Getting Started: A Brief Checklist
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comprehensive-tutorials-worked-examples-in-r">
+   Comprehensive Tutorials &amp; Worked Examples in R
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-data">
+   Example Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#choosing-the-right-graph">
+   Choosing the right graph
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#choosing-a-color-palette">
+   Choosing a color palette
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#advanced-tools">
+   Advanced Tools
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="data-visualization">
+<h1>Data Visualization<a class="headerlink" href="#data-visualization" title="Permalink to this headline">¶</a></h1>
+<p>Data visualization is one of the most important steps in a scientific project. You carefully planned your study,
+you carried out your experiment and collected your data. Now, you embark on the process of understanding and analyzing
+your data. This process nearly always requires you to see what’s going on with your data. But while a quick-and-dirty plot
+may be sufficient for you who intimately know the data and its origin, that visualization needs to be refined so that a
+naive but competent reader can easily understand what you are trying to show them.</p>
+<p>In general, any point you want to communicate to your readers should be visualized.</p>
+<p>Lucky for us, R is especially suited to generating “publication-ready” plots, though getting your plots to that stage requires
+a little bit of work. 🎉</p>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>If you come across a particularly good (or particularly bad) figure while reading a scientific paper, stop and consider what
+makes it good (or bad). You may find you want to keep a record for yourself of good visualization tricks you’ve come across.</p>
+</div>
+<p>Below you’ll find a brief introduction to data visualization, as well as many resources and tutorials for visualizing your data
+effectively and aesthetically.</p>
+<div class="section" id="getting-started-a-brief-checklist">
+<h2>Getting Started: A Brief Checklist<a class="headerlink" href="#getting-started-a-brief-checklist" title="Permalink to this headline">¶</a></h2>
+<p>Data visualization begins with thinking about what type of data you have (e.g. categorical, continuous),
+and considering what the main aim of the visualization is (e.g. “I want to visualize how levels of
+my categorical variable <em>sex</em> affect my continuous variable <em>weight</em>.”)</p>
+<p>Here’s an example procedure you may follow when starting out on your visualization quest.
+There’s a set of questions you should ask yourself and, for each of these, actions you should take:</p>
+<ol class="simple">
+<li><p>What is the structure of my data? –&gt; <strong>View data frame</strong></p></li>
+<li><p>What message do I want to convey with my data? What graph should I use for which type of data? –&gt; <strong>Select a type of graph (See <span class="xref std std-ref">choose-graph</span>)</strong></p></li>
+<li><p>What package(s) or tool(s) do I need to plot my data? –&gt; <strong>Select package/function, identify required data format</strong></p></li>
+<li><p>Which variables do I need? –&gt; <strong>Filter data frame</strong></p></li>
+<li><p>What format should my data be in? –&gt; <strong>Wrangle data</strong></p></li>
+</ol>
+<p>At this stage, you are ready to plot your data! Once you have your preliminary plot, it’s time
+to turn your attention to the finer details.</p>
+<p>To make sure your plot is intelligible to others (and to yourself in the future),
+here’s a (non-comprehensive) list of questions and actions you should take:</p>
+<ol class="simple">
+<li><p>Are the units of my variables appropriate? –&gt; <strong>Modify data frame by transforming units (e.g. miliseconds to seconds)</strong></p></li>
+<li><p>Are the axes limits appropriate (espcially with multiple plots)? –&gt; <strong>Define axes limits</strong></p></li>
+<li><p>Are my axes ticks, axes labels, legend labels, title, subtitle, and/or captions complete and appropriate? –&gt; <strong>Modify plot components</strong></p></li>
+<li><p>Is my color scheme consistent across plots, appealing, and color-blind friendly? –&gt; <strong>Select and apply a color palette (See <span class="xref std std-ref">choose-palette</span>)</strong></p></li>
+</ol>
+<p>As you can see, data visualization requires some amount of data wrangling first.
+For this reason, you will see many tutorials begin by manipulating the data into the right format
+for the plotting function in question.</p>
+</div>
+<div class="section" id="comprehensive-tutorials-worked-examples-in-r">
+<h2>Comprehensive Tutorials &amp; Worked Examples in R<a class="headerlink" href="#comprehensive-tutorials-worked-examples-in-r" title="Permalink to this headline">¶</a></h2>
+<p>There are many tutorials with worked examples in R that can guide you through the steps outlined above. Just a few of them are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://r4ds.had.co.nz/index.html">R for Data Science</a> (Ed: O’Reilly) by the R4DS Team (2017-01)</p></li>
+<li><p><a class="reference external" href="https://r-graphics.org/">R Graphics Cookbook</a> (Ed: O’Reilly) by Winston Chang (2022-01-14)</p></li>
+<li><p><a class="reference external" href="https://rkabacoff.github.io/datavis/index.html">Data Visualization with R</a> by Rob Kabacoff (2020-12-01)</p></li>
+</ul>
+</div>
+<div class="section" id="example-data">
+<h2>Example Data<a class="headerlink" href="#example-data" title="Permalink to this headline">¶</a></h2>
+<p>Many tutorials will provide examples using built-in datasets that either come in base R or in frequently-used packages, such as <code class="docutils literal notranslate"><span class="pre">tidyverse</span></code>.
+The most commonly-used are <code class="docutils literal notranslate"><span class="pre">mtcars</span></code> and <code class="docutils literal notranslate"><span class="pre">iris</span></code>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>If you’re stuck on a plotting issue and want to get help from the scientific community, <a class="reference external" href="https://stackoverflow.com/">Stack Overflow</a> is a great forum.
+Your question will have a greater chance of getting answered if you post a <strong>reproducible</strong> example using one an in-built dataset such as <code class="docutils literal notranslate"><span class="pre">mtcars</span></code> or <code class="docutils literal notranslate"><span class="pre">iris</span></code>.</p>
+</div>
+</div>
+<div class="section" id="choosing-the-right-graph">
+<h2>Choosing the right graph<a class="headerlink" href="#choosing-the-right-graph" title="Permalink to this headline">¶</a></h2>
+<p>In <strong>Step 2.</strong>, once you have decided what message you want to convey with your data, you must answer the question:
+<strong>What graph should I use for which type of data?</strong></p>
+<p>Even for seasoned plotters, it’s useful to reference a visualization cheat sheet such as <a class="reference external" href="https://www.r-graph-gallery.com/index.html">R Graph Gallery</a> or the
+<a class="reference external" href="https://raw.githubusercontent.com/Financial-Times/chart-doctor/main/visual-vocabulary/poster.png">Visual Vocabulary</a> guide from the Financial Times.</p>
+<p>Both of these resources (and many others) can give you some inspiration for how to plot whatever data you have.
+The R Graph Gallery additionally features tutorials in R for visualizing each type of graph, mainly using <code class="docutils literal notranslate"><span class="pre">ggplot2</span></code>.</p>
+</div>
+<div class="section" id="choosing-a-color-palette">
+<h2>Choosing a color palette<a class="headerlink" href="#choosing-a-color-palette" title="Permalink to this headline">¶</a></h2>
+<p>Your choice of color palette may seem like a merely ornamental part of plotting, but is a crucial element of your plot.
+Check out this article on the <a class="reference external" href="https://www.nature.com/articles/s41467-020-19160-7">misuse of color in science communication</a>, published in Nature.</p>
+<p>A poor color palette may confuse readers because the colors are too similar.</p>
+<p>Similarly, some commonly-used colormaps that are used to visualize continuous change in some variable (e.g. temperature)
+in fact distort the data they aim torepresent.</p>
+<a class="mx-auto d-block reference internal image-reference" href="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig1_HTML.png"><img alt="Color palettes distort perception" class="mx-auto d-block" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig1_HTML.png" style="width: 400px;" /></a>
+<p>In addition, your plots are likely to be seen by color-blind individuals (an estimated 8% of men have some form of color-blindness).</p>
+<p>Luckily, many visualization tools feature palettes that compensate for quirks in human color perception, are aesthetic, and color-blind-friendly.</p>
+<p>Packages with read-made palettes:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.r-graph-gallery.com/38-rcolorbrewers-palettes.html">RColorBrewer</a>: particularly suited for categorial data</p></li>
+<li><p><a class="reference external" href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">viridis</a>: particularly suited for continuous data &amp; color-blind friendly</p></li>
+<li><p><a class="reference external" href="https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html">ggsci</a>: palettes modelled after scientific journal themes</p></li>
+</ul>
+<p>Tools for creating your own palettes:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://blog.datawrapper.de/beautifulcolors/">How to pick more beautiful colors for your data visualizations</a> from Datawrapper</p></li>
+<li><p><a class="reference external" href="https://color.adobe.com/create/color-wheel">Adobe Color Wheel</a> (with Color-Blind feature)</p></li>
+</ul>
+<p>A list of all colors available in base R can be found <a class="reference external" href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf">here</a>.</p>
+</div>
+<div class="section" id="advanced-tools">
+<h2>Advanced Tools<a class="headerlink" href="#advanced-tools" title="Permalink to this headline">¶</a></h2>
+<p>Once you’ve got a handle on the basics, you can look forward to the many great tools that await you! You can combine plots, make
+plots interactive or 3D, animate your plots, and more:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://plotly-r.com/index.html">Guide to Interactive web-based data visualization</a> by Carson Sievert (2019-12-19)</p></li>
+<li><p><a class="reference external" href="https://patchwork.data-imaginist.com/index.html">Patchwork: A simple tool to combine ggplot2 plots</a></p></li>
+<li><p><a class="reference external" href="https://cran.r-project.org/web/packages/egg/vignettes/Ecosystem.html">Guide to plot layouts in the g-universe</a> by Baptiste Auguié (2019-07-13)</p></li>
+<li><p><a class="reference external" href="https://www.r-graph-gallery.com/animation.html">Guide to animating plots</a> from R Graph Gallery</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./experimentation/finalization"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="analysis.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Analysis</p>
+        </div>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Ava Kiai<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
