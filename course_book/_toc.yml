@@ -21,4 +21,7 @@ chapters:
   sections:
   - file: experimentation/conceptualization.md
   - file: experimentation/execution.md
-  - file: experimentation/finalization.md
+  - file: experimentation/finalization/landing.md
+      sections:
+        - file: experimentation/finalization/analysis.md
+        - file: experimentation/finalization/data_viz.md
