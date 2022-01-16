@@ -32,7 +32,7 @@ There's a set of questions you should ask yourself and, for each of these, actio
 #### Steps, Part I: Plot
 
 1. What is the structure of my data? --> **View data frame**
-2. What message do I want to convey with my data? What graph should I use for which type of data? --> **Select a type of graph (See** [](choose-graph)**)**
+2. What message do I want to convey with my data? What graph should I use for which type of data? --> **Select a type of graph (See [below](choose:graph))**
 3. What package(s) or tool(s) do I need to plot my data? --> **Select package/function, identify required data format**
 3. Which variables do I need? --> **Filter data frame**
 4. What format should my data be in? --> **Wrangle data**
@@ -47,7 +47,7 @@ Here's a (non-comprehensive) list of questions and actions you should take:
 1. Are the units of my variables appropriate? --> **Modify data frame by transforming units (e.g. miliseconds to seconds)**
 2. Are the axes limits appropriate (espcially with multiple plots)? --> **Define axes limits**
 3. Are my axes ticks, axes labels, legend labels, title, subtitle, and/or captions complete and appropriate? --> **Modify plot components**
-4. Is my color scheme consistent across plots, appealing, and color-blind friendly? --> **Select and apply a color palette (See** [](choose-palette)**)**
+4. Is my color scheme consistent across plots, appealing, and color-blind friendly? --> **Select and apply a color palette (See [below](choose:palette))**
 
 As you can see, data visualization requires some amount of data wrangling first. 
 For this reason, you will see many tutorials begin by manipulating the data into the right format
@@ -75,7 +75,7 @@ Your question will have a greater chance of getting answered if you post a **rep
 ```
 
 
-(choose-graph)=
+(choose:graph)=
 ### Choosing the right graph
 
 In **Step 2.**, once you have decided what message you want to convey with your data, you must answer the question:
@@ -88,7 +88,7 @@ Both of these resources (and many others) can give you some inspiration for how 
 The R Graph Gallery additionally features tutorials in R for visualizing each type of graph, mainly using `ggplot2`.
 
 
-(choose-palette)=
+(choose:palette)=
 ### Choosing a color palette
 
 Your choice of color palette may seem like a merely ornamental part of plotting, but is a crucial element of your plot. 

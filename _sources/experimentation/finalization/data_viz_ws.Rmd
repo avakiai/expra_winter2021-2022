@@ -10,15 +10,6 @@ Our aim in this session is to visualize some data in order to:
 3. play with color
 
 ```{r}
-library(tidyverse)
 mtcars
-
-```
-```{r}
-
-```
-
-```{r}
-
 ```
 
