@@ -1,0 +1,24 @@
+---
+title: "Data Visualization Workshop"
+output: html_document
+---
+
+Our aim in this session is to visualize some data in order to:
+
+1. get a handle on how to plot certain types of data
+2. learn how to build a `ggplot` and the logic of the `grammar of graphics`
+3. play with color
+
+```{r}
+library(tidyverse)
+mtcars
+
+```
+```{r}
+
+```
+
+```{r}
+
+```
+
