@@ -4,7 +4,7 @@
 
 In the final stage of a study, we'll generate our results by systematically stepping through our analysis plan, focus on polishing our figures to be maximally effective, revisit our hypothesis and infer some conclusions from our results, and get our study into a form ready for others to consume (whether as a poster, presentation, or written document). 
 
-<img src="../static/the_process_0.png" alt="the process" class="mx-auto d-block" width="550px">
+<img src="../../static/the_process_0.png" alt="the process" class="mx-auto d-block" width="550px">
 
 The module will therefore feature the following components:
 
