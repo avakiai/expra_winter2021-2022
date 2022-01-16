@@ -318,6 +318,18 @@
   <a class="reference internal nav-link" href="#getting-started-a-brief-checklist">
    Getting Started: A Brief Checklist
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-part-i">
+     Steps, Part I:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-part-ii">
+     Steps, Part II:
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#comprehensive-tutorials-worked-examples-in-r">
@@ -368,6 +380,18 @@
   <a class="reference internal nav-link" href="#getting-started-a-brief-checklist">
    Getting Started: A Brief Checklist
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-part-i">
+     Steps, Part I:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-part-ii">
+     Steps, Part II:
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#comprehensive-tutorials-worked-examples-in-r">
@@ -412,7 +436,7 @@ may be sufficient for you who intimately know the data and its origin, that visu
 naive but competent reader can easily understand what you are trying to show them.</p>
 <p>In general, any point you want to communicate to your readers should be visualized.</p>
 <p>Lucky for us, R is especially suited to generating “publication-ready” plots, though getting your plots to that stage requires
-a little bit of work. 🎉</p>
+a little bit of work.</p>
 <div class="tip admonition">
 <p class="admonition-title">Tip</p>
 <p>If you come across a particularly good (or particularly bad) figure while reading a scientific paper, stop and consider what
@@ -427,26 +451,32 @@ and considering what the main aim of the visualization is (e.g. “I want to vis
 my categorical variable <em>sex</em> affect my continuous variable <em>weight</em>.”)</p>
 <p>Here’s an example procedure you may follow when starting out on your visualization quest.
 There’s a set of questions you should ask yourself and, for each of these, actions you should take:</p>
+<div class="section" id="steps-part-i">
+<h3>Steps, Part I:<a class="headerlink" href="#steps-part-i" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>What is the structure of my data? –&gt; <strong>View data frame</strong></p></li>
-<li><p>What message do I want to convey with my data? What graph should I use for which type of data? –&gt; <strong>Select a type of graph (See <span class="xref std std-ref">choose-graph</span>)</strong></p></li>
+<li><p>What message do I want to convey with my data? What graph should I use for which type of data? –&gt; <strong>Select a type of graph (See <span class="xref myst"></span></strong></p></li>
 <li><p>What package(s) or tool(s) do I need to plot my data? –&gt; <strong>Select package/function, identify required data format</strong></p></li>
 <li><p>Which variables do I need? –&gt; <strong>Filter data frame</strong></p></li>
 <li><p>What format should my data be in? –&gt; <strong>Wrangle data</strong></p></li>
 </ol>
-<p>At this stage, you are ready to plot your data! Once you have your preliminary plot, it’s time
+<p>At this stage, you are ready to plot your data! 🎉🎉 Once you have your preliminary plot, it’s time
 to turn your attention to the finer details.</p>
 <p>To make sure your plot is intelligible to others (and to yourself in the future),
 here’s a (non-comprehensive) list of questions and actions you should take:</p>
+</div>
+<div class="section" id="steps-part-ii">
+<h3>Steps, Part II:<a class="headerlink" href="#steps-part-ii" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>Are the units of my variables appropriate? –&gt; <strong>Modify data frame by transforming units (e.g. miliseconds to seconds)</strong></p></li>
 <li><p>Are the axes limits appropriate (espcially with multiple plots)? –&gt; <strong>Define axes limits</strong></p></li>
 <li><p>Are my axes ticks, axes labels, legend labels, title, subtitle, and/or captions complete and appropriate? –&gt; <strong>Modify plot components</strong></p></li>
-<li><p>Is my color scheme consistent across plots, appealing, and color-blind friendly? –&gt; <strong>Select and apply a color palette (See <span class="xref std std-ref">choose-palette</span>)</strong></p></li>
+<li><p>Is my color scheme consistent across plots, appealing, and color-blind friendly? –&gt; <strong>Select and apply a color palette (See <span class="xref myst"></span>)</strong></p></li>
 </ol>
 <p>As you can see, data visualization requires some amount of data wrangling first.
 For this reason, you will see many tutorials begin by manipulating the data into the right format
 for the plotting function in question.</p>
+</div>
 </div>
 <div class="section" id="comprehensive-tutorials-worked-examples-in-r">
 <h2>Comprehensive Tutorials &amp; Worked Examples in R<a class="headerlink" href="#comprehensive-tutorials-worked-examples-in-r" title="Permalink to this headline">¶</a></h2>
@@ -482,8 +512,11 @@ The R Graph Gallery additionally features tutorials in R for visualizing each ty
 Check out this article on the <a class="reference external" href="https://www.nature.com/articles/s41467-020-19160-7">misuse of color in science communication</a>, published in Nature.</p>
 <p>A poor color palette may confuse readers because the colors are too similar.</p>
 <p>Similarly, some commonly-used colormaps that are used to visualize continuous change in some variable (e.g. temperature)
-in fact distort the data they aim torepresent.</p>
-<a class="mx-auto d-block reference internal image-reference" href="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig1_HTML.png"><img alt="Color palettes distort perception" class="mx-auto d-block" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig1_HTML.png" style="width: 400px;" /></a>
+in fact distort the data they aim to represent.</p>
+<div class="figure align-default" id="color-map">
+<a class="reference internal image-reference" href="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig1_HTML.png"><img alt="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig1_HTML.png" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-020-19160-7/MediaObjects/41467_2020_19160_Fig1_HTML.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Marie Skłodowska-Curie, as originally photographed by Henri Manuel around 1920, the Earth from space, and an apple are shown a) in their original images and b) in distorted [the commonly-used “jet” palette] and c) in undistorted colour versions. Inferring the true picture from an unscientifically (e.g., jet) coloured data set is incomparably harder than from a data set represented in a perceptually uniform and ordered colour map, like batlow. <em>From <span class="xref myst">Nature Communications</span></em>.</span><a class="headerlink" href="#color-map" title="Permalink to this image">¶</a></p>
+</div>
 <p>In addition, your plots are likely to be seen by color-blind individuals (an estimated 8% of men have some form of color-blindness).</p>
 <p>Luckily, many visualization tools feature palettes that compensate for quirks in human color perception, are aesthetic, and color-blind-friendly.</p>
 <p>Packages with read-made palettes:</p>
