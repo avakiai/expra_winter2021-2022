@@ -12,4 +12,4 @@ The module will therefore feature the following components:
 * [Data Visualization](https://avakiai.com/expra_winter2021-2022/experimentation/finalization/data_viz.html)
 * Preparing a Scientific Poster
 * Preparing a Report & Open Materials
-* Scientific Communication
+* [Science Communication](https://avakiai.com/expra_winter2021-2022/lectures/workshops.html#scientific-outreach-communication)

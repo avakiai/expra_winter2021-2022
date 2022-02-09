@@ -348,13 +348,56 @@
 <li><p>learn how to build a <code class="docutils literal notranslate"><span class="pre">ggplot</span></code> and the logic of the <code class="docutils literal notranslate"><span class="pre">grammar</span> <span class="pre">of</span> <span class="pre">graphics</span></code></p></li>
 <li><p>play with color</p></li>
 </ol>
+<p>We’ll use the <code class="docutils literal notranslate"><span class="pre">mpg</span></code> dataset from the <code class="docutils literal notranslate"><span class="pre">tidyverse</span></code> library.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mtcars</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+
+<span class="n">mpg</span>
 </pre></div>
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="n">ggplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">mpg</span><span class="p">,</span> <span class="n">mapping</span> <span class="o">=</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">displ</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">hwy</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">class</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_point</span><span class="p">()</span> <span class="o">+</span>
+  <span class="n">geom_smooth</span><span class="p">(</span><span class="n">mapping</span> <span class="o">=</span> <span class="n">aes</span><span class="p">(</span><span class="n">group</span> <span class="o">=</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">scale_x_continuous</span><span class="p">(</span><span class="n">limits</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">),</span> <span class="n">breaks</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">scale_y_continuous</span><span class="p">(</span><span class="n">limits</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">50</span><span class="p">),</span> <span class="n">breaks</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">scale_color_brewer</span><span class="p">(</span><span class="n">palette</span> <span class="o">=</span> <span class="s2">&quot;Paired&quot;</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;type of car&quot;</span><span class="p">)</span> <span class="o">+</span> 
+  <span class="n">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;engine displacement (litres)&quot;</span><span class="p">,</span> 
+       <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;highway miles per gallon&quot;</span><span class="p">,</span>
+       <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Fuel efficiency is affected by engine displacement*&quot;</span><span class="p">,</span>
+       <span class="n">caption</span> <span class="o">=</span> <span class="s2">&quot;*Engine displacement (l) is a measure of engine size. </span><span class="se">\n</span><span class="s2"> Larger cars (e.g. subcompacts and SUVs) are less fuel efficient </span><span class="se">\n</span><span class="s2"> than smaller cars (e.g. compact and midsize cars).&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">theme_bw</span><span class="p">()</span> <span class="c1">#+</span>
+  <span class="c1">#guides(color = &quot;none&quot;)</span>
+
+<span class="n">p</span>
+<span class="n">ggsave</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;fuel_efficiency.png&quot;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="n">p</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">w</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">displ</span><span class="p">,</span> <span class="n">hwy</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_point</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="n">class</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_smooth</span><span class="p">(</span><span class="n">se</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Fuel efficiency generally decreases with engine size&quot;</span><span class="p">,</span>
+       <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;engine dispalcement (L)&quot;</span><span class="p">,</span>
+       <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;Highway mpg&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">theme_bw</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>#—-
+Plot mtcars as per
+https://r4ds.had.co.nz/data-visualisation.html</p>
 
     <script type="text/x-thebe-config">
     {

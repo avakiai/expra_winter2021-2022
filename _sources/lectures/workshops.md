@@ -17,14 +17,8 @@ Slides:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQGXXmMGpRNbWkh8GvJZyxa4vcE8DgJQI5f1ZICDUKN0uaVwPYZ1ZxFbwherYGW-LxtiuYbpUNmKy39/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" style="border: 1px solid #464646;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-#### Data Visualization Workshop
-
-Slides: Coming soon!
-
-#### Scientific Poster Workshop
-
-Slides: Coming soon!
-
 #### Scientific Outreach & Communication
 
-Slides: Coming soon!
+Slides: 
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRMMlwgZeOSdCrXxm7gf_Eb1A7lPz9z9XyuHS07uTR9pkbxMGLq6vK4onPG6JqCn3FhgO60-BbOQPrE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" style="border: 1px solid #464646;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
