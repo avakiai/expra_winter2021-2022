@@ -1,0 +1,32 @@
+## Experiment Order
+
+* Welcome screen
+* Consent form
+	- Methods
+* Sex
+* Age
+* GSI Questionnaire: subscales for Musical Training and Perceptual Abilities 
+* Instructions
+* [Working Memory Instructions]
+* [Working Memory Recall & Feedback Practice]
+	- Note: Success = 5 or more letters correct, i.e. at least half. If 
+	participant fails 1st practice, they are given a second practice
+	consonant sequence. After 2nd try, whatever their result the experiment 
+	continues.
+----- Genre/Block Loop (x2)	
+| --- Explicit Information/Trial Loop (x3)
+| |* Prestige Text
+| |* [Working Memory Probe]
+| |* Play Music Stimuli
+| |* Liking Ratings (x4)
+| |* Open-text Response (x2)
+| |* [Working Memory Recall]
+| |* [Working Memory Confidence]
+|-- 
+|	- Trial Loop Notes: The 1st trial is always "baseline" text.
+|	The 2nd and 3rd trials are counterbalanced "low" & "high" text.
+|* Final Evaluation (x3)
+|* Knew Piece Evaluation
+-----
+
+[Experiment elements in brackets were presented only to Working Memory participants.]

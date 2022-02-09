@@ -9,7 +9,62 @@ Our aim in this session is to visualize some data in order to:
 2. learn how to build a `ggplot` and the logic of the `grammar of graphics`
 3. play with color
 
+We'll use the `mpg` dataset from the `tidyverse` library.
 ```{r}
-mtcars
+library(tidyverse)
+
+mpg
 ```
+
+
+
+```{r}
+w = 7
+h = 5
+
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) +
+  geom_point() +
+  geom_smooth(mapping = aes(group = 1)) +
+  scale_x_continuous(limits = c(1,7), breaks = c(1, 3, 5, 7)) + 
+  scale_y_continuous(limits = c(10,50), breaks = c(10, 20, 30, 40, 50)) + 
+  scale_color_brewer(palette = "Paired", name = "type of car") + 
+  labs(x = "engine displacement (litres)", 
+       y = "highway miles per gallon",
+       title = "Fuel efficiency is affected by engine displacement*",
+       caption = "*Engine displacement (l) is a measure of engine size. \n Larger cars (e.g. subcompacts and SUVs) are less fuel efficient \n than smaller cars (e.g. compact and midsize cars).") +
+  theme_bw() #+
+  #guides(color = "none")
+
+p
+ggsave(filename = "fuel_efficiency.png", plot = p, width = w, height = h)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+ggplot(mpg, aes(displ, hwy)) +
+  geom_point(aes(color = class)) +
+  geom_smooth(se = FALSE) +
+  labs(title = "Fuel efficiency generally decreases with engine size",
+       x = "engine dispalcement (L)",
+       y = "Highway mpg") +
+  theme_bw()
+
+```
+
+#----
+Plot mtcars as per
+https://r4ds.had.co.nz/data-visualisation.html
+
+
+
 
